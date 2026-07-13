@@ -63,6 +63,25 @@ def test_exact_state_integration_recovers_graph_only_with_weight_volume() -> Non
     assert demo.common.density_l1(grid, naive_density, graph_density) > 0.05
 
 
+def test_exact_state_integration_retains_inverse_rho_convergence_without_cancellation() -> None:
+    points = np.array([1.12, 2.5])
+    hard_limit = demo.hard_tube_logdensity(points, corrected=False)
+    errors = [
+        demo.common.centered_max_abs_diff(
+            demo.exact_integrated_tube_logdensity(
+                points,
+                rho=rho,
+                include_weight_volume=False,
+            ),
+            hard_limit,
+        )
+        for rho in (3.0e6, 3.0e7, 3.0e8)
+    ]
+
+    assert errors[1] < 0.11 * errors[0]
+    assert errors[2] < 0.11 * errors[1]
+
+
 def test_detcorr_weighted_api_reports_secondary_not_primary_correction() -> None:
     audit = demo.detcorr_weighted_api_audit()
     assert audit["detcorr_available"] is True

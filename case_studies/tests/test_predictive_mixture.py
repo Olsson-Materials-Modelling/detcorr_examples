@@ -63,10 +63,7 @@ def test_single_component_reduces_to_declared_distribution(family: str) -> None:
     probabilities = np.array([0.01, 0.25, 0.5, 0.9, 0.99])
     location = 0.37
     scale = 0.61
-    expected_base = norm.ppf(probabilities)
-    if family == "student_t4":
-        expected_base = student_t.ppf(probabilities, df=4)
-    expected = location + scale * expected_base
+    distribution = norm if family == "normal" else student_t(df=4)
 
     result = posterior_mixture_logratio_quantiles(
         np.array([location]),
@@ -76,7 +73,14 @@ def test_single_component_reduces_to_declared_distribution(family: str) -> None:
         family=family,
     )
 
-    assert np.allclose(result.quantiles, expected, rtol=0.0, atol=3.0e-12)
+    standardized = (result.quantiles - location) / scale
+    assert np.allclose(
+        distribution.cdf(standardized),
+        probabilities,
+        rtol=0.0,
+        atol=1.0e-12,
+    )
+    assert result.diagnostics.max_abs_cdf_root_residual < 1.0e-12
 
 
 @pytest.mark.parametrize("family", ["normal", "student_t4"])

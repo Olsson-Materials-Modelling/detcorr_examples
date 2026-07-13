@@ -510,28 +510,28 @@
   },
   "example": "sensor_weighted_constraint",
   "finite_penalty_validation": {
-    "coarse_rho_corrected_vs_graph_centered_max_abs_diff": 0.0023611156745104722,
+    "coarse_rho_corrected_vs_graph_centered_max_abs_diff": 0.0023611093816597872,
     "coarse_rho_for_convergence_check": 3000000.0,
-    "error_ratio_vs_tenfold_coarser_rho": 0.10002848786581929,
-    "finite_corrected_vs_graph_centered_max_abs_diff": 0.0002361788305975665,
+    "error_ratio_vs_tenfold_coarser_rho": 0.10001213987519024,
+    "finite_corrected_vs_graph_centered_max_abs_diff": 0.00023613960173918258,
     "finite_penalty_error_limit": 0.0005,
-    "finite_vs_hard_tube_centered_max_abs_diff": 0.0002361788305975665,
+    "finite_vs_hard_tube_centered_max_abs_diff": 0.00023613960173918258,
     "integral_route": "exact_multivariate_gaussian_state_integral",
     "n_points": 11,
     "rho": 30000000.0
   },
   "grid_support": {
-    "maximum_two_percent_edge_mass": 5.2222463445411246e-23,
-    "minimum_endpoint_log_drop": 53.16490186828383,
+    "maximum_two_percent_edge_mass": 5.2222463780236753e-23,
+    "minimum_endpoint_log_drop": 53.16490192627509,
     "table": "tables/grid_support_audit.csv"
   },
   "independent_validation": {
-    "coarse_rho_corrected_vs_graph_centered_max_abs_diff": 0.0023611156745104722,
+    "coarse_rho_corrected_vs_graph_centered_max_abs_diff": 0.0023611093816597872,
     "coarse_rho_for_convergence_check": 3000000.0,
-    "error_ratio_vs_tenfold_coarser_rho": 0.10002848786581929,
-    "finite_corrected_vs_graph_centered_max_abs_diff": 0.0002361788305975665,
+    "error_ratio_vs_tenfold_coarser_rho": 0.10001213987519024,
+    "finite_corrected_vs_graph_centered_max_abs_diff": 0.00023613960173918258,
     "finite_penalty_error_limit": 0.0005,
-    "finite_vs_hard_tube_centered_max_abs_diff": 0.0002361788305975665,
+    "finite_vs_hard_tube_centered_max_abs_diff": 0.00023613960173918258,
     "integral_route": "exact_multivariate_gaussian_state_integral",
     "n_points": 11,
     "rho": 30000000.0,
@@ -562,19 +562,19 @@
     "state_unit": "mV"
   },
   "outcome": {
-    "corrected_density_l1_vs_graph": 1.0696376224010514e-07,
-    "corrected_mean_shift_in_graph_sd": 4.0716153698183726e-08,
+    "corrected_density_l1_vs_graph": 8.929128942068052e-08,
+    "corrected_mean_shift_in_graph_sd": 2.4007648496952648e-08,
     "correction_log_range_on_grid": 13.8,
-    "naive_density_l1_vs_graph": 0.43106415726438285,
-    "naive_mean_shift_in_graph_sd": -0.5470072179680097,
-    "naive_minus_corrected_mean_in_graph_sd": -0.5470072586841634
+    "naive_density_l1_vs_graph": 0.4310641668981819,
+    "naive_mean_shift_in_graph_sd": -0.5470072334921395,
+    "naive_minus_corrected_mean_in_graph_sd": -0.5470072574997881
   },
   "outcomes": {
-    "corrected_density_l1_vs_graph": 1.0696376224010514e-07,
+    "corrected_density_l1_vs_graph": 8.929128942068052e-08,
     "correction_log_range_on_grid": 13.8,
-    "naive_corrected_density_l1": 0.43106418322248913,
-    "naive_density_l1_vs_graph": 0.43106415726438285,
-    "naive_mean_shift_in_graph_sd": -0.5470072179680097
+    "naive_corrected_density_l1": 0.4310641832935822,
+    "naive_density_l1_vs_graph": 0.4310641668981819,
+    "naive_mean_shift_in_graph_sd": -0.5470072334921395
   },
   "outputs": {
     "grid_support_table": "tables/grid_support_audit.csv",
@@ -585,13 +585,13 @@
     "validation_table": "tables/finite_penalty_validation.csv"
   },
   "posterior": {
-    "corrected_centered_logdensity_max_abs_diff": 0.0002361217982809194,
-    "corrected_finite_tube_mean": 1.189961175708135,
-    "corrected_minus_graph_mean": 3.7120044815708297e-09,
+    "corrected_centered_logdensity_max_abs_diff": 0.00023612740559997292,
+    "corrected_finite_tube_mean": 1.1899611741848564,
+    "corrected_minus_graph_mean": 2.1887258672137477e-09,
     "graph_mean": 1.1899611719961305,
-    "naive_density_l1_vs_graph": 0.43106415726438285,
-    "naive_finite_tube_mean": 1.1400916961217573,
-    "naive_minus_graph_mean": -0.04986947587437318
+    "naive_density_l1_vs_graph": 0.4310641668981819,
+    "naive_finite_tube_mean": 1.1400916947064557,
+    "naive_minus_graph_mean": -0.049869477289674835
   },
   "provenance": {
     "detcorr_version": "0.10.0",

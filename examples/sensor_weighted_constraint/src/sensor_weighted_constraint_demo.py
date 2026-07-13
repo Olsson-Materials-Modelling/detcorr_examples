@@ -170,8 +170,10 @@ def exact_integrated_tube_logdensity(
 ) -> np.ndarray:
     """Integrate the finite-penalty full-space target over ``u`` exactly.
 
-    The integral is evaluated from the combined Gaussian precision. It is not
-    constructed by subtracting a determinant from the graph target.
+    The integral is evaluated from the combined Gaussian precision after
+    shifting ``u`` by the constrained mean. This algebraically equivalent
+    residual form avoids cancellation between terms that grow with ``rho``.
+    It is not constructed by subtracting a determinant from the graph target.
     Terms independent of ``gamma`` are omitted.
     """
 
@@ -179,20 +181,20 @@ def exact_integrated_tube_logdensity(
         raise ValueError("rho must be positive")
     values = np.asarray(gamma, dtype=float)
     observation_precision = np.diag(1.0 / OBSERVATION_SD_MV**2)
-    observation_linear = observation_precision @ OBSERVED_SIGNAL_MV
-    observation_constant = float(OBSERVED_SIGNAL_MV @ observation_precision @ OBSERVED_SIGNAL_MV)
     result = np.empty_like(values)
     for index, gain in enumerate(values):
         metric = algorithmic_metric(float(gain))
         constrained_mean = solved_state_mv(float(gain))
+        observation_residual = OBSERVED_SIGNAL_MV - constrained_mean
+        residual_linear = observation_precision @ observation_residual
         precision = observation_precision + rho * metric
-        linear = observation_linear + rho * metric @ constrained_mean
-        constant = observation_constant + rho * float(constrained_mean @ metric @ constrained_mean)
         sign, logdet_precision = np.linalg.slogdet(precision)
         if sign <= 0.0:
             raise ValueError("combined Gaussian precision is not SPD")
-        integrated = 0.5 * float(linear @ np.linalg.solve(precision, linear))
-        integrated -= 0.5 * constant
+        integrated = -0.5 * float(
+            observation_residual @ observation_precision @ observation_residual
+        )
+        integrated += 0.5 * float(residual_linear @ np.linalg.solve(precision, residual_linear))
         integrated -= 0.5 * float(logdet_precision)
         if include_weight_volume:
             integrated += metric_log_sqrt_det(float(gain))
