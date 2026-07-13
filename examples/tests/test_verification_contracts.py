@@ -213,6 +213,183 @@ def test_csv_semantic_comparator_accepts_numeric_formatting_and_small_drift(
     verifier._compare_semantic_csvs(committed, regenerated, location="fixture/table.csv")
 
 
+def test_csv_semantic_comparator_accepts_supported_slq_diagnostic_drift(
+    tmp_path: Path,
+) -> None:
+    committed = tmp_path / "committed.csv"
+    regenerated = tmp_path / "regenerated.csv"
+    _write_csv(
+        committed,
+        [
+            ["route", "value", "centered_value", "centered_abs_error", "error_estimate"],
+            ["matrix_free_centered_gram_slq", "6185.664", "285.358", "4.187", "12.971"],
+        ],
+    )
+    _write_csv(
+        regenerated,
+        [
+            ["route", "value", "centered_value", "centered_abs_error", "error_estimate"],
+            ["matrix_free_centered_gram_slq", "6185.874", "285.625", "4.454", "13.004"],
+        ],
+    )
+
+    verifier._compare_semantic_csvs(
+        committed,
+        regenerated,
+        location=("materials_screened_lattice_2d3d_jarvis/tables/exact_vs_matrix_free_audit.csv"),
+    )
+
+
+@pytest.mark.parametrize(
+    ("location", "route", "column"),
+    [
+        (
+            "different_example/tables/exact_vs_matrix_free_audit.csv",
+            "matrix_free_centered_gram_slq",
+            "value",
+        ),
+        (
+            "materials_screened_lattice_2d3d_jarvis/tables/exact_vs_matrix_free_audit.csv",
+            "exact_sparse_lu",
+            "value",
+        ),
+        (
+            "materials_screened_lattice_2d3d_jarvis/tables/exact_vs_matrix_free_audit.csv",
+            "matrix_free_centered_gram_slq",
+            "analytic_reference",
+        ),
+    ],
+)
+def test_slq_diagnostic_tolerance_is_path_and_route_scoped(
+    tmp_path: Path,
+    location: str,
+    route: str,
+    column: str,
+) -> None:
+    committed = tmp_path / "committed.csv"
+    regenerated = tmp_path / "regenerated.csv"
+    _write_csv(committed, [["route", column], [route, "6000.0"]])
+    _write_csv(regenerated, [["route", column], [route, "6000.2"]])
+
+    with pytest.raises(RuntimeError, match="number differs"):
+        verifier._compare_semantic_csvs(committed, regenerated, location=location)
+
+
+@pytest.mark.parametrize(
+    ("column", "committed_value", "regenerated_value"),
+    [
+        ("value", "6000.0", "6000.301"),
+        ("centered_value", "285.0", "285.301"),
+        ("centered_abs_error", "4.0", "4.301"),
+        ("error_estimate", "11.0", "11.051"),
+    ],
+)
+def test_slq_diagnostic_tolerance_rejects_material_change(
+    tmp_path: Path,
+    column: str,
+    committed_value: str,
+    regenerated_value: str,
+) -> None:
+    committed = tmp_path / "committed.csv"
+    regenerated = tmp_path / "regenerated.csv"
+    _write_csv(
+        committed,
+        [["route", column], ["matrix_free_centered_gram_slq", committed_value]],
+    )
+    _write_csv(
+        regenerated,
+        [["route", column], ["matrix_free_centered_gram_slq", regenerated_value]],
+    )
+
+    with pytest.raises(RuntimeError, match="number differs"):
+        verifier._compare_semantic_csvs(
+            committed,
+            regenerated,
+            location=(
+                "materials_screened_lattice_2d3d_jarvis/tables/exact_vs_matrix_free_audit.csv"
+            ),
+        )
+
+
+def test_slq_diagnostic_tolerance_rejects_nonpositive_error_estimate(tmp_path: Path) -> None:
+    committed = tmp_path / "committed.csv"
+    regenerated = tmp_path / "regenerated.csv"
+    _write_csv(
+        committed,
+        [["route", "error_estimate"], ["matrix_free_centered_gram_slq", "0.02"]],
+    )
+    _write_csv(
+        regenerated,
+        [["route", "error_estimate"], ["matrix_free_centered_gram_slq", "-0.01"]],
+    )
+
+    with pytest.raises(RuntimeError, match="non-positive SLQ error estimate"):
+        verifier._compare_semantic_csvs(
+            committed,
+            regenerated,
+            location=(
+                "materials_screened_lattice_2d3d_jarvis/tables/exact_vs_matrix_free_audit.csv"
+            ),
+        )
+
+
+@pytest.mark.parametrize(
+    "column",
+    [
+        "finite_vs_hard_tube_centered_error",
+        "finite_corrected_vs_graph_centered_error",
+    ],
+)
+def test_screened_lattice_finite_penalty_tolerance_accepts_supported_drift(
+    tmp_path: Path,
+    column: str,
+) -> None:
+    committed = tmp_path / "committed.csv"
+    regenerated = tmp_path / "regenerated.csv"
+    _write_csv(committed, [[column], ["0.003996644079961698"]])
+    _write_csv(regenerated, [[column], ["0.003943238279961698"]])
+
+    verifier._compare_semantic_csvs(
+        committed,
+        regenerated,
+        location=(
+            "materials_screened_lattice_2d3d_jarvis/tables/finite_penalty_tube_validation.csv"
+        ),
+    )
+
+
+@pytest.mark.parametrize(
+    ("location", "regenerated_value"),
+    [
+        (
+            "different_example/tables/finite_penalty_tube_validation.csv",
+            "0.003943238279961698",
+        ),
+        (
+            "materials_screened_lattice_2d3d_jarvis/tables/finite_penalty_tube_validation.csv",
+            "0.003895644079961698",
+        ),
+    ],
+)
+def test_screened_lattice_finite_penalty_tolerance_is_scoped_and_bounded(
+    tmp_path: Path,
+    location: str,
+    regenerated_value: str,
+) -> None:
+    committed = tmp_path / "committed.csv"
+    regenerated = tmp_path / "regenerated.csv"
+    column = "finite_vs_hard_tube_centered_error"
+    _write_csv(committed, [[column], ["0.003996644079961698"]])
+    _write_csv(regenerated, [[column], [regenerated_value]])
+
+    with pytest.raises(RuntimeError, match="number differs"):
+        verifier._compare_semantic_csvs(
+            committed,
+            regenerated,
+            location=location,
+        )
+
+
 @pytest.mark.parametrize(
     ("regenerated_rows", "message"),
     [

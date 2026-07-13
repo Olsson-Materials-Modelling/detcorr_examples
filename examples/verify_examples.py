@@ -104,8 +104,54 @@ SEMANTIC_NUMERIC_FIELDS = {
 }
 
 _MISSING = object()
-CSV_RELATIVE_TOLERANCE = 5.0e-7
-CSV_ABSOLUTE_TOLERANCE = 1.0e-8
+CSV_DEFAULT_TOLERANCE = SemanticTolerance(
+    relative=5.0e-7,
+    absolute=1.0e-8,
+    rationale="portable tabular numeric evidence",
+)
+
+# The seeded SLQ audit is reproducible at the probe level, while Lanczos
+# eigensolves can vary slightly across supported BLAS/LAPACK implementations.
+# These bounds are expressed in natural-log units and apply only to the four
+# stochastic diagnostic fields on the explicitly named matrix-free route.  The
+# exact route, analytic references, configuration, and all posterior results
+# retain the default contract.
+_SCREENED_LATTICE_AUDIT = (
+    "materials_screened_lattice_2d3d_jarvis/tables/exact_vs_matrix_free_audit.csv"
+)
+_SCREENED_LATTICE_FINITE_PENALTY = (
+    "materials_screened_lattice_2d3d_jarvis/tables/finite_penalty_tube_validation.csv"
+)
+_SCREENED_LATTICE_SLQ_ROUTE = "matrix_free_centered_gram_slq"
+CSV_PORTABILITY_TOLERANCES = {
+    (_SCREENED_LATTICE_AUDIT, _SCREENED_LATTICE_SLQ_ROUTE, column): SemanticTolerance(
+        relative=0.0,
+        absolute=0.3,
+        rationale="platform-sensitive SLQ log-determinant diagnostic",
+    )
+    for column in ("value", "centered_value", "centered_abs_error")
+}
+CSV_PORTABILITY_TOLERANCES[
+    (_SCREENED_LATTICE_AUDIT, _SCREENED_LATTICE_SLQ_ROUTE, "error_estimate")
+] = SemanticTolerance(
+    relative=0.0,
+    absolute=0.05,
+    rationale="platform-sensitive SLQ diagnostic standard error",
+)
+# The finite-penalty check evaluates centered residuals after sparse operations
+# on log densities of order 1e4 at rho=5e10.  Its 1e-4 portability bound is 40
+# times smaller than the declared 4e-3 validation threshold.
+for column in (
+    "finite_vs_hard_tube_centered_error",
+    "finite_corrected_vs_graph_centered_error",
+):
+    CSV_PORTABILITY_TOLERANCES[(_SCREENED_LATTICE_FINITE_PENALTY, None, column)] = (
+        SemanticTolerance(
+            relative=0.0,
+            absolute=1.0e-4,
+            rationale="large-rho sparse finite-penalty validation residual",
+        )
+    )
 
 
 def _run(cmd: list[str], *, env: dict[str, str], capture: bool = False) -> None:
@@ -240,16 +286,22 @@ def _compare_semantic_csvs(expected_path: Path, observed_path: Path, *, location
             f"regenerated CSV row count differs at {location}: "
             f"committed={len(expected) - 1}, regenerated={len(observed) - 1}"
         )
+    route_index = expected[0].index("route") if "route" in expected[0] else None
     for row_index, (expected_row, observed_row) in enumerate(
         zip(expected[1:], observed[1:], strict=True),
         start=2,
     ):
         if len(expected_row) != len(observed_row):
             raise RuntimeError(f"regenerated CSV width differs at {location}:{row_index}")
+        route = expected_row[route_index] if route_index is not None else None
         for column_index, (expected_value, observed_value) in enumerate(
             zip(expected_row, observed_row, strict=True)
         ):
             column = expected[0][column_index]
+            tolerance = CSV_PORTABILITY_TOLERANCES.get(
+                (location, route, column),
+                CSV_DEFAULT_TOLERANCE,
+            )
             try:
                 expected_number = float(expected_value)
             except ValueError:
@@ -276,15 +328,25 @@ def _compare_semantic_csvs(expected_path: Path, observed_path: Path, *, location
                 raise RuntimeError(
                     f"non-finite numeric CSV value at {location}:{row_index}:{column}"
                 )
+            if (location, route, column) == (
+                _SCREENED_LATTICE_AUDIT,
+                _SCREENED_LATTICE_SLQ_ROUTE,
+                "error_estimate",
+            ) and (expected_number <= 0.0 or observed_number <= 0.0):
+                raise RuntimeError(
+                    f"non-positive SLQ error estimate at {location}:{row_index}:{column}"
+                )
             if not math.isclose(
                 expected_number,
                 observed_number,
-                rel_tol=CSV_RELATIVE_TOLERANCE,
-                abs_tol=CSV_ABSOLUTE_TOLERANCE,
+                rel_tol=tolerance.relative,
+                abs_tol=tolerance.absolute,
             ):
                 raise RuntimeError(
                     f"regenerated CSV number differs at {location}:{row_index}:{column}: "
-                    f"committed={expected_number!r}, regenerated={observed_number!r}"
+                    f"committed={expected_number!r}, regenerated={observed_number!r}; "
+                    f"allowed rel_tol={tolerance.relative:g}, "
+                    f"abs_tol={tolerance.absolute:g} for {tolerance.rationale}"
                 )
 
 
