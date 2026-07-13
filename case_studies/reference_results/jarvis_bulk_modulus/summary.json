@@ -1,0 +1,597 @@
+{
+  "analysis_status": "registered reanalysis of a pre-existing public fixture; not prospective confirmation",
+  "claim_bearing_full_run": true,
+  "claim_ceiling": "fixture-conditional predictive calibration and model-adequacy evidence; no universal DFT correction",
+  "claim_evaluations": [
+    {
+      "claim": "The robust common scale improves formula-grouped probabilistic prediction over identity on this fixture.",
+      "claim_bearing_full_run": true,
+      "claim_id": "JB-PRED",
+      "data_sha256": "6d9c37c52ef1d7eeb62d0cce3bc00f5b4c979b4b5d2b3bdcfcda8ab6a73cae86",
+      "evidence_artifacts": [
+        {
+          "artifact_type": "table",
+          "path": "tables/grouped_predictions.csv",
+          "sha256": "8c03feedd9cf2bc96935b8d0b6221da6fdcedacfa5fe772f88049ca9e355620d"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/predictive_scores.csv",
+          "sha256": "71ea34f15e4039b8b16dd3953648a9b464ed56d4cfce3971eb0b2a939ec6516f"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/predictive_group_elpd_contributions.csv",
+          "sha256": "5a336c6f2c31c90718095ea2abb19ce71336694af6757ca2208c69fa00f8cd77"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/predictive_formula_cluster_bootstrap.csv",
+          "sha256": "8eaca5cd34e6ef4949d598adaa42ce68b054f5a2f17a88212d561474471a7726"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/direct_model_ladder_scores.csv",
+          "sha256": "97543c14e5d5cc6a6007525d9a23e9e9710f4f19ac26caceba7b926fa74e4323"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/direct_model_ladder_predictions.csv",
+          "sha256": "c232c0cdf963c989c11adbd30bfe502b6a882545e1436038e2aefc2d205673bd"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/influence_and_residuals.csv",
+          "sha256": "213b80315352dc11012affe7f97d715a64cfcbfd95751ef4ab6a1060ba1faa1e"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/pairing_permutation_distribution.csv",
+          "sha256": "534fced2c0018d8207c53221e7cad41e1166c4c1234eb457979bf913c17aab28"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/primary_grid_support_audit.csv",
+          "sha256": "4c872efdf2ee6affef29ceabdbcb6fe66e672b36a7604213db25630b864cbe44"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/logo_role_manifest.csv",
+          "sha256": "59a298d06f00d0083a7057b16f33663e72e395af201f8ebc032cd426a0072ae6"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/logo_role_validation.csv",
+          "sha256": "99575bcd116a8b295a3963668fe3dc2b8bd538dbd7376b9d9267a2a1076d5032"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/heldout_outcome_leakage_audit.csv",
+          "sha256": "a4875e5752a588a75053a782b39e6fa31fab4608ab723f074ac54feebdf3a7d2"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/physical_density_jacobian_audit.csv",
+          "sha256": "3be87b20a2d8b342b58dd3a1cc4c482caafb93e3dc9e04aae7f05ab44129b1bf"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/predictive_grid_refinement_gates.csv",
+          "sha256": "0399d073f23756318c43da018b0ac55321d5ab5c2cd50a3d78fdb940c4abd838"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/predictive_grid_refinement_details.csv",
+          "sha256": "dc196292da57e0ae65e67140c1a57c352d247537e370ce76724d4b9d39866f99"
+        },
+        {
+          "artifact_type": "claim_bearing_figure",
+          "path": "figures/grouped_predictions.png",
+          "sha256": "081627be99be35bb7082abc7aa58bb50ee0ad0eba11b7a077ec299d65956094b"
+        },
+        {
+          "artifact_type": "claim_bearing_figure",
+          "path": "figures/pairing_permutation_control.png",
+          "sha256": "e00815b075908444164543ab350783e9977addab8ebf1b30527f54e82bff53f5"
+        }
+      ],
+      "evidence_class": "fixture_conditional_inference",
+      "evidence_level": "E1",
+      "gates": {
+        "aggregate_delta_elpd_positive": false,
+        "all_primary_full_and_logo_support_audits_pass": true,
+        "coverage50_90_and_widths_are_emitted": true,
+        "coverage_not_degraded_by_more_than_0p05": true,
+        "direct_scale_screen_rmse_improves_identity": true,
+        "heldout_outcome_leakage_sentinel_passes": true,
+        "logo_role_manifest_has_no_leakage": true,
+        "maximum_group_influence_below_one_graph_sd": true,
+        "mean_log_score_improves": false,
+        "median_formula_delta_elpd_positive": false,
+        "median_point_mae_improves": true,
+        "median_point_rmse_improves": true,
+        "pairing_negative_control_lower_tail_rank_at_most_0p05": true,
+        "physical_density_jacobian_passes": true,
+        "predictive_grid_refinement_passes": true,
+        "registered_formula_bootstrap_q05_delta_elpd_positive": false
+      },
+      "model_config_sha256": "38cd44f92e4f6eb2e41d40d91449fb0c284d8a1731c79ce03fd7f51ed7ce3ca6",
+      "plain_language_interpretation": "The aggregate held-out graph-minus-identity delta ELPD is -0.64673 on this input.",
+      "plain_language_non_claim": "This does not establish a universal bulk-modulus correction, broad transport across formula populations, or out-of-database improvement. The direct Gaussian screen has nonphysical negative-modulus tails and is diagnostic only.",
+      "primary_result": {
+        "aggregate_delta_elpd_graph_minus_identity": -0.6467295485592497,
+        "formula_bootstrap_q05": -2.067857412937958,
+        "formula_bootstrap_q95": 0.7848355087436683,
+        "maximum_absolute_formula_contribution_formula": "V",
+        "maximum_absolute_formula_contribution_fraction": 0.04936496089955276
+      },
+      "protocol_timing": "post_outcome_retrospective",
+      "protocol_version": "0.2-retrospective",
+      "qualification": "Aggregate formula-LOGO delta ELPD is non-positive. Point-error gains cannot rescue the probabilistic claim.",
+      "source_hashes": {
+        "common_evidence": "3277f8df798847d8b35e9897e6d91d431a6d3cf50dec0d5ff42f32f812e66b5d",
+        "common_geometry": "ea5b9252e250a7a02069ab238080b9dc3509d81ce4430cf8bbca1d0e08661f44",
+        "common_predictive_mixture": "2db977651dee30a7b35296157d6054a9a3dfbeeeebc7588c85e35ab02f371f7e",
+        "common_protocol": "252e258a25ebb3b1bc719c871fd7a8e76449e5bd78a543d748a6cc05711011a9",
+        "protocol_lock": "f1f7a5689eb90c5406f93968aa7c0a09f4a6f566f019134c51b15b884f174d38",
+        "study_analysis": "f17794d4ff6553c1398aa00ff9afff8a6681a621120cc8b8e51d7af25d190775"
+      },
+      "status": "NOT_SUPPORTED",
+      "timing_class": "registered_reanalysis"
+    },
+    {
+      "claim": "The declared determinant restores the intended graph target for the active bulk-modulus residual route.",
+      "claim_bearing_full_run": true,
+      "claim_id": "JB-GEOM",
+      "data_sha256": "6d9c37c52ef1d7eeb62d0cce3bc00f5b4c979b4b5d2b3bdcfcda8ab6a73cae86",
+      "evidence_artifacts": [
+        {
+          "artifact_type": "table",
+          "path": "tables/geometry_route_contract.csv",
+          "sha256": "341a7263b6f82d20d67549b70ac44d7966f82323138f218bc66f5f40e2394556"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/geometry_hard_limit_audit.csv",
+          "sha256": "a8fb663e4cfaa15f8531d73e6c16d445928c63353213491eefd2d9b59adc247e"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/geometry_finite_pushforward_audit.csv",
+          "sha256": "67eea1ae1728137a2897f7904a67e316108f9578757bfa473485d66035ae5bbe"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/geometry_global_support.csv",
+          "sha256": "fc04cda472da9463b1eaa9d438a533e7b2fccb80a6bb91745362ea852462488d"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/detcorr_api_audit.csv",
+          "sha256": "a6ff90454a140086a572ebd2f3cf0805714bd6df1f7571178dcf035eb27446d8"
+        },
+        {
+          "artifact_type": "claim_bearing_figure",
+          "path": "figures/posterior_targets.png",
+          "sha256": "838b8f2f0a33c2a1312f10b6cf74cb760ca9cb85d1ff02d5123b80ce61f92570"
+        }
+      ],
+      "evidence_class": "fixture_conditional_inference",
+      "evidence_level": "E1",
+      "gates": {
+        "all_corrected_hard_routes_match_graph": true,
+        "complete_finite_pushforwards_agree_at_25_points": true,
+        "deliberate_double_counting_control_fails": true,
+        "detcorr_api_absolute_error_below_1e_10": true,
+        "global_support_and_tail_gates_pass": true,
+        "residual_metric_transform_is_pointwise_invariant": true
+      },
+      "model_config_sha256": "38cd44f92e4f6eb2e41d40d91449fb0c284d8a1731c79ce03fd7f51ed7ce3ca6",
+      "plain_language_interpretation": "The independently evaluated coordinate and measure routes satisfy the declared finite-tube and hard-limit identities.",
+      "plain_language_non_claim": "Measure consistency is not evidence that the one-scale material model is physically adequate or predictively superior.",
+      "primary_result": {
+        "all_passed": true,
+        "corrected_hard_vs_graph_max_abs_error": 0.0,
+        "direct_vs_log_centered_max_abs_error": 1.043076736095827e-11,
+        "double_counting_failure_centered_max_abs_error": 2.1473385844863913,
+        "global_support_all_edge_masses_below_1e_10": true,
+        "global_support_all_endpoint_log_drops_above_30": true,
+        "n_hermite_nodes": 256,
+        "n_parameter_points": 25,
+        "reciprocal_vs_log_centered_max_abs_error": 1.0402345651527867e-11,
+        "residual_metric_log_j_max_abs_error": 9.992007221626409e-16,
+        "residual_metric_penalty_max_abs_error": 1.4210854715202004e-14,
+        "rho": 25.0
+      },
+      "protocol_timing": "post_outcome_retrospective",
+      "protocol_version": "0.2-retrospective",
+      "qualification": "This validates the measure calculation, not the adequacy of the one-scale materials model.",
+      "source_hashes": {
+        "common_evidence": "3277f8df798847d8b35e9897e6d91d431a6d3cf50dec0d5ff42f32f812e66b5d",
+        "common_geometry": "ea5b9252e250a7a02069ab238080b9dc3509d81ce4430cf8bbca1d0e08661f44",
+        "common_predictive_mixture": "2db977651dee30a7b35296157d6054a9a3dfbeeeebc7588c85e35ab02f371f7e",
+        "common_protocol": "252e258a25ebb3b1bc719c871fd7a8e76449e5bd78a543d748a6cc05711011a9",
+        "protocol_lock": "f1f7a5689eb90c5406f93968aa7c0a09f4a6f566f019134c51b15b884f174d38",
+        "study_analysis": "f17794d4ff6553c1398aa00ff9afff8a6681a621120cc8b8e51d7af25d190775"
+      },
+      "status": "SUPPORTED",
+      "timing_class": "registered_reanalysis"
+    }
+  ],
+  "data": {
+    "bundled_fixture_expected_sha256": "6d9c37c52ef1d7eeb62d0cce3bc00f5b4c979b4b5d2b3bdcfcda8ab6a73cae86",
+    "input_sha256": "6d9c37c52ef1d7eeb62d0cce3bc00f5b4c979b4b5d2b3bdcfcda8ab6a73cae86",
+    "is_bundled_pinned_fixture": true,
+    "manifest": {
+      "dataset_id": "jarvis-docs-bulk-modulus-36",
+      "dataset_name": "Pinned JARVIS documentation bulk-modulus comparison fixture",
+      "deduplication_rule": "Require unique normalized jvasp_id; distinct TiO2 structures remain distinct rows.",
+      "dependent_observation_columns": [
+        "bulk_modulus_expt_gpa"
+      ],
+      "evidence_timing_class": "registered_reanalysis",
+      "grouping_key": "formula",
+      "grouping_rule": "Leave one complete normalized formula group out; all TiO2 rows are held together.",
+      "known_source_dependence": "Experimental source and protocol dependence is unresolved; same-formula structures are not treated as independent groups.",
+      "license_identifier": "NIST-PUBLIC-INFORMATION",
+      "license_source_url": "https://www.nist.gov/copyrights-disclaimers",
+      "license_status": "NIST public-information permission. NIST's Copyrights & Disclaimers policy states that, except for material marked copyrighted, information on NIST sites is public information that may be distributed or copied and requests appropriate credit. The NIST JARVIS comparison table carries no separate copyright mark. This permission is not represented as a Creative Commons licence and the NIST data disclaimer applies.",
+      "n_formula_groups": 35,
+      "n_rows": 36,
+      "preparation": "Byte-identical copy of the checksum-pinned 36-row tutorial transcription. The source reports an 8.51 GPa MAE; this table recomputes 8.5055555556 GPa.",
+      "processed_bytes": 2990,
+      "processed_filename": "jarvis_bulk_modulus_benchmark_fixture.csv",
+      "processed_sha256": "6d9c37c52ef1d7eeb62d0cce3bc00f5b4c979b4b5d2b3bdcfcda8ab6a73cae86",
+      "protocol_timing": "post_outcome_retrospective",
+      "protocol_version": "0.2-retrospective",
+      "raw_bytes": "unknown: no immutable upstream raw snapshot was retained",
+      "raw_filename": "unknown: the upstream HTML/source snapshot was not retained; this CSV is the pinned processed transcription",
+      "raw_sha256": "unknown: no immutable upstream raw snapshot was retained",
+      "redistribution_decision": "Bundled as an attributed transcription under NIST's public-information permission with the NIST data disclaimer and no-endorsement boundary retained. The repository MIT licence is not applied to the fixture, and no ownership or separate licence is asserted over the underlying experimental facts.",
+      "reference_input_columns": [
+        "bulk_modulus_opt_gpa"
+      ],
+      "repository_license_applies": false,
+      "retrieval_date": "2026-07-11",
+      "retrieval_method": "manual transcription inherited byte-for-byte from the corrected unpublished worked example",
+      "retrieval_timestamp_utc": "unknown: the date 2026-07-11 is recorded but the clock time is not",
+      "rights_basis": "Attributed transcription of unmarked NIST JARVIS public information under NIST's permission to copy and distribute such information.",
+      "rights_checked_date": "2026-07-12",
+      "row_count": 36,
+      "row_identity_key": "jvasp_id",
+      "schema_version": "1.0",
+      "scientific_limit": "Values lack source-level experimental uncertainty, phase, temperature, and protocol metadata. The fixture supports a registered reanalysis, not a universal functional correction.",
+      "selection_rule": "Retain rows in the inherited comparison table only when OPT and experimental modulus are finite and strictly positive; no imputation, clipping, or residual-based filtering.",
+      "sha256": "6d9c37c52ef1d7eeb62d0cce3bc00f5b4c979b4b5d2b3bdcfcda8ab6a73cae86",
+      "source_citation": "NIST JARVIS-DFT documentation, Comparison of bulk modulus K_V (GPa) from vdW-DF-optB88 (OPT) and experiments; row-level experimental source citations are not present in this compact fixture.",
+      "source_name": "NIST JARVIS-DFT documentation OPT/experimental bulk-modulus comparison table",
+      "source_row_key": "jvasp_id as transcribed; upstream snapshot needed to revalidate immutability",
+      "source_url": "https://jarvis-materials-design.github.io/dbdocs/jarvisdft/",
+      "source_url_or_accession": "https://jarvis-materials-design.github.io/dbdocs/jarvisdft/",
+      "study_role": "retrospective registered reanalysis fixture",
+      "third_party_notice": "../../../THIRD_PARTY_NOTICES.md",
+      "transform_code_commit": "not recorded; analysis source SHA256 is emitted per claim",
+      "units": {
+        "bulk_modulus_expt_gpa": "GPa",
+        "bulk_modulus_opt_gpa": "GPa"
+      },
+      "version": "1.0-pinned-transcription"
+    },
+    "n_formula_groups": 35,
+    "n_rows": 36,
+    "source_url": "https://jarvis-materials-design.github.io/dbdocs/jarvisdft/",
+    "upstream_redistribution_terms": "NIST public-information permission. NIST's Copyrights & Disclaimers policy states that, except for material marked copyrighted, information on NIST sites is public information that may be distributed or copied and requests appropriate credit. The NIST JARVIS comparison table carries no separate copyright mark. This permission is not represented as a Creative Commons licence and the NIST data disclaimer applies."
+  },
+  "detcorr_api_audit": {
+    "absolute_error": 0.0,
+    "analytic_logabsdet": -157.042418779913,
+    "api_logabsdet": -157.042418779913,
+    "detcorr_version": "0.10.0",
+    "method": "diagonal",
+    "structure": "diagonal"
+  },
+  "diagnostics": {
+    "maximum_absolute_omit_group_shift_graph_sd": 0.2524612501918201,
+    "spearman_opt_vs_expt": 0.9882231824311835,
+    "spearman_opt_vs_primary_log_residual": 0.27247570685163003
+  },
+  "direct_model_ladder_negative_q05_counts": {
+    "affine_direct": 7,
+    "identity": 7,
+    "scale_direct": 7
+  },
+  "direct_model_ladder_scores": [
+    {
+      "coverage50": 0.6388888888888888,
+      "coverage90": 0.8611111111111112,
+      "mae_gpa": 8.186655617167515,
+      "mean_log_predictive_density_per_gpa": -3.890806159489026,
+      "model": "affine_direct",
+      "n_heldout": 36,
+      "rmse_gpa": 11.313003467896968
+    },
+    {
+      "coverage50": 0.5555555555555556,
+      "coverage90": 0.8888888888888888,
+      "mae_gpa": 8.505555555555556,
+      "mean_log_predictive_density_per_gpa": -3.90898570972563,
+      "model": "identity",
+      "n_heldout": 36,
+      "rmse_gpa": 11.719783843285393
+    },
+    {
+      "coverage50": 0.6111111111111112,
+      "coverage90": 0.8611111111111112,
+      "mae_gpa": 7.901573439159382,
+      "mean_log_predictive_density_per_gpa": -3.8735677977418614,
+      "model": "scale_direct",
+      "n_heldout": 36,
+      "rmse_gpa": 11.239239028278178
+    }
+  ],
+  "geometry_diagnostic": {
+    "computed_gate_statistics": {
+      "all_passed": true,
+      "corrected_hard_vs_graph_max_abs_error": 0.0,
+      "direct_vs_log_centered_max_abs_error": 1.043076736095827e-11,
+      "double_counting_failure_centered_max_abs_error": 2.1473385844863913,
+      "global_support_all_edge_masses_below_1e_10": true,
+      "global_support_all_endpoint_log_drops_above_30": true,
+      "n_hermite_nodes": 256,
+      "n_parameter_points": 25,
+      "reciprocal_vs_log_centered_max_abs_error": 1.0402345651527867e-11,
+      "residual_metric_log_j_max_abs_error": 9.992007221626409e-16,
+      "residual_metric_penalty_max_abs_error": 1.4210854715202004e-14,
+      "rho": 25.0
+    },
+    "graph": {
+      "gamma_mean": 1.0342785696061934,
+      "gamma_q005": 1.0035981910799023,
+      "gamma_q05": 1.0149122387953562,
+      "gamma_q50": 1.0342611734919254,
+      "gamma_q95": 1.0540891781761612,
+      "gamma_q995": 1.0652825052071684,
+      "gamma_sd": 0.011552160843406096,
+      "local_window_mass": 1.0000000000000029,
+      "mode_gamma": 1.0356197087996197,
+      "mode_mu": 0.03499999999999659
+    },
+    "independent_direct_lebesgue_naive": {
+      "gamma_mean": 1.0389035487192921,
+      "gamma_q005": 1.008178428924617,
+      "gamma_q05": 1.0194260780687963,
+      "gamma_q50": 1.0388909424554769,
+      "gamma_q95": 1.0586428847585576,
+      "gamma_q995": 1.0698521218050454,
+      "gamma_sd": 0.01152659612656896,
+      "local_window_mass": 1.000000000000004,
+      "mode_gamma": 1.0408107741923946,
+      "mode_mu": 0.04000000000000625
+    },
+    "independent_reciprocal_lebesgue_naive": {
+      "gamma_mean": 1.0296118945104238,
+      "gamma_q005": 0.9989809466729261,
+      "gamma_q05": 1.0102046107843685,
+      "gamma_q50": 1.02959492024375,
+      "gamma_q95": 1.049431411084128,
+      "gamma_q995": 1.0605686471061773,
+      "gamma_sd": 0.011578364357013312,
+      "local_window_mass": 1.0000000000000142,
+      "mode_gamma": 1.030454533953518,
+      "mode_mu": 0.030000000000001137
+    },
+    "likelihood": "fixed direct-GPa Gaussian; sigma=sqrt(3^2+(0.055 B_OPT)^2)",
+    "scientific_role": "separate coordinate/measure audit; not the primary model"
+  },
+  "grid": {
+    "mode": "full",
+    "n_eta": 321,
+    "n_mu": 641
+  },
+  "heldout_outcome_leakage_sentinel": {
+    "all_passed": true,
+    "graph_fit_max_abs_error": 0.0,
+    "identity_fit_max_abs_error": 0.0,
+    "n_heldout_rows_perturbed": 36,
+    "predictive_quantile_max_abs_error": 0.0
+  },
+  "implementation_checks": {
+    "all_claim_gates_are_boolean": true,
+    "all_passed": true,
+    "claim_bearing_full_run_uses_2000_bootstraps_and_permutations": true,
+    "detcorr_api_matches_analytic_result": true,
+    "formula_logo_role_manifest_all_passed": true,
+    "geometry_contract_all_passed": true,
+    "heldout_outcome_leakage_sentinel_all_passed": true,
+    "locked_resampling_seed_used": true,
+    "negative_bulk_delta_elpd_maps_to_not_supported": true,
+    "physical_density_minus_log_y_jacobian_all_passed": true,
+    "predictive_grid_refinement_all_passed": true,
+    "primary_full_and_logo_support_all_passed": true,
+    "sole_scientific_posterior_is_graph_primary": true
+  },
+  "limitations": [
+    "The 36-row documentation fixture is small and heterogeneous.",
+    "Experimental uncertainty, temperature, phase, and measurement-protocol metadata are unavailable in the fixture.",
+    "The primary discrepancy is a model for aggregate calibration error, not a measured experimental error law.",
+    "The direct Gaussian identity/scale/affine ladder is an adequacy screen with unbounded physical-GPa support and nonphysical negative-modulus tails, not a positive-modulus generative model.",
+    "LOGO evaluates interpolation across represented material types, not transport to a new database or functional.",
+    "The pairing permutation is a negative-control diagnostic; heterogeneous formula groups are not asserted exchangeable for formal hypothesis testing."
+  ],
+  "logo_role_manifest_validation": {
+    "all_passed": true,
+    "every_row_is_held_out_exactly_once": true,
+    "heldout_sets_match_formula_groups": true,
+    "n_folds": 35,
+    "n_manifest_rows": 1260,
+    "n_source_rows": 36,
+    "no_training_heldout_overlap_within_fold": true,
+    "protocol_hash": "38cd44f92e4f6eb2e41d40d91449fb0c284d8a1731c79ce03fd7f51ed7ce3ca6",
+    "single_protocol_hash": true,
+    "training_sets_are_exact_complements": true
+  },
+  "negative_control": {
+    "lower_tail_rank_fraction_with_plus_one": 0.0004997501249375312,
+    "n_formula_groups": 35,
+    "n_permutations": 2000,
+    "observed_logo_log_rmse": 0.09230944658637957,
+    "permutation_median": 1.922663819915206,
+    "permutation_q05": 1.611594536941323,
+    "permutation_q95": 2.163114085936808,
+    "seed": 20260711
+  },
+  "physical_density_jacobian_audit": {
+    "all_passed": true,
+    "expected_log_density_shift": -1.9810014688665833,
+    "graph_absolute_error": 4.440892098500626e-16,
+    "identity_absolute_error": 4.440892098500626e-16,
+    "physical_scale_factor": 7.25
+  },
+  "posterior": {
+    "primary_graph": {
+      "gamma_mean": 1.0129278736940732,
+      "gamma_q05": 0.9880048082578773,
+      "gamma_q50": 1.0126855538087463,
+      "gamma_q95": 1.0386794682107423,
+      "gamma_sd": 0.015374655623708886,
+      "lower_mu_edge_mass_2pct": 1.8721251916428635e-39,
+      "tau_log_ratio_mean": 0.07643345835470733,
+      "upper_mu_edge_mass_2pct": 1.503548876840974e-38
+    }
+  },
+  "predictive_evidence": {
+    "aggregate_delta_elpd": -0.6467295485592497,
+    "bootstrap_q05_delta_elpd": -2.067857412937958,
+    "bootstrap_q95_delta_elpd": 0.7848355087436683,
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 20260711,
+    "maximum_absolute_formula_contribution_formula": "V",
+    "maximum_absolute_formula_contribution_fraction": 0.04936496089955276,
+    "mean_formula_delta_elpd": -0.01847798710169285,
+    "median_formula_delta_elpd": -0.018857528637299836,
+    "n_formula_clusters": 35,
+    "total_absolute_formula_delta_elpd": 4.626618183914093
+  },
+  "predictive_grid_refinement": {
+    "active_grid_mode": "full",
+    "active_grid_shape": [
+      641,
+      321
+    ],
+    "aggregate_delta_elpd_abs_difference": 1.3322676295501878e-15,
+    "all_passed": true,
+    "all_quantile_routes_exact": true,
+    "comparison_grid_mode": "standard",
+    "comparison_grid_shape": [
+      321,
+      181
+    ],
+    "coverage_decision_mismatch_count": 0,
+    "gates": {
+      "aggregate_delta_elpd_abs_difference_below_1e_minus_10": true,
+      "coverage_decisions_identical": true,
+      "logratio_quantile_abs_difference_below_1e_minus_10": true,
+      "mixture_cdf_root_residual_below_1e_10": true,
+      "mixture_cdf_routes_are_exact": true,
+      "posterior_gamma_mean_abs_difference_below_1e_minus_10": true,
+      "posterior_log_gamma_quantile_refinement_within_declared_tolerance": true,
+      "posterior_tau_mean_abs_difference_below_1e_minus_10": true,
+      "row_log_density_abs_difference_below_1e_minus_10": true
+    },
+    "max_abs_cdf_root_residual": 8.780753901760363e-13,
+    "max_abs_log_predictive_density_difference": 7.105427357601002e-15,
+    "max_abs_logratio_quantile_difference": 7.494005416219807e-16,
+    "n_prediction_rows": 72,
+    "posterior_gamma_mean_abs_difference": 6.661338147750939e-16,
+    "posterior_gamma_quantile_max_abs_difference": 0.000457301967312973,
+    "posterior_log_gamma_quantile_max_abs_difference": 0.0004629611396399901,
+    "posterior_log_gamma_quantile_tolerance": 0.001,
+    "posterior_tau_mean_abs_difference": 5.551115123125783e-17
+  },
+  "predictive_protocol": "leave one complete formula group out; every prior and discrepancy choice fixed in code before evaluating that group",
+  "predictive_scores": [
+    {
+      "coverage50": 0.4444444444444444,
+      "coverage90": 0.9444444444444444,
+      "mae_point_prediction_gpa": 8.067320593135307,
+      "mean_interval50_width_gpa": 15.467134643234273,
+      "mean_interval90_width_gpa": 45.337247479995085,
+      "mean_log_predictive_density_per_gpa": -3.416475813423988,
+      "model": "graph_primary",
+      "n_heldout": 36,
+      "rmse_point_prediction_gpa": 11.411906633522987
+    },
+    {
+      "coverage50": 0.5,
+      "coverage90": 0.9166666666666666,
+      "mae_point_prediction_gpa": 8.50555555555556,
+      "mean_interval50_width_gpa": 14.751869711962051,
+      "mean_interval90_width_gpa": 43.65604148091536,
+      "mean_log_predictive_density_per_gpa": -3.398511103741786,
+      "model": "identity",
+      "n_heldout": 36,
+      "rmse_point_prediction_gpa": 11.719783843285398
+    }
+  ],
+  "primary_estimand": "common positive scale gamma under a normalized Student-t(4) log-ratio discrepancy, with full-support Gaussian priors and density with respect to dlog(gamma) dlog(tau); local quadrature is verified by a broad-grid audit",
+  "protocol": {
+    "configuration": {
+      "bootstrap_replicates": 2000,
+      "claim_rules": {
+        "coverage90_maximum_degradation": 0.05,
+        "direct_scale_rmse_must_improve_identity": true,
+        "maximum_formula_influence_graph_sd": 1.0,
+        "pairing_lower_tail_rank_maximum": 0.05,
+        "point_error_requirement": "both_median_rmse_and_mae_improve",
+        "substantial_case_concentration_fraction": 0.5
+      },
+      "comparison_model": "identity_with_student_t4_log_ratio_discrepancy",
+      "coverage_levels": [
+        0.5,
+        0.9
+      ],
+      "grid_mode": "full",
+      "grid_refinement": {
+        "coverage_mismatches_allowed": 0,
+        "density_quantile_and_elpd_tolerance": 1e-10,
+        "full_comparison": "standard",
+        "posterior_log_gamma_quantile_tolerance_full": 0.001,
+        "posterior_log_gamma_quantile_tolerance_nonclaim": 0.003,
+        "quick_comparison": "standard",
+        "standard_comparison": "quick"
+      },
+      "grid_shape": [
+        641,
+        321
+      ],
+      "grouping": "leave_one_formula_group_out",
+      "permutation_replicates": 2000,
+      "predictive_quantiles": {
+        "brent_rtol": 1.7763568394002505e-15,
+        "brent_xtol": 1e-12,
+        "component_limit": null,
+        "method": "exact_finite_mixture_cdf_inversion_in_log_ratio",
+        "probabilities": [
+          0.05,
+          0.25,
+          0.5,
+          0.75,
+          0.95
+        ]
+      },
+      "primary_model": "student_t4_log_ratio_common_scale",
+      "priors": {
+        "eta": "Normal(log(0.12),0.75^2) with respect to deta",
+        "mu": "Normal(0,0.35^2) with respect to dmu"
+      },
+      "protocol_version": "0.2-retrospective",
+      "resampling_seed": 20260711,
+      "study": "jarvis_bulk_modulus"
+    },
+    "evidence_level": "E1",
+    "model_config_sha256": "38cd44f92e4f6eb2e41d40d91449fb0c284d8a1731c79ce03fd7f51ed7ce3ca6",
+    "protocol_timing": "post_outcome_retrospective",
+    "timing_class": "registered_reanalysis",
+    "version": "0.2-retrospective"
+  }
+}

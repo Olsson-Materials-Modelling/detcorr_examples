@@ -1,0 +1,37 @@
+material,formula,jvasp_id,bulk_modulus_opt_gpa,bulk_modulus_expt_gpa,source_note
+Copper,Cu,JVASP-14648,141.4,142.0,JARVIS-DB docs bulk modulus comparison table
+Vanadium,V,JVASP-1041,183.4,161.9,JARVIS-DB docs bulk modulus comparison table
+Diamond,C,JVASP-91,437.4,443.0,JARVIS-DB docs bulk modulus comparison table
+Iron,Fe,JVASP-882,193.0,168.3,JARVIS-DB docs bulk modulus comparison table
+Silicon,Si,JVASP-1002,87.3,99.2,JARVIS-DB docs bulk modulus comparison table
+Nickel,Ni,JVASP-14630,200.4,186.0,JARVIS-DB docs bulk modulus comparison table
+Germanium,Ge,JVASP-890,58.1,75.8,JARVIS-DB docs bulk modulus comparison table
+Niobium,Nb,JVASP-934,176.0,170.2,JARVIS-DB docs bulk modulus comparison table
+Silver,Ag,JVASP-813,100.3,109.0,JARVIS-DB docs bulk modulus comparison table
+Molybdenum,Mo,JVASP-925,262.0,272.5,JARVIS-DB docs bulk modulus comparison table
+Palladium,Pd,JVASP-14644,176.0,195.0,JARVIS-DB docs bulk modulus comparison table
+Tantalum,Ta,JVASP-14750,199.0,200.0,JARVIS-DB docs bulk modulus comparison table
+Rhodium,Rh,JVASP-14817,260.8,269.0,JARVIS-DB docs bulk modulus comparison table
+Tungsten,W,JVASP-14830,305.2,323.2,JARVIS-DB docs bulk modulus comparison table
+Lithium,Li,JVASP-913,13.9,13.3,JARVIS-DB docs bulk modulus comparison table
+Iridium,Ir,JVASP-901,348.0,355.0,JARVIS-DB docs bulk modulus comparison table
+Sodium,Na,JVASP-25140,7.7,7.5,JARVIS-DB docs bulk modulus comparison table
+Platinum,Pt,JVASP-972,251.6,278.3,JARVIS-DB docs bulk modulus comparison table
+Potassium,K,JVASP-14800,3.9,3.7,JARVIS-DB docs bulk modulus comparison table
+Gold,Au,JVASP-825,148.0,173.2,JARVIS-DB docs bulk modulus comparison table
+Rubidium,Rb,JVASP-978,3.1,2.9,JARVIS-DB docs bulk modulus comparison table
+Lead,Pb,JVASP-961,42.6,46.8,JARVIS-DB docs bulk modulus comparison table
+Calcium,Ca,JVASP-846,17.7,18.4,JARVIS-DB docs bulk modulus comparison table
+Lithium chloride,LiCl,JVASP-23864,35.5,35.4,JARVIS-DB docs bulk modulus comparison table
+Strontium,Sr,JVASP-21208,12.5,12.4,JARVIS-DB docs bulk modulus comparison table
+Sodium chloride,NaCl,JVASP-23862,27.7,26.6,JARVIS-DB docs bulk modulus comparison table
+Barium,Ba,JVASP-831,9.9,9.3,JARVIS-DB docs bulk modulus comparison table
+Sodium fluoride,NaF,JVASP-20326,53.7,51.4,JARVIS-DB docs bulk modulus comparison table
+Aluminum,Al,JVASP-816,70.0,79.4,JARVIS-DB docs bulk modulus comparison table
+Magnesium oxide,MgO,JVASP-116,160.7,165.0,JARVIS-DB docs bulk modulus comparison table
+Lithium fluoride,LiF,JVASP-1130,73.9,69.8,JARVIS-DB docs bulk modulus comparison table
+Silicon carbide,SiC,JVASP-182,213.3,225.0,JARVIS-DB docs bulk modulus comparison table
+Titanium dioxide anatase,TiO2,JVASP-314,196.0,191.9,JARVIS-DB docs bulk modulus comparison table
+Gallium arsenide,GaAs,JVASP-1174,62.0,75.6,JARVIS-DB docs bulk modulus comparison table
+Titanium dioxide rutile,TiO2,JVASP-10036,226.3,243.5,JARVIS-DB docs bulk modulus comparison table
+Black phosphorus,P,JVASP-7818,41.0,36.0,JARVIS-DB docs bulk modulus comparison table

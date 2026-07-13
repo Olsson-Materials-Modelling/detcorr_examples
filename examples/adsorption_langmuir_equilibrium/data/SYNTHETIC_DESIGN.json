@@ -1,0 +1,32 @@
+{
+  "K_true_per_bar": 0.85,
+  "coverage_offsets": [
+    0.006,
+    -0.005,
+    0.004,
+    -0.007,
+    0.006,
+    -0.004,
+    0.002
+  ],
+  "coverage_sigma": 0.03,
+  "design_policy": "Truth, pressures, offsets, and uncertainty were declared before inference; no random draw or fitted preprocessing is used.",
+  "eta_true": -0.16251892949777494,
+  "pressure_bar": [
+    0.03,
+    0.07,
+    0.15,
+    0.3,
+    0.6,
+    1.2,
+    2.5
+  ],
+  "status": "synthetic_validation_only",
+  "units": {
+    "K": "bar^-1",
+    "coverage": "dimensionless",
+    "eta": "dimensionless",
+    "pressure": "bar",
+    "residual": "dimensionless"
+  }
+}

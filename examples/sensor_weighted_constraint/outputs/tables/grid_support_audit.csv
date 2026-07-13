@@ -1,0 +1,4 @@
+target,mode_is_interior,lower_endpoint_log_drop,upper_endpoint_log_drop,lower_edge_mass_2pct,upper_edge_mass_2pct
+graph_reduced,True,58.95529711415818,103.24162842793366,1.9977772781444483e-25,0.0
+finite_naive,True,53.16490186828383,111.25148372522551,5.2222463445411246e-23,0.0
+finite_corrected,True,58.9550609923599,103.24164284930157,1.998154022352508e-25,0.0

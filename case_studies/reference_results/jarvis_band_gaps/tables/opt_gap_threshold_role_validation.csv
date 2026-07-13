@@ -1,0 +1,5 @@
+minimum_opt_gap_ev,protocol_hash,n_folds,n_source_rows,n_manifest_rows,no_training_heldout_overlap_within_fold,heldout_sets_match_formula_groups,training_sets_are_exact_complements,every_row_is_held_out_exactly_once,single_protocol_hash,all_passed
+0.0,a9f4bbde140092e46ae71c530d3901c0cedf9fbf540e67a0dfe2fb36238b7bac,50,54,2700,True,True,True,True,True,True
+0.25,e35729ac5b36e928cd9d409b4b0434554742a6acd8934ef3934d1e6e3818d1f3,44,48,2112,True,True,True,True,True,True
+0.5,1b56d4ee1a5757f55961fffd75241b4777273448bdc08ceb7636fb6153f206a0,42,46,1932,True,True,True,True,True,True
+1.0,ff1c25db9ae6d0fadb60282528096005ae90cf4d7c2390b441925897064e729f,32,35,1120,True,True,True,True,True,True

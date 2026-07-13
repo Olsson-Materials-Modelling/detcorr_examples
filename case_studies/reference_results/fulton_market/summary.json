@@ -1,0 +1,1058 @@
+{
+  "aggregate_predictive_metrics": [
+    {
+      "interval_coverage": 0.9696969696969697,
+      "interval_level": 0.9,
+      "mae_predictive_median": 0.1511408381992364,
+      "mean_crps": 0.1072960012616651,
+      "mean_interval_width": 0.7627727559971149,
+      "mean_log_score": 0.27406213245123195,
+      "model": "ar1_graph",
+      "n_forecasts": 33,
+      "rmse_predictive_mean": 0.19901161592557196,
+      "total_log_score": 9.044050370890654
+    },
+    {
+      "interval_coverage": 0.9696969696969697,
+      "interval_level": 0.9,
+      "mae_predictive_median": 0.15489691578908865,
+      "mean_crps": 0.10722728507296714,
+      "mean_interval_width": 0.6934022318831389,
+      "mean_log_score": 0.26168881990326187,
+      "model": "ar1_identity_reference_baseline",
+      "n_forecasts": 33,
+      "rmse_predictive_mean": 0.1925659897979299,
+      "total_log_score": 8.635731056807641
+    },
+    {
+      "interval_coverage": 0.9696969696969697,
+      "interval_level": 0.9,
+      "mae_predictive_median": 0.18435474707828045,
+      "mean_crps": 0.133015605995618,
+      "mean_interval_width": 0.9441914908147979,
+      "mean_log_score": 0.02797782973533026,
+      "model": "iid_graph_sensitivity",
+      "n_forecasts": 33,
+      "rmse_predictive_mean": 0.2380381051356369,
+      "total_log_score": 0.9232683812658986
+    },
+    {
+      "interval_coverage": 0.9393939393939394,
+      "interval_level": 0.9,
+      "mae_predictive_median": 0.2401248701607659,
+      "mean_crps": 0.16115866932893158,
+      "mean_interval_width": 0.7523851445543399,
+      "mean_log_score": -0.15929337377096384,
+      "model": "iid_identity_reference_baseline",
+      "n_forecasts": 33,
+      "rmse_predictive_mean": 0.27650949671252034,
+      "total_log_score": -5.256681334441806
+    },
+    {
+      "interval_coverage": 0.9696969696969697,
+      "interval_level": 0.9,
+      "mae_predictive_median": 0.14901378243578403,
+      "mean_crps": 0.10710753405009671,
+      "mean_interval_width": 0.8131775542549122,
+      "mean_log_score": 0.2556057867210609,
+      "model": "ar1_beta_uncertainty_sensitivity",
+      "n_forecasts": 33,
+      "rmse_predictive_mean": 0.1938539667625395,
+      "total_log_score": 8.434990961795009
+    },
+    {
+      "interval_coverage": 0.9696969696969697,
+      "interval_level": 0.9,
+      "mae_predictive_median": 0.1535882612479356,
+      "mean_crps": 0.10713072105025001,
+      "mean_interval_width": 0.7652338913253708,
+      "mean_log_score": 0.249474250689768,
+      "model": "ar1_beta_uncertainty_identity_baseline",
+      "n_forecasts": 33,
+      "rmse_predictive_mean": 0.19219893209935918,
+      "total_log_score": 8.232650272762344
+    },
+    {
+      "interval_coverage": 0.9393939393939394,
+      "interval_level": 0.9,
+      "mae_predictive_median": 0.17756937707907178,
+      "mean_crps": 0.1282335896019014,
+      "mean_interval_width": 0.910034392623197,
+      "mean_log_score": 0.17054878686708141,
+      "model": "ar1_naive_volume_omission_counterfactual",
+      "n_forecasts": 33,
+      "rmse_predictive_mean": 0.25514100237566256,
+      "total_log_score": 5.628109966613687
+    },
+    {
+      "interval_coverage": 0.8787878787878788,
+      "interval_level": 0.9,
+      "mae_predictive_median": 0.16411289374348745,
+      "mean_crps": 0.11858413676914158,
+      "mean_interval_width": 0.7473146772757789,
+      "mean_log_score": 0.15651162209232483,
+      "model": "ar1_lag4_reference_placebo",
+      "n_forecasts": 33,
+      "rmse_predictive_mean": 0.2175889361596584,
+      "total_log_score": 5.16488352904672
+    },
+    {
+      "interval_coverage": 0.9696969696969697,
+      "interval_level": 0.9,
+      "mae_predictive_median": 0.13483278137264829,
+      "mean_crps": 0.10179263702266511,
+      "mean_interval_width": 0.7570778093759184,
+      "mean_log_score": 0.2966245404604398,
+      "model": "last_price_persistence_baseline",
+      "n_forecasts": 33,
+      "rmse_predictive_mean": 0.1880600726398218,
+      "total_log_score": 9.788609835194514
+    }
+  ],
+  "analysis_status": "registered_retrospective_reanalysis",
+  "claim_bearing_full_run": true,
+  "claim_ceiling": "A defensible result is conditional to this fixed temporal protocol and model family: the graph-measure calibration has auditable one-step predictive consequences and its conclusions can be compared with prespecified dependence, uncertainty, and negative-control analyses. No causal or structural Fulton-market claim follows.",
+  "claim_evaluations": [
+    {
+      "claim_bearing_full_run": true,
+      "claim_id": "FU-PRED",
+      "conclusion": "PREDICTIVE_IMPROVEMENT_NOT_ESTABLISHED",
+      "crps_identity_minus_graph": -6.871618869795648e-05,
+      "cumulative_delta_elpd_graph_minus_identity": 0.4083193140830125,
+      "cumulative_delta_elpd_graph_minus_lag4": 3.879166841843934,
+      "cumulative_delta_elpd_graph_minus_persistence_context": -0.74455946430386,
+      "data_sha256": "fa51db236cb3f9e7040cdc50b002542bcbb3d51077132848d1960a996ec9b3c9",
+      "evidence_artifacts": [
+        {
+          "artifact_type": "table",
+          "path": "tables/rolling_predictions.csv",
+          "sha256": "5159c5d8a9caba8e53dd0d79207ec2f58a646f83b170e69d17908d67348f70d6"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/aggregate_predictive_metrics.csv",
+          "sha256": "3444201bdd54141c57689b4ec95d60eb9917831774d15378a944b401a7fa91d3"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/matched_calibration_effects.csv",
+          "sha256": "e6f80589e7ab83dab16350f4f506e89d97a73bb993e99b62ade56bb8ddc6bf12"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/paired_score_uncertainty.csv",
+          "sha256": "b5a5b0c6bb59b5fd23ad54d1f8234554127715c7b2ad287f85bb7eb4c7b61cf7"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/role_manifest.csv",
+          "sha256": "05644cf91254257c8a5e7c781602e27e0e6a810369c14eaaf1752295326dc972"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/pre_score_predictions.csv",
+          "sha256": "59926b0934eb5f9e48859a1582e1bcc9948be7eebcfc9f3285ee8100b114074e"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/phi_clip_sensitivity.csv",
+          "sha256": "2248baad1f4b489a5901a61a0e9cb9a974424e413659dac9448b58836cb885fe"
+        },
+        {
+          "artifact_type": "figure",
+          "path": "figures/rolling_predictions.png",
+          "sha256": "69d02a248950d835b38d0dd8b3b6f3ba2b340b64aefd2c340cb0bf6264d2379c"
+        },
+        {
+          "artifact_type": "figure",
+          "path": "figures/cumulative_log_score_contrasts.png",
+          "sha256": "bc2098095363ebac6eb10ce675ebbb22ed8d1dbc4c2df0f772ac85c83940d30a"
+        }
+      ],
+      "evidence_class": "registered_retrospective_evaluation",
+      "evidence_level": "E2_conditional_registered_fixture",
+      "gate_components": {
+        "contemporaneous_reference_beats_lag4_log_score": true,
+        "cumulative_delta_elpd_positive": true,
+        "graph_crps_no_worse_than_identity": false,
+        "moving_block_90pct_lower_positive": false
+      },
+      "gate_passed": false,
+      "interpretation": "The registered graph calibration did not satisfy every predictive-improvement gate on the current short retrospective series.",
+      "matched_assumption_family": "ar1_plugin",
+      "model_config_sha256": "2a9b9e5a2e499505334e66d5d3824a6898cbab2cd39290e94edb811d86741b15",
+      "moving_block_90pct_mean_delta_elpd": [
+        -0.0417219391082214,
+        0.06335702153229449
+      ],
+      "non_claim": "Failure to establish improvement does not establish that scale one is true, nor does any result identify market structure.",
+      "phi_clip_sensitivity": {
+        "absolute_limits": [
+          0.5,
+          0.75,
+          0.9,
+          0.99
+        ],
+        "all_gate_decisions_match_primary": true,
+        "cumulative_delta_elpd_range": [
+          0.4083193140830125,
+          1.2023517187271766
+        ],
+        "moving_block_lower_endpoint_range": [
+          -0.0417219391082214,
+          -0.022373141832096433
+        ],
+        "outcomes_known_when_added": true,
+        "primary_absolute_limit": 0.9,
+        "primary_n_origins_clipped": 0,
+        "role": "post-outcome one-at-a-time robustness sensitivity; alternatives do not select or replace the primary analysis",
+        "table": "tables/phi_clip_sensitivity.csv",
+        "timing": "post_outcome_nonselecting"
+      },
+      "protocol_timing": "post_outcome_nonselecting",
+      "protocol_version": "2",
+      "source_hashes": {
+        "REGISTERED_PROTOCOL.json": "cca5dfd6369b20c16504486b476e5725f405c5f3f0d3b6fa949fb64b907c3170",
+        "common/evidence.py": "3277f8df798847d8b35e9897e6d91d431a6d3cf50dec0d5ff42f32f812e66b5d",
+        "fulton_analysis.py": "83e6d789831a683fb59dc2989a23869712e5acc378df1ead07e18e2b27468c5e",
+        "run_analysis.py": "19a031c531c898732329c87ae4044996c3199f75a5d80fdf4cfc70f99c475c1a"
+      },
+      "status": "NOT_SUPPORTED",
+      "timing_class": "registered_reanalysis"
+    },
+    {
+      "ar1_iid_direction_reversal": false,
+      "ar1_iid_interval_gate_change": true,
+      "claim_bearing_full_run": true,
+      "claim_id": "FU-DEP",
+      "conclusion": "DEPENDENCE_SENSITIVE",
+      "data_sha256": "fa51db236cb3f9e7040cdc50b002542bcbb3d51077132848d1960a996ec9b3c9",
+      "evidence_artifacts": [
+        {
+          "artifact_type": "table",
+          "path": "tables/matched_calibration_effects.csv",
+          "sha256": "e6f80589e7ab83dab16350f4f506e89d97a73bb993e99b62ade56bb8ddc6bf12"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/paired_score_uncertainty.csv",
+          "sha256": "b5a5b0c6bb59b5fd23ad54d1f8234554127715c7b2ad287f85bb7eb4c7b61cf7"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/initial_reference_residual_diagnostics.csv",
+          "sha256": "06628cababcdd718c742a65f123edfd522032ca08ab0f71a1cfc193da9489396"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/initial_reference_residual_acf.csv",
+          "sha256": "f046f513df3dfddfc1c6ba1b4d3b17895e0872917d01e46b50ac0dd09faee4ce"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/phi_clip_sensitivity.csv",
+          "sha256": "2248baad1f4b489a5901a61a0e9cb9a974424e413659dac9448b58836cb885fe"
+        },
+        {
+          "artifact_type": "figure",
+          "path": "figures/initial_reference_residual_acf.png",
+          "sha256": "9aa6703207c73de66547d2c8f4ff6e0a591aaa491892484797932e035252c0af"
+        }
+      ],
+      "evidence_class": "registered_retrospective_evaluation",
+      "evidence_level": "E2_matched_plugin_sensitivity",
+      "interpretation": "The matched AR(1) and iid comparisons retain the same point direction, but their registered interval-gate decisions differ.",
+      "matched_mean_delta_elpd": {
+        "ar1_beta_uncertainty": 0.006131536031292886,
+        "ar1_plugin": 0.012373312547970075,
+        "iid": 0.18727120350629406
+      },
+      "model_config_sha256": "2a9b9e5a2e499505334e66d5d3824a6898cbab2cd39290e94edb811d86741b15",
+      "non_claim": "This comparison does not establish that stationary AR(1) errors are true or that phi has a posterior distribution.",
+      "phi_clip_sensitivity": {
+        "absolute_limits": [
+          0.5,
+          0.75,
+          0.9,
+          0.99
+        ],
+        "all_dependence_categories_match_primary": true,
+        "dependence_sensitive_by_limit": {
+          "0.5": true,
+          "0.75": true,
+          "0.9": true,
+          "0.99": true
+        },
+        "outcomes_known_when_added": true,
+        "primary_absolute_limit": 0.9,
+        "primary_n_origins_clipped": 0,
+        "role": "post-outcome one-at-a-time robustness sensitivity; alternatives do not select or replace the primary analysis",
+        "table": "tables/phi_clip_sensitivity.csv",
+        "timing": "post_outcome_nonselecting"
+      },
+      "phi_is_plugin_not_posterior": true,
+      "protocol_timing": "post_outcome_nonselecting",
+      "protocol_version": "2",
+      "source_hashes": {
+        "REGISTERED_PROTOCOL.json": "cca5dfd6369b20c16504486b476e5725f405c5f3f0d3b6fa949fb64b907c3170",
+        "common/evidence.py": "3277f8df798847d8b35e9897e6d91d431a6d3cf50dec0d5ff42f32f812e66b5d",
+        "fulton_analysis.py": "83e6d789831a683fb59dc2989a23869712e5acc378df1ead07e18e2b27468c5e",
+        "run_analysis.py": "19a031c531c898732329c87ae4044996c3199f75a5d80fdf4cfc70f99c475c1a"
+      },
+      "status": "SUPPORTED",
+      "timing_class": "registered_reanalysis"
+    },
+    {
+      "claim_bearing_full_run": true,
+      "claim_id": "FU-GEOM",
+      "conclusion": "QUANTIFIED",
+      "crps_naive_minus_graph": 0.020937588340236304,
+      "cumulative_delta_elpd_graph_minus_naive": 3.4159404042769674,
+      "data_sha256": "fa51db236cb3f9e7040cdc50b002542bcbb3d51077132848d1960a996ec9b3c9",
+      "evidence_artifacts": [
+        {
+          "artifact_type": "table",
+          "path": "tables/primary_model_geometry_audit.csv",
+          "sha256": "e9ebd01ae0945b13f816e36129a1f4f39212c8db5df87eb35b37d062559d74aa"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/residual_pushforward_audit.csv",
+          "sha256": "961ae30b5d26a9b61a96adfd20573bc6d34df12d4c224208aec15682cb0e7ef7"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/rolling_predictions.csv",
+          "sha256": "5159c5d8a9caba8e53dd0d79207ec2f58a646f83b170e69d17908d67348f70d6"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/matched_calibration_effects.csv",
+          "sha256": "e6f80589e7ab83dab16350f4f506e89d97a73bb993e99b62ade56bb8ddc6bf12"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/phi_clip_sensitivity.csv",
+          "sha256": "2248baad1f4b489a5901a61a0e9cb9a974424e413659dac9448b58836cb885fe"
+        },
+        {
+          "artifact_type": "figure",
+          "path": "figures/rolling_eta_volume_effect.png",
+          "sha256": "65fbf6af281d38d6ecbc9e3db11e9b4978caed6f2c5d834fbcf2b1474926d67c"
+        }
+      ],
+      "evidence_class": "registered_retrospective_evaluation",
+      "evidence_level": "E2_analytic_and_callable_geometry_audit",
+      "geometry_gate_evidence": {
+        "all_geometry_checks_passed": true,
+        "detcorr_callable": {
+          "absolute_error": 3.973243956068018e-11,
+          "available": true,
+          "detcorr_version": "0.10.0",
+          "expected_state_logdet": -1.6500563346474888,
+          "lambda": 0.79,
+          "n_state": 7,
+          "observed_state_logdet": -1.6500563346077564,
+          "route": "detcorr callable residual with scipy central finite differences",
+          "target_measure": "graph",
+          "version_is_at_least_0_10": true
+        },
+        "parameter_density_pushforward": {
+          "lambda_mean_direct": 0.7553910213334231,
+          "lambda_mean_via_eta": 0.7553910204285847,
+          "lambda_to_eta_to_lambda_total_variation": 5.066552188988133e-17
+        },
+        "primary_model_finite_tube": {
+          "central_graph_probability": 0.99,
+          "claim_bearing_model": "rolling primary AR(1) log-price graph model",
+          "determinant_log_variation_central_region": 14.868064781265895,
+          "direct_normal_factor_J": "J_u=lambda^n",
+          "direct_state_base_density_q": "q_u(u)=1 relative to du",
+          "direct_state_coordinate": "u=native_price/state_scale in (0,infinity)",
+          "eta_points": 25,
+          "exact_gaussian_verification_used_as_claim_evidence": false,
+          "finite_vs_graph_error_fraction_of_determinant_variation": 8.532823932587954e-06,
+          "log_state_coordinate": "v=log(u)",
+          "log_state_normal_factor_J": "J_v=prod(lambda*exp(v))",
+          "max_abs_centered_finite_vs_graph_log_error": 0.00012686657899685372,
+          "max_abs_log_J_over_q_coordinate_error": 0.0,
+          "max_invalid_positive_state_fraction": 0.0,
+          "max_qmc_replicate_centered_log_sd": 1.1873529220797916e-07,
+          "n_state": 16,
+          "origin_test_t": 65,
+          "passed": true,
+          "pushed_log_state_base_density_q": "q_v(v)=exp(sum(v)) relative to dv",
+          "qmc_error_fraction_of_determinant_variation": 7.985927822805048e-09,
+          "registered_max_error_fraction": 0.01,
+          "required_multiplier": "J/q=lambda^n in both coordinates on the graph",
+          "rho": 1000000.0,
+          "rho_unit": "inverse squared dimensionless residual",
+          "sobol_power": 14,
+          "sobol_samples_per_scramble": 16384,
+          "sobol_scrambles": 4,
+          "sobol_seed_sequence": [
+            20260711,
+            20260712,
+            20260713,
+            20260714
+          ],
+          "state_scale_native": 0.8436752099766366,
+          "state_scale_source": "geometric mean price of reference-training rows 1-48",
+          "support_certificate": {
+            "direct_to_log_pushforward": "du=exp(sum(v))dv is included as q_v, so no state Jacobian is double counted",
+            "finite_tube_integrable_for_every_lambda_positive": true,
+            "global_eta_target_normalizable": true,
+            "lambda_to_zero_and_infinity": "the proper normal prior on eta=log(lambda) dominates polynomial tube-volume factors; the corrected hard limit is the proper conjugate eta posterior",
+            "positive_boundary_respected": true,
+            "state_domain": "u in (0, infinity)^n",
+            "u_to_infinity": "for every lambda>0, exp[-rho*||a-lambda*u||^2/2] is Gaussian-coercive",
+            "u_to_zero": "the Gaussian log-price likelihood decays faster than every power of u, so it is integrable at the positive boundary"
+          }
+        },
+        "residual_metric_pushforward": {
+          "max_abs_correction_error": 0.0,
+          "max_abs_penalty_error": 3.469446951953614e-18
+        }
+      },
+      "interpretation": "The omitted J/q factor changes the declared rolling target and its predictive distribution by the reported amounts.",
+      "max_abs_eta_shift_in_graph_sd": 3.135194235180826,
+      "mean_eta_shift_in_graph_sd": -2.7442552228264208,
+      "model_config_sha256": "2a9b9e5a2e499505334e66d5d3824a6898cbab2cd39290e94edb811d86741b15",
+      "model_sensitivity_envelope_in_graph_sd": 0.49270896550118176,
+      "moving_block_90pct_mean_delta_elpd_graph_minus_naive": [
+        -0.02904550789703498,
+        0.23297886806764703
+      ],
+      "non_claim": "The determinant is a measure correction, not an economic mechanism or causal price effect.",
+      "normal_factor_J": "J(lambda)=lambda^n",
+      "phi_clip_sensitivity": {
+        "absolute_limits": [
+          0.5,
+          0.75,
+          0.9,
+          0.99
+        ],
+        "all_geometry_consequences_finite": true,
+        "graph_minus_naive_delta_elpd_range": [
+          2.4746381332506244,
+          3.4159404042769674
+        ],
+        "mean_eta_volume_shift_graph_sd_range": [
+          -2.7442552228264208,
+          -2.404121104512221
+        ],
+        "outcomes_known_when_added": true,
+        "primary_absolute_limit": 0.9,
+        "primary_n_origins_clipped": 0,
+        "role": "post-outcome one-at-a-time robustness sensitivity; alternatives do not select or replace the primary analysis",
+        "table": "tables/phi_clip_sensitivity.csv",
+        "timing": "post_outcome_nonselecting"
+      },
+      "primary_model_coordinate_audit": {
+        "finite_vs_graph_error_fraction_of_determinant_variation": 8.532823932587954e-06,
+        "max_abs_log_J_over_q_coordinate_error": 0.0,
+        "origin_test_t": 65,
+        "passed": true,
+        "qmc_error_fraction_of_determinant_variation": 7.985927822805048e-09,
+        "support_certificate": {
+          "direct_to_log_pushforward": "du=exp(sum(v))dv is included as q_v, so no state Jacobian is double counted",
+          "finite_tube_integrable_for_every_lambda_positive": true,
+          "global_eta_target_normalizable": true,
+          "lambda_to_zero_and_infinity": "the proper normal prior on eta=log(lambda) dominates polynomial tube-volume factors; the corrected hard limit is the proper conjugate eta posterior",
+          "positive_boundary_respected": true,
+          "state_domain": "u in (0, infinity)^n",
+          "u_to_infinity": "for every lambda>0, exp[-rho*||a-lambda*u||^2/2] is Gaussian-coercive",
+          "u_to_zero": "the Gaussian log-price likelihood decays faster than every power of u, so it is integrable at the positive boundary"
+        }
+      },
+      "protocol_timing": "post_outcome_nonselecting",
+      "protocol_version": "2",
+      "required_graph_multiplier": "J/q=lambda^n",
+      "source_hashes": {
+        "REGISTERED_PROTOCOL.json": "cca5dfd6369b20c16504486b476e5725f405c5f3f0d3b6fa949fb64b907c3170",
+        "common/evidence.py": "3277f8df798847d8b35e9897e6d91d431a6d3cf50dec0d5ff42f32f812e66b5d",
+        "fulton_analysis.py": "83e6d789831a683fb59dc2989a23869712e5acc378df1ead07e18e2b27468c5e",
+        "run_analysis.py": "19a031c531c898732329c87ae4044996c3199f75a5d80fdf4cfc70f99c475c1a"
+      },
+      "state_base_density_q": "q(u)=1 in the declared direct-price coordinate",
+      "state_base_measure": "product Lebesgue du over direct positive price states",
+      "status": "SUPPORTED",
+      "timing_class": "registered_reanalysis"
+    }
+  ],
+  "configuration": {
+    "bootstrap_interval_quantiles": [
+      0.05,
+      0.95
+    ],
+    "bootstrap_replicates": 5000,
+    "bootstrap_seed": 20260711,
+    "calibration_window": 16,
+    "first_test_position_zero_based": 64,
+    "grid_points_verification": 4001,
+    "interval_level": 0.9,
+    "mode": "full",
+    "phi_clip": [
+      -0.9,
+      0.9
+    ],
+    "phi_clip_sensitivity": {
+      "absolute_limits": [
+        0.5,
+        0.75,
+        0.9,
+        0.99
+      ],
+      "primary_absolute_limit": 0.9,
+      "selection_role": "robustness disclosure only; never selects the primary model",
+      "timing": "post_outcome_nonselecting"
+    },
+    "placebo_lag": 4,
+    "primary_geometry": {
+      "central_graph_probability": 0.99,
+      "eta_points": 25,
+      "max_error_fraction": 0.01,
+      "rho": 1000000.0,
+      "sobol_power": 14,
+      "sobol_scrambles": 4
+    },
+    "prior_eta_sd": 0.5
+  },
+  "implementation_checks": {
+    "all_matched_identity_comparisons_present": true,
+    "all_passed": true,
+    "all_registered_claims_evaluated": true,
+    "configuration_hash_recorded": true,
+    "detcorr_callable_matches_analytic_jacobian": true,
+    "every_model_scores_same_origins": true,
+    "input_schema_and_time_order_valid": true,
+    "locked_bootstrap_seed_and_90pct_interval_used": true,
+    "parameter_density_pushforward_exact": true,
+    "phi_clip_sensitivity_contract_complete": true,
+    "pre_score_predictions_hashed_before_outcome_score": true,
+    "predictive_outputs_finite": true,
+    "primary_model_direct_log_J_over_q_and_finite_tube_gate": true,
+    "primary_phi_clip_row_reproduces_claim_analysis": true,
+    "reference_calibration_test_roles_disjoint": true,
+    "registered_protocol_loaded_and_validated": true,
+    "residual_metric_pushforward_exact": true,
+    "role_manifest_assertions_pass": true,
+    "verification_corrected_tube_matches_graph": true,
+    "verification_naive_tube_differs_from_graph": true
+  },
+  "initial_training_residual_diagnostics": {
+    "derived_log_innovation_sd_plugin": 0.3088064623121697,
+    "durbin_watson": 0.6847120386672823,
+    "ljung_box_p_approximate": 1.4170684576290164e-06,
+    "ljung_box_q": 49.96493248009948,
+    "max_lag": 12,
+    "phi_is_training_only_plugin_not_posterior": true,
+    "phi_raw": 0.6387572589531649,
+    "phi_used": 0.6387572589531649,
+    "stationary_marginal_log_residual_sd_plugin": 0.4013557612507952
+  },
+  "input": {
+    "data_rights_boundary": "The registered fish.csv is conveyed separately under GPL-3 to the extent the wooldridge package licence applies; the Rdatasets underlying-rights caveat is retained. See THIRD_PARTY_NOTICES.md and TECHNICAL_DETAILS.md.",
+    "is_registered_97_row_fixture": true,
+    "manifest": {
+      "bundled_file": "fish.csv",
+      "columns": 21,
+      "dataset_id": "fulton_fish_rdatasets_snapshot",
+      "deduplication_rule": "rownames must be unique; duplicate source rows are rejected",
+      "dependent_observation_columns": [
+        "avgprc"
+      ],
+      "evidence_timing_class": "registered_reanalysis",
+      "grouping_rule": "strict source order with rolling train/calibration/test origins fixed by REGISTERED_PROTOCOL.json",
+      "known_source_dependence": "serial dependence is expected and is modeled through the registered plug-in AR(1) primary plus iid sensitivity",
+      "license_file": "../../../third_party_licenses/GPL-3.0.txt",
+      "license_identifier": "GPL-3.0-only",
+      "license_source_url": "https://CRAN.R-project.org/package=wooldridge",
+      "license_status": "The official wooldridge data package distributes fish as package content and declares GPL-3. This CSV is conveyed separately under GPL-3 to the extent that package licence applies. Rdatasets states that its GPL declaration covers its code/documentation and that it could not definitively determine the underlying rights in every hosted dataset; that caveat is retained.",
+      "processed_filename": "not_persisted; deterministic roles and transformations are emitted in each result directory",
+      "processed_sha256": "not_applicable; generated products are hashed by run_manifest.json",
+      "protocol_timing": "post_outcome_retrospective_with_nonselecting_sensitivity",
+      "protocol_version": "fulton_registered_protocol_v1",
+      "raw_bytes": 18556,
+      "raw_filename": "fish.csv",
+      "raw_sha256": "fa51db236cb3f9e7040cdc50b002542bcbb3d51077132848d1960a996ec9b3c9",
+      "redistribution_decision": "Bundled as a separately licensed GPL-3 fixture to the extent applicable, with the complete GPL-3 text, preferred-form CSV, official package and Rdatasets source links, Graddy attribution, and the Rdatasets underlying-rights caveat. The repository MIT licence is not applied to this file.",
+      "reference_input_columns": [
+        "t",
+        "mon",
+        "tues",
+        "wed",
+        "thurs",
+        "speed2",
+        "wave2"
+      ],
+      "registered_role": "retrospective open-data reanalysis fixture",
+      "repository_license_applies": false,
+      "retrieval_method": "byte-identical Rdatasets CSV serialization of the fish table distributed by the official wooldridge package and reused from the tutorial fixture",
+      "retrieval_timestamp_utc": "unknown: the exact upstream retrieval time was not retained; the byte identity is fixed by SHA256",
+      "rights_basis": "The official GPL-3 wooldridge data package distributes the fish table as package content; the CSV is an Rdatasets serialization of that table.",
+      "rights_checked_date": "2026-07-12",
+      "row_count": 97,
+      "rows": 97,
+      "schema_version": 1,
+      "selection_rule": "all 97 ordered complete rows are retained; prediction begins at the fixed 65th observation",
+      "sha256": "fa51db236cb3f9e7040cdc50b002542bcbb3d51077132848d1960a996ec9b3c9",
+      "snapshot_url": "https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/csv/wooldridge/fish.csv",
+      "source_citation": "K. Graddy, Testing for Imperfect Competition at the Fulton Fish Market, RAND Journal of Economics 26 (1995), 75-92; Rdatasets wooldridge::fish export",
+      "source_name": "Rdatasets export of wooldridge::fish",
+      "source_row_key": "rownames",
+      "source_url_or_accession": "https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/csv/wooldridge/fish.csv",
+      "study_role": "rolling conditional one-step calibration and prediction",
+      "third_party_notice": "../../../THIRD_PARTY_NOTICES.md",
+      "transform_code_commit": "not recorded; per-run source-file SHA256 values are recorded instead",
+      "units": {
+        "avgprc": "source-native positive price unit; no currency rescaling is introduced",
+        "speed2": "squared wind-speed source unit",
+        "wave2": "squared wave-height source unit"
+      },
+      "version": 1
+    },
+    "manifest_path": "studies/fulton_market/data/FIXTURE_MANIFEST.json",
+    "n_columns": 21,
+    "n_rows": 97,
+    "path": "studies/fulton_market/data/fish.csv",
+    "registered_fixture_sha256": "fa51db236cb3f9e7040cdc50b002542bcbb3d51077132848d1960a996ec9b3c9",
+    "sha256": "fa51db236cb3f9e7040cdc50b002542bcbb3d51077132848d1960a996ec9b3c9",
+    "source_url": "https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/csv/wooldridge/fish.csv",
+    "t_end": 97,
+    "t_start": 1
+  },
+  "interpretation": "The rolling results quantify conditional one-step calibration and its sensitivity to dependence, plug-in reference uncertainty, and target-measure omission. They do not identify market structure or validate determinant correction through predictive superiority.",
+  "limitations": [
+    "The 97-row fixture is short and was inspected before this extension was registered; results are retrospective, not prospective confirmation.",
+    "Weather, weekday, and trend regressors form a compact reduced reference, not a structural supply or demand system.",
+    "The AR(1) coefficient and stationary marginal residual SD are plug-in training estimates, and the innovation SD is derived from them; phi is not given a posterior. Only the declared coefficient-covariance sensitivity propagates part of reference-fit uncertainty.",
+    "Rolling score contrasts are dependent because training and calibration windows overlap; moving-block intervals are descriptive with only 33 registered origins.",
+    "The lognormal observation model and stationary AR(1) covariance remain simplifying assumptions and do not resolve all heteroskedasticity or regime change.",
+    "Each test price is untouched, but its contemporaneous weather and weekday covariates are treated as known; the result is conditional prediction, not an unconditional advance forecast when those covariates are unavailable.",
+    "Lambda is a conditional dimensionless calibration scale, not an elasticity, causal effect, market-power coefficient, or universal economic constant."
+  ],
+  "matched_calibration_effects": [
+    {
+      "assumption_family": "ar1_plugin",
+      "block_length": 4,
+      "bootstrap_replicates": 5000,
+      "bootstrap_seed": 20260711,
+      "crps_identity_minus_graph": -6.871618869795648e-05,
+      "cumulative_delta_elpd_graph_minus_identity": 0.4083193140830125,
+      "graph_mean_crps": 0.1072960012616651,
+      "graph_model": "ar1_graph",
+      "identity_mean_crps": 0.10722728507296714,
+      "interval_level": 0.9,
+      "matched_identity_model": "ar1_identity_reference_baseline",
+      "mean_delta_elpd_graph_minus_identity": 0.012373312547970075,
+      "moving_block_90pct_mean_delta_elpd_lower": -0.0417219391082214,
+      "moving_block_90pct_mean_delta_elpd_upper": 0.06335702153229449,
+      "n_origins": 33
+    },
+    {
+      "assumption_family": "iid",
+      "block_length": 4,
+      "bootstrap_replicates": 5000,
+      "bootstrap_seed": 20260711,
+      "crps_identity_minus_graph": 0.028143063333313567,
+      "cumulative_delta_elpd_graph_minus_identity": 6.179949715707704,
+      "graph_mean_crps": 0.133015605995618,
+      "graph_model": "iid_graph_sensitivity",
+      "identity_mean_crps": 0.16115866932893158,
+      "interval_level": 0.9,
+      "matched_identity_model": "iid_identity_reference_baseline",
+      "mean_delta_elpd_graph_minus_identity": 0.18727120350629406,
+      "moving_block_90pct_mean_delta_elpd_lower": 0.05052475035933308,
+      "moving_block_90pct_mean_delta_elpd_upper": 0.3055765400285678,
+      "n_origins": 33
+    },
+    {
+      "assumption_family": "ar1_beta_uncertainty",
+      "block_length": 4,
+      "bootstrap_replicates": 5000,
+      "bootstrap_seed": 20260711,
+      "crps_identity_minus_graph": 2.3187000153301884e-05,
+      "cumulative_delta_elpd_graph_minus_identity": 0.20234068903266522,
+      "graph_mean_crps": 0.10710753405009671,
+      "graph_model": "ar1_beta_uncertainty_sensitivity",
+      "identity_mean_crps": 0.10713072105025001,
+      "interval_level": 0.9,
+      "matched_identity_model": "ar1_beta_uncertainty_identity_baseline",
+      "mean_delta_elpd_graph_minus_identity": 0.006131536031292886,
+      "moving_block_90pct_mean_delta_elpd_lower": -0.021815996904288284,
+      "moving_block_90pct_mean_delta_elpd_upper": 0.03477844283954798,
+      "n_origins": 33
+    }
+  ],
+  "mode": "full",
+  "outputs": {
+    "claims": [
+      "claims/claim_evaluations.json"
+    ],
+    "figures": [
+      "cumulative_log_score_contrasts.png",
+      "initial_reference_residual_acf.png",
+      "rolling_eta_volume_effect.png",
+      "rolling_predictions.png"
+    ],
+    "tables": [
+      "aggregate_predictive_metrics.csv",
+      "claim_evaluations.csv",
+      "initial_reference_residual_acf.csv",
+      "initial_reference_residual_diagnostics.csv",
+      "matched_calibration_effects.csv",
+      "paired_score_uncertainty.csv",
+      "phi_clip_sensitivity.csv",
+      "pre_score_predictions.csv",
+      "primary_model_geometry_audit.csv",
+      "residual_pushforward_audit.csv",
+      "role_manifest.csv",
+      "rolling_predictions.csv",
+      "verification_spine.csv"
+    ]
+  },
+  "phi_clip_sensitivity": {
+    "absolute_limits": [
+      0.5,
+      0.75,
+      0.9,
+      0.99
+    ],
+    "all_dependence_sensitivity_categories_match_primary": true,
+    "all_geometry_consequences_finite": true,
+    "all_numeric_outputs_finite": true,
+    "all_predictive_gate_decisions_match_primary": true,
+    "held_fixed": "data, temporal roles, reference fit, stationary marginal residual SD, prior, calibration window, scores, matched comparators, bootstrap seed and replicates",
+    "maximum_abs_eta_change_vs_primary_in_primary_sd": 0.12638060717149224,
+    "outcomes_known_when_added": true,
+    "primary_absolute_limit": 0.9,
+    "primary_clipping_active": false,
+    "primary_n_origins_clipped": 0,
+    "raw_phi_range": [
+      0.5808408068694967,
+      0.6827484518348089
+    ],
+    "results": [
+      {
+        "analysis_role": "tighter_stress",
+        "ar1_iid_direction_reversal": false,
+        "ar1_iid_interval_gate_change": true,
+        "block_length": 4,
+        "bootstrap_replicates": 5000,
+        "bootstrap_seed": 20260711,
+        "crps_identity_minus_graph": 0.003629847036859063,
+        "cumulative_delta_elpd_graph_minus_identity": 1.2023517187271766,
+        "cumulative_delta_elpd_graph_minus_lag4": 3.360630082465735,
+        "cumulative_delta_elpd_graph_minus_naive": 2.4746381332506244,
+        "dependence_sensitive": true,
+        "max_abs_eta_change_vs_primary_in_primary_sd": 0.12638060717149224,
+        "max_abs_eta_volume_shift_in_graph_sd": 2.576885387029005,
+        "max_abs_phi_raw": 0.6827484518348089,
+        "max_phi_raw": 0.6827484518348089,
+        "max_phi_used": 0.5,
+        "mean_delta_elpd_graph_minus_identity": 0.0364349005674902,
+        "mean_eta_volume_shift_in_graph_sd": -2.404121104512221,
+        "min_phi_raw": 0.5808408068694967,
+        "min_phi_used": 0.5,
+        "moving_block_90pct_mean_delta_elpd_graph_minus_naive_lower": -0.043981318258914215,
+        "moving_block_90pct_mean_delta_elpd_graph_minus_naive_upper": 0.1935332144522426,
+        "moving_block_90pct_mean_delta_elpd_lower": -0.022373141832096433,
+        "moving_block_90pct_mean_delta_elpd_upper": 0.09152732621383448,
+        "n_origins": 33,
+        "n_origins_clipped": 33,
+        "non_claim_selecting": true,
+        "phi_absolute_limit": 0.5,
+        "post_outcome_nonselecting_addition": true,
+        "predictive_gate_cumulative_delta_elpd_positive": true,
+        "predictive_gate_graph_crps_no_worse": true,
+        "predictive_gate_interval_lower_positive": false,
+        "predictive_gate_passed": false,
+        "predictive_gate_reference_beats_lag4": true
+      },
+      {
+        "analysis_role": "tighter_stress",
+        "ar1_iid_direction_reversal": false,
+        "ar1_iid_interval_gate_change": true,
+        "block_length": 4,
+        "bootstrap_replicates": 5000,
+        "bootstrap_seed": 20260711,
+        "crps_identity_minus_graph": -6.871618869795648e-05,
+        "cumulative_delta_elpd_graph_minus_identity": 0.4083193140830125,
+        "cumulative_delta_elpd_graph_minus_lag4": 3.879166841843934,
+        "cumulative_delta_elpd_graph_minus_naive": 3.4159404042769674,
+        "dependence_sensitive": true,
+        "max_abs_eta_change_vs_primary_in_primary_sd": 0.0,
+        "max_abs_eta_volume_shift_in_graph_sd": 3.135194235180826,
+        "max_abs_phi_raw": 0.6827484518348089,
+        "max_phi_raw": 0.6827484518348089,
+        "max_phi_used": 0.6827484518348089,
+        "mean_delta_elpd_graph_minus_identity": 0.012373312547970075,
+        "mean_eta_volume_shift_in_graph_sd": -2.7442552228264208,
+        "min_phi_raw": 0.5808408068694967,
+        "min_phi_used": 0.5808408068694967,
+        "moving_block_90pct_mean_delta_elpd_graph_minus_naive_lower": -0.02904550789703498,
+        "moving_block_90pct_mean_delta_elpd_graph_minus_naive_upper": 0.23297886806764703,
+        "moving_block_90pct_mean_delta_elpd_lower": -0.0417219391082214,
+        "moving_block_90pct_mean_delta_elpd_upper": 0.06335702153229449,
+        "n_origins": 33,
+        "n_origins_clipped": 0,
+        "non_claim_selecting": true,
+        "phi_absolute_limit": 0.75,
+        "post_outcome_nonselecting_addition": true,
+        "predictive_gate_cumulative_delta_elpd_positive": true,
+        "predictive_gate_graph_crps_no_worse": false,
+        "predictive_gate_interval_lower_positive": false,
+        "predictive_gate_passed": false,
+        "predictive_gate_reference_beats_lag4": true
+      },
+      {
+        "analysis_role": "primary",
+        "ar1_iid_direction_reversal": false,
+        "ar1_iid_interval_gate_change": true,
+        "block_length": 4,
+        "bootstrap_replicates": 5000,
+        "bootstrap_seed": 20260711,
+        "crps_identity_minus_graph": -6.871618869795648e-05,
+        "cumulative_delta_elpd_graph_minus_identity": 0.4083193140830125,
+        "cumulative_delta_elpd_graph_minus_lag4": 3.879166841843934,
+        "cumulative_delta_elpd_graph_minus_naive": 3.4159404042769674,
+        "dependence_sensitive": true,
+        "max_abs_eta_change_vs_primary_in_primary_sd": 0.0,
+        "max_abs_eta_volume_shift_in_graph_sd": 3.135194235180826,
+        "max_abs_phi_raw": 0.6827484518348089,
+        "max_phi_raw": 0.6827484518348089,
+        "max_phi_used": 0.6827484518348089,
+        "mean_delta_elpd_graph_minus_identity": 0.012373312547970075,
+        "mean_eta_volume_shift_in_graph_sd": -2.7442552228264208,
+        "min_phi_raw": 0.5808408068694967,
+        "min_phi_used": 0.5808408068694967,
+        "moving_block_90pct_mean_delta_elpd_graph_minus_naive_lower": -0.02904550789703498,
+        "moving_block_90pct_mean_delta_elpd_graph_minus_naive_upper": 0.23297886806764703,
+        "moving_block_90pct_mean_delta_elpd_lower": -0.0417219391082214,
+        "moving_block_90pct_mean_delta_elpd_upper": 0.06335702153229449,
+        "n_origins": 33,
+        "n_origins_clipped": 0,
+        "non_claim_selecting": true,
+        "phi_absolute_limit": 0.9,
+        "post_outcome_nonselecting_addition": true,
+        "predictive_gate_cumulative_delta_elpd_positive": true,
+        "predictive_gate_graph_crps_no_worse": false,
+        "predictive_gate_interval_lower_positive": false,
+        "predictive_gate_passed": false,
+        "predictive_gate_reference_beats_lag4": true
+      },
+      {
+        "analysis_role": "looser_boundary",
+        "ar1_iid_direction_reversal": false,
+        "ar1_iid_interval_gate_change": true,
+        "block_length": 4,
+        "bootstrap_replicates": 5000,
+        "bootstrap_seed": 20260711,
+        "crps_identity_minus_graph": -6.871618869795648e-05,
+        "cumulative_delta_elpd_graph_minus_identity": 0.4083193140830125,
+        "cumulative_delta_elpd_graph_minus_lag4": 3.879166841843934,
+        "cumulative_delta_elpd_graph_minus_naive": 3.4159404042769674,
+        "dependence_sensitive": true,
+        "max_abs_eta_change_vs_primary_in_primary_sd": 0.0,
+        "max_abs_eta_volume_shift_in_graph_sd": 3.135194235180826,
+        "max_abs_phi_raw": 0.6827484518348089,
+        "max_phi_raw": 0.6827484518348089,
+        "max_phi_used": 0.6827484518348089,
+        "mean_delta_elpd_graph_minus_identity": 0.012373312547970075,
+        "mean_eta_volume_shift_in_graph_sd": -2.7442552228264208,
+        "min_phi_raw": 0.5808408068694967,
+        "min_phi_used": 0.5808408068694967,
+        "moving_block_90pct_mean_delta_elpd_graph_minus_naive_lower": -0.02904550789703498,
+        "moving_block_90pct_mean_delta_elpd_graph_minus_naive_upper": 0.23297886806764703,
+        "moving_block_90pct_mean_delta_elpd_lower": -0.0417219391082214,
+        "moving_block_90pct_mean_delta_elpd_upper": 0.06335702153229449,
+        "n_origins": 33,
+        "n_origins_clipped": 0,
+        "non_claim_selecting": true,
+        "phi_absolute_limit": 0.99,
+        "post_outcome_nonselecting_addition": true,
+        "predictive_gate_cumulative_delta_elpd_positive": true,
+        "predictive_gate_graph_crps_no_worse": false,
+        "predictive_gate_interval_lower_positive": false,
+        "predictive_gate_passed": false,
+        "predictive_gate_reference_beats_lag4": true
+      }
+    ],
+    "role": "post-outcome one-at-a-time robustness sensitivity; alternatives do not select or replace the primary analysis",
+    "scientific_outcomes_are_not_implementation_pass_fail_checks": true,
+    "single_changed_axis": "symmetric absolute clipping bound for training-only phi",
+    "table": "tables/phi_clip_sensitivity.csv",
+    "timing": "post_outcome_nonselecting"
+  },
+  "primary_predictive_metrics": {
+    "interval_coverage": 0.9696969696969697,
+    "interval_level": 0.9,
+    "mae_predictive_median": 0.1511408381992364,
+    "mean_crps": 0.1072960012616651,
+    "mean_interval_width": 0.7627727559971149,
+    "mean_log_score": 0.27406213245123195,
+    "n_forecasts": 33,
+    "rmse_predictive_mean": 0.19901161592557196,
+    "total_log_score": 9.044050370890654
+  },
+  "registered_protocol": {
+    "baselines": [
+      "AR(1)-conditioned identity reference matched to the primary graph model",
+      "iid identity reference matched to the iid graph sensitivity",
+      "AR(1) plus coefficient-uncertainty identity reference matched to that graph sensitivity",
+      "last-price lognormal persistence with past-only difference scale"
+    ],
+    "calibration_window": 16,
+    "first_test_t": 65,
+    "forecast_horizon": 1,
+    "last_test_t": 97,
+    "negative_control": "four-observation causal lag of the reference design; response order retained and no future row used",
+    "primary": "training-only log-price reference; training-only plug-in stationary AR(1) error; graph posterior; one-step native-price predictive score",
+    "prior": "eta=log(lambda) ~ Normal(0, 0.5^2), density pushed to d lambda",
+    "role_separation": "for test t, rows before t-16 fit the reference, rows t-16 through t-1 calibrate eta, and row t is scored once",
+    "sensitivities": [
+      "iid log-price error",
+      "Gaussian OLS coefficient-covariance propagation",
+      "state-volume determinant omission counterfactual",
+      "post-outcome one-at-a-time symmetric AR(1) phi clipping bounds; non-claim-selecting"
+    ],
+    "test_covariates_used_for_conditional_prediction": true,
+    "test_outcome_used_before_scoring": false
+  },
+  "reproducibility": {
+    "configuration_sha256": "2a9b9e5a2e499505334e66d5d3824a6898cbab2cd39290e94edb811d86741b15",
+    "data_sha256": "fa51db236cb3f9e7040cdc50b002542bcbb3d51077132848d1960a996ec9b3c9",
+    "environment": {
+      "byteorder": "little",
+      "detcorr": "0.10.0",
+      "machine": "x86_64",
+      "matplotlib": "3.10.8",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "platform": "Linux-6.12.47-x86_64-with-glibc2.39",
+      "python": "3.12.13",
+      "python_implementation": "CPython",
+      "scipy": "1.17.0"
+    },
+    "pre_score_prediction_manifest_path": "tables/pre_score_predictions.csv",
+    "pre_score_prediction_manifest_sha256": "59926b0934eb5f9e48859a1582e1bcc9948be7eebcfc9f3285ee8100b114074e",
+    "random_seed": 20260711,
+    "randomness_scope": "moving-block bootstrap resampling only",
+    "registered_protocol_path": "REGISTERED_PROTOCOL.json",
+    "registered_protocol_sha256": "cca5dfd6369b20c16504486b476e5725f405c5f3f0d3b6fa949fb64b907c3170",
+    "registered_protocol_version": 2,
+    "role_manifest_assertions": {
+      "fixed_calibration_count": true,
+      "one_test_row_per_origin": true,
+      "roles_are_disjoint_within_origin": true,
+      "split_algorithm": "expanding_train_fixed16_calibration_horizon1_v1",
+      "split_salt": "fulton-temporal-v1-no-randomization",
+      "test_rows_are_65_through_end_once": true
+    },
+    "role_manifest_path": "tables/role_manifest.csv",
+    "role_manifest_sha256": "05644cf91254257c8a5e7c781602e27e0e6a810369c14eaaf1752295326dc972",
+    "source_hashes": {
+      "REGISTERED_PROTOCOL.json": "cca5dfd6369b20c16504486b476e5725f405c5f3f0d3b6fa949fb64b907c3170",
+      "common/evidence.py": "3277f8df798847d8b35e9897e6d91d431a6d3cf50dec0d5ff42f32f812e66b5d",
+      "fulton_analysis.py": "83e6d789831a683fb59dc2989a23869712e5acc378df1ead07e18e2b27468c5e",
+      "run_analysis.py": "19a031c531c898732329c87ae4044996c3199f75a5d80fdf4cfc70f99c475c1a"
+    }
+  },
+  "residual_and_coordinate_audits": {
+    "detcorr_callable": {
+      "absolute_error": 3.973243956068018e-11,
+      "available": true,
+      "detcorr_version": "0.10.0",
+      "expected_state_logdet": -1.6500563346474888,
+      "lambda": 0.79,
+      "n_state": 7,
+      "observed_state_logdet": -1.6500563346077564,
+      "route": "detcorr callable residual with scipy central finite differences",
+      "target_measure": "graph",
+      "version_is_at_least_0_10": true
+    },
+    "parameter_pushforward": {
+      "lambda_mean_direct": 0.7553910213334231,
+      "lambda_mean_via_eta": 0.7553910204285847,
+      "lambda_to_eta_to_lambda_total_variation": 5.066552188988133e-17
+    },
+    "primary_model_direct_log_and_finite_tube": {
+      "central_graph_probability": 0.99,
+      "claim_bearing_model": "rolling primary AR(1) log-price graph model",
+      "determinant_log_variation_central_region": 14.868064781265895,
+      "direct_normal_factor_J": "J_u=lambda^n",
+      "direct_state_base_density_q": "q_u(u)=1 relative to du",
+      "direct_state_coordinate": "u=native_price/state_scale in (0,infinity)",
+      "eta_points": 25,
+      "exact_gaussian_verification_used_as_claim_evidence": false,
+      "finite_vs_graph_error_fraction_of_determinant_variation": 8.532823932587954e-06,
+      "log_state_coordinate": "v=log(u)",
+      "log_state_normal_factor_J": "J_v=prod(lambda*exp(v))",
+      "max_abs_centered_finite_vs_graph_log_error": 0.00012686657899685372,
+      "max_abs_log_J_over_q_coordinate_error": 0.0,
+      "max_invalid_positive_state_fraction": 0.0,
+      "max_qmc_replicate_centered_log_sd": 1.1873529220797916e-07,
+      "n_state": 16,
+      "origin_test_t": 65,
+      "passed": true,
+      "pushed_log_state_base_density_q": "q_v(v)=exp(sum(v)) relative to dv",
+      "qmc_error_fraction_of_determinant_variation": 7.985927822805048e-09,
+      "registered_max_error_fraction": 0.01,
+      "required_multiplier": "J/q=lambda^n in both coordinates on the graph",
+      "rho": 1000000.0,
+      "rho_unit": "inverse squared dimensionless residual",
+      "sobol_power": 14,
+      "sobol_samples_per_scramble": 16384,
+      "sobol_scrambles": 4,
+      "sobol_seed_sequence": [
+        20260711,
+        20260712,
+        20260713,
+        20260714
+      ],
+      "state_scale_native": 0.8436752099766366,
+      "state_scale_source": "geometric mean price of reference-training rows 1-48",
+      "support_certificate": {
+        "direct_to_log_pushforward": "du=exp(sum(v))dv is included as q_v, so no state Jacobian is double counted",
+        "finite_tube_integrable_for_every_lambda_positive": true,
+        "global_eta_target_normalizable": true,
+        "lambda_to_zero_and_infinity": "the proper normal prior on eta=log(lambda) dominates polynomial tube-volume factors; the corrected hard limit is the proper conjugate eta posterior",
+        "positive_boundary_respected": true,
+        "state_domain": "u in (0, infinity)^n",
+        "u_to_infinity": "for every lambda>0, exp[-rho*||a-lambda*u||^2/2] is Gaussian-coercive",
+        "u_to_zero": "the Gaussian log-price likelihood decays faster than every power of u, so it is integrable at the positive boundary"
+      }
+    },
+    "residual_pushforward": {
+      "max_abs_correction_error": 0.0,
+      "max_abs_penalty_error": 3.469446951953614e-18
+    }
+  },
+  "schema_version": "1.1",
+  "scientific_outcomes_are_not_pass_fail_checks": true,
+  "score_uncertainty": {
+    "interval_quantiles": [
+      0.05,
+      0.95
+    ],
+    "method": "circular moving-block bootstrap of paired origin-level contrasts; block length fixed at four; descriptive interval, not an iid significance test",
+    "replicates": 5000,
+    "seed": 20260711,
+    "table": "tables/paired_score_uncertainty.csv"
+  },
+  "study": "fulton_market",
+  "verification_spine": {
+    "corrected_mean": 0.7553910367012475,
+    "corrected_total_variation_vs_graph": 1.2316928692199334e-07,
+    "graph_mean": 0.7553910213334231,
+    "graph_sd": 0.05573245092119384,
+    "n_calibration_states": 33,
+    "n_train": 64,
+    "naive_mean": 0.6545753116504415,
+    "naive_shift_graph_sd": -1.80892295272526,
+    "naive_total_variation_vs_graph": 0.7191192495185528,
+    "rho": 50000000.0,
+    "route": "independent exact product of native-price Gaussian state integrals"
+  }
+}

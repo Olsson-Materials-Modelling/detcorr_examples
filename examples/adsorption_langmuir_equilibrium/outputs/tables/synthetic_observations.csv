@@ -1,0 +1,8 @@
+pressure_bar,q_truth,fixed_offset,q_observed,sigma_q,observation_status
+0.03,0.024865919063871273,0.006,0.030865919063871275,0.03,declared deterministic synthetic observation
+0.07,0.056158565361019354,-0.005,0.051158565361019356,0.03,declared deterministic synthetic observation
+0.15,0.11308203991130819,0.004,0.1170820399113082,0.03,declared deterministic synthetic observation
+0.3,0.20318725099601592,-0.007,0.19618725099601592,0.03,declared deterministic synthetic observation
+0.6,0.33774834437086093,0.006,0.34374834437086094,0.03,declared deterministic synthetic observation
+1.2,0.504950495049505,-0.004,0.500950495049505,0.03,declared deterministic synthetic observation
+2.5,0.6799999999999999,0.002,0.6819999999999999,0.03,declared deterministic synthetic observation

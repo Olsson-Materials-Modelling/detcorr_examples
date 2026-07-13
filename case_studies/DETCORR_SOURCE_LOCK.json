@@ -1,0 +1,29 @@
+{
+  "commit": "a414f063515359f70952e2717a506b75e69e4b0b",
+  "package_file_sha256": {
+    "__init__.py": "d69b3d51c496232a3c1d5203dea74558e9e7aa95e82c6c3f4165a4a24aba5284",
+    "_stats.py": "53025d5887c038e5f7d3bb79db6650053138ea039c6e7b99709e4e771943b2e2",
+    "_utils.py": "a24529dee5a654efe843b31e4c49a6658abaf98a262903db5a358f30123e9428",
+    "_version.py": "372cc1296c26d63417a0baa78930b1233803681e686f30e2033797a8ea880f31",
+    "backends/__init__.py": "36f9b42a0bb72c5f13b436b16cc1177c2fc25228d7267532a77977168a7a8d2a",
+    "backends/capabilities.py": "5e0d973f07550169c40b13c1503a039d3a3f4c0092cb026ea211eb78c0fb2026",
+    "backends/jax_backend.py": "f8217ba4989334485a026c7975c4248fc7a4ad48e32cba9a2a7ebadef8aef750",
+    "backends/scipy_backend.py": "a1ac52b64267eb9605bbafd62fe80ba282626952766badbf67b85dcdb55def9d",
+    "backends/torch_backend.py": "cba2e82fdee3b8ad15eb77644ce297d1e1190bed8dabfa4fd8cfc1f6c42efdb2",
+    "batch.py": "1fc1b8013f31d5960c0567d51f19f3e301d7773e87c48ed4fb449a6c9bc79924",
+    "config.py": "1cdb31faf61fcd93b90d596154e46e95f70f124a51568804e21aa5c740cdadf1",
+    "core.py": "ee09d167de21a77d7a182f0cf91dd76bf3fc3aa6b2796e0ab7eb790ce7921621",
+    "diagnostics.py": "0f29dca47d16094f6e3141ef464091ba47f1895d7cecfa9084c523b2d21ecfb4",
+    "estimators.py": "31437a6addf1ba454ae0bdb62a0b39eceea78f687877febf5918e5044ac3b96e",
+    "exceptions.py": "f5f61ee56aeea8eb4922c22f08d82e7b89ce04b97256d8aca6b79bb62477bdb0",
+    "logdet.py": "2cb213b5926783016f9a2a550fe51249c8186d944ccc2575177b5f3d1f21ecb0",
+    "reproducibility.py": "17f88e8cc132e28a54279ff531b6a3e6d65c0fb5e81ccd9940bf34ebd1119d0f",
+    "structure.py": "dd9b7640facc60e05091bc481e29f894756cb4a34f546076dede6aaeebfc59fd",
+    "targets.py": "b8876dbb7e3fe19efdbd86c93e26770fa3f4afab4657067f87743f0791358ce8",
+    "types.py": "ea69fb6356e4c828e35162cffdb707e0f8f520139a3e8cd3bfdc61bf40944f42",
+    "weights.py": "9acd8797c638633188c749286cf6e56e9b7cd7693c07218b5057e43ebb30e443"
+  },
+  "repository_url": "https://github.com/Olsson-Materials-Modelling/detcorr.git",
+  "schema_version": 1,
+  "version": "0.10.0"
+}

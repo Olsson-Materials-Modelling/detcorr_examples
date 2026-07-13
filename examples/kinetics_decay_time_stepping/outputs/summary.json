@@ -1,0 +1,227 @@
+{
+  "classification": "synthetic time-stepping verification problem",
+  "configuration": {
+    "eta_max": 0.8,
+    "eta_min": -1.8,
+    "n_grid": 1601,
+    "prior_mean_eta": 0.0,
+    "prior_sd_eta": 1.0,
+    "rho_per_mm2": 100000000.0
+  },
+  "corrected_density_l1_vs_graph": 3.54547335674168e-06,
+  "correction_driver": "accumulated lower-triangular time-step Jacobian n*log(1+dt*k)",
+  "correction_log_range_on_grid": 5.348711011958041,
+  "demo": "kinetics_decay_time_stepping",
+  "detcorr_api_audit": {
+    "absolute_error": 0.0,
+    "analytic_logdet": 2.2303548192317764,
+    "detcorr_available": true,
+    "detcorr_logdet": 2.2303548192317764,
+    "eta": -0.4415,
+    "reason": null,
+    "result": {
+      "api_version": "0.10",
+      "backend": "dense",
+      "error_estimate": null,
+      "estimated": false,
+      "exact": true,
+      "logabsdet": 2.2303548192317764,
+      "metadata": {
+        "determinant_config": {
+          "method": "auto",
+          "singular_policy": "raise",
+          "slq": {
+            "adjoint_check": true,
+            "adjoint_check_atol": 1e-07,
+            "adjoint_check_n_probe": 3,
+            "adjoint_check_rtol": 1e-05,
+            "checkpoint_degrees": null,
+            "confidence_level": 0.95,
+            "convergence_atol": 0.0,
+            "convergence_check": true,
+            "convergence_rtol": 0.05,
+            "eigenvalue_floor": 1e-14,
+            "exact_check_max_dimension": 0,
+            "jitter": 0.0,
+            "lanczos_breakdown_tol": 1e-14,
+            "lanczos_degree": 40,
+            "max_stored_probe_diagnostics": 8,
+            "max_stored_quadrature_nodes": 16,
+            "n_probe": 16,
+            "orthogonality_check": false,
+            "probe_distribution": "rademacher",
+            "reorthogonalize": false,
+            "seed": null,
+            "store_probe_diagnostics": true,
+            "store_probe_estimates": true,
+            "store_quadrature_nodes": false,
+            "warn_condition_number": 1000000000000.0,
+            "warn_relative_standard_error": 0.1
+          },
+          "sparse_lu": {
+            "diag_pivot_thresh": null,
+            "permc_spec": "COLAMD"
+          },
+          "structure": "triangular"
+        },
+        "diagonal_pivot_ratio": 1.0,
+        "input_jacobian_type": "ndarray",
+        "max_abs_diagonal": 1.3215355453151778,
+        "min_abs_diagonal": 1.3215355453151778,
+        "near_singular": false,
+        "near_singular_pivot_ratio_threshold": 1e-12
+      },
+      "method": "triangular",
+      "rank_deficient": false,
+      "shape": [
+        8,
+        8
+      ],
+      "sign": 1.0,
+      "singular": false,
+      "value": 2.2303548192317764,
+      "warnings": []
+    }
+  },
+  "independent_validation": {
+    "corrected_centered_logdensity_max_abs_diff_vs_graph": 0.008791207362037312,
+    "determinant_dense_max_abs_error": 8.881784197001252e-16,
+    "manufactured_residual_norm": 1.9229626863835638e-16,
+    "not_graph_minus_logdet_construction": true,
+    "route": "stable exact multivariate Gaussian integration over u"
+  },
+  "interpretation_boundary": "The data are generated from the same discrete model. The example validates recurrence, Gaussian integration, and measure correction, not the empirical adequacy of first-order kinetics.",
+  "model": {
+    "continuous_equation": "du/dt=-k*u",
+    "discrete_residual": "c_i=u_i-u_{i-1}+dt*k*u_i",
+    "dt_seconds": 0.5,
+    "exact_logdet": "n*log(1+dt*k)",
+    "initial_concentration_mm": 2.0,
+    "n_steps": 8,
+    "rate_parameterization": "k/(1 s^-1)=exp(eta)",
+    "state_jacobian": "lower bidiagonal with diagonal 1+dt*k"
+  },
+  "naive_density_l1_vs_graph": 0.08134832657317737,
+  "naive_mean_shift_in_graph_sd": -0.10185232157228774,
+  "outcome": {
+    "corrected_density_l1_vs_graph": 3.54547335674168e-06,
+    "corrected_mean_shift_in_graph_sd": -9.652824231981338e-08,
+    "correction_log_range_on_grid": 5.348711011958041,
+    "graph_mean": -0.4408433682814873,
+    "graph_sd": 0.05256745432738513,
+    "naive_density_l1_vs_graph": 0.08134832657317737,
+    "naive_mean_shift_in_graph_sd": -0.10185232157228774,
+    "naive_minus_corrected_mean_in_graph_sd": -0.10185222504404542
+  },
+  "outcomes": {
+    "corrected_mean_abs_error_eta": 5.0742439694495545e-09,
+    "corrected_mean_eta": -0.44084337335573126,
+    "declared_true_eta": -0.4307829160924542,
+    "graph_mean_eta": -0.4408433682814873,
+    "graph_sd_eta": 0.05256745432738513,
+    "naive_mean_eta": -0.44619748554387667,
+    "naive_mean_shift_eta": -0.00535411726238938
+  },
+  "provenance": {
+    "detcorr_version": "0.10.0",
+    "example_root": ".",
+    "platform": "Linux-6.12.47-x86_64-with-glibc2.39",
+    "python_version": "3.12.13"
+  },
+  "synthetic_data_contract": {
+    "generated_from_same_implicit_euler_model": true,
+    "observation_sigma_mm": 0.08,
+    "random_number_generation": "none",
+    "standardized_offsets": [
+      0.3,
+      -0.55,
+      0.8,
+      -0.25,
+      0.45,
+      -0.7,
+      0.2,
+      0.55
+    ],
+    "status": "transparent manufactured discrete-model control",
+    "true_eta": -0.4307829160924542,
+    "true_rate_per_s": 0.65
+  },
+  "tables": {
+    "determinant_audit": [
+      {
+        "absolute_error": 0.0,
+        "analytic_logdet": 0.6352898077732907,
+        "dense_slogdet": 0.6352898077732907,
+        "determinant_sign": 1.0,
+        "eta": -1.8,
+        "rate_per_s": 0.16529888822158653
+      },
+      {
+        "absolute_error": 0.0,
+        "analytic_logdet": 2.251299675505484,
+        "dense_slogdet": 2.251299675505484,
+        "determinant_sign": 1.0,
+        "eta": -0.4307829160924542,
+        "rate_per_s": 0.65
+      },
+      {
+        "absolute_error": 8.881784197001252e-16,
+        "analytic_logdet": 3.243720864865315,
+        "dense_slogdet": 3.243720864865316,
+        "determinant_sign": 1.0,
+        "eta": 0.0,
+        "rate_per_s": 1.0
+      },
+      {
+        "absolute_error": 0.0,
+        "analytic_logdet": 5.984000819731332,
+        "dense_slogdet": 5.984000819731332,
+        "determinant_sign": 1.0,
+        "eta": 0.8,
+        "rate_per_s": 2.225540928492468
+      }
+    ],
+    "posterior_summary": [
+      {
+        "centered_logdensity_max_abs_diff_vs_graph": 0.0,
+        "density_l1_vs_graph": 0.0,
+        "log_normalizer": -3.162422428546071,
+        "mean": -0.4408433682814873,
+        "mean_rate_per_s": 0.6443839803353034,
+        "mode": -0.4415,
+        "q05": -0.5265686031732695,
+        "q50": -0.4412782709698318,
+        "q95": -0.35364206019268624,
+        "sd": 0.05256745432738513,
+        "target": "graph_reduced"
+      },
+      {
+        "centered_logdensity_max_abs_diff_vs_graph": 3.7599377737368513,
+        "density_l1_vs_graph": 0.08134832657317737,
+        "log_normalizer": -71.72207990864057,
+        "mean": -0.44619748554387667,
+        "mean_rate_per_s": 0.6409350469145194,
+        "mode": -0.44799999999999995,
+        "q05": -0.5315538133152692,
+        "q50": -0.446619540563607,
+        "q95": -0.35940203892632183,
+        "sd": 0.05232900479955392,
+        "target": "naive_finite_gaussian_tube"
+      },
+      {
+        "centered_logdensity_max_abs_diff_vs_graph": 0.008791207362037312,
+        "density_l1_vs_graph": 3.54547335674168e-06,
+        "log_normalizer": -69.49363999995012,
+        "mean": -0.44084337335573126,
+        "mean_rate_per_s": 0.6443839835620673,
+        "mode": -0.4415,
+        "q05": -0.526568944424209,
+        "q50": -0.4412782659074507,
+        "q95": -0.3536417598546909,
+        "sd": 0.05256764648035459,
+        "target": "detcorr_finite_gaussian_tube"
+      }
+    ]
+  },
+  "target_measure": "graph posterior over eta with respect to d eta"
+}

@@ -1,0 +1,1054 @@
+{
+  "analysis_status": "registered reanalysis of a pre-existing public fixture; not prospective confirmation",
+  "claim_bearing_full_run": true,
+  "claim_ceiling": "fixture-conditional predictive calibration and model-adequacy evidence; no universal DFT correction",
+  "claim_evaluations": [
+    {
+      "claim": "A robust common scale improves formula-grouped positive-gap prediction over identity on this fixture.",
+      "claim_bearing_full_run": true,
+      "claim_id": "JG-PRED",
+      "data_sha256": "4b7a5f437b1a41030bb65c31d56eaa9524cc91598bd09ff2825c02df60528631",
+      "evidence_artifacts": [
+        {
+          "artifact_type": "table",
+          "path": "tables/grouped_predictions.csv",
+          "sha256": "66b07bbf514409df5819e94551e273edd32b2ed7330d6ce93f517aa176e99c47"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/predictive_scores.csv",
+          "sha256": "783063600e89f054a672bad7972e95738f34858a19c7de1d6d7a7b33c6bbcb4b"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/predictive_group_elpd_contributions.csv",
+          "sha256": "6546a2826b94b086bfcaf512381ab8a2dc891609be18161f18ce7af90a8e85e7"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/predictive_formula_cluster_bootstrap.csv",
+          "sha256": "92b9873e34e99586fb7ec2e77c3fb085620202082e0f84ff528e1d53b9ee0a6b"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/direct_model_ladder_scores.csv",
+          "sha256": "b7348d1389c8268e59a617dd8f7a5a9b7f73b79a74ac9ff397d57e3ddabbce31"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/direct_model_ladder_predictions.csv",
+          "sha256": "dd7de344a4d25d6c34b453944cfcbd64557f62e0c8891eb5cfe5b6612f4bfcc9"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/influence_and_residuals.csv",
+          "sha256": "da3f7514d8f4efad79b98992298faa06e25ff0efcb9d4a9bea6dfbb7f3600091"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/pairing_permutation_distribution.csv",
+          "sha256": "9d80f186cfcff21383a25c27eedb1cfc43f608f62928c16fad14810eafced49c"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/primary_grid_support_audit.csv",
+          "sha256": "5f01cf8e0696937a00c37ddad627e42701ead9741d0ada45bd5e2263d5a0803f"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/logo_role_manifest.csv",
+          "sha256": "3c949b23230ec80e2c747726fef8c31b1edf2b038c113ec351f5493b833ce2c2"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/logo_role_validation.csv",
+          "sha256": "df627a2df78b81de0d964b9bd8758587d6c6e3c2922ecf97e58628df099760e8"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/heldout_outcome_leakage_audit.csv",
+          "sha256": "c457c4a75a1854ab2a4786bdaac9009781595f5ac321fba58c5e3ceb9287c9f2"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/physical_density_jacobian_audit.csv",
+          "sha256": "08f92b43df93b8ae3a4f11e08da23aa7219b8f6a35a8b1b526250657aa58df4a"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/predictive_grid_refinement_gates.csv",
+          "sha256": "db4c5bcd19ac888dc6759ae6302cbf2fd6571bb7db06b7ccc39c3539d9fdf5c0"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/predictive_grid_refinement_details.csv",
+          "sha256": "25eb84e18ffbd66103d498c55359f22103bf269a05c530d3131116274df0cc20"
+        },
+        {
+          "artifact_type": "claim_bearing_figure",
+          "path": "figures/grouped_predictions.png",
+          "sha256": "a698d6aaa7f8ee521767c3578b596a5ea2107ab12f1f94ebf0186fc372479e89"
+        },
+        {
+          "artifact_type": "claim_bearing_figure",
+          "path": "figures/pairing_permutation_control.png",
+          "sha256": "a8162cd36d2ca54415a47e6793bd005bee983f416a6bf52df48cbbd65ebc4c37"
+        }
+      ],
+      "evidence_class": "fixture_conditional_inference",
+      "evidence_level": "E1",
+      "gates": {
+        "affine_screen_does_not_beat_scale": false,
+        "aggregate_delta_elpd_positive": true,
+        "all_primary_full_and_logo_support_audits_pass": true,
+        "coverage50_90_and_widths_are_emitted": true,
+        "coverage_not_degraded_by_more_than_0p05": true,
+        "direct_scale_screen_rmse_improves_identity": true,
+        "heldout_outcome_leakage_sentinel_passes": true,
+        "logo_role_manifest_has_no_leakage": true,
+        "maximum_group_influence_below_one_graph_sd": true,
+        "mean_log_score_improves": true,
+        "median_formula_delta_elpd_positive": true,
+        "median_point_mae_improves": true,
+        "median_point_rmse_improves": true,
+        "pairing_negative_control_lower_tail_rank_at_most_0p05": true,
+        "physical_density_jacobian_passes": true,
+        "predictive_grid_refinement_passes": true,
+        "registered_formula_bootstrap_q05_delta_elpd_positive": true
+      },
+      "model_config_sha256": "fd153cf88a307b385e09f4d3118d5f2b9f66a2fc75d8b222fa5a59bcd0f852b4",
+      "plain_language_interpretation": "The aggregate held-out graph-minus-identity delta ELPD is 28.654; the affine screen does beat the direct scale screen.",
+      "plain_language_non_claim": "This does not establish a universal DFT band-gap correction, broad transport across formula populations, or coverage of metals and zero-gap materials. The direct Gaussian screen has nonphysical negative-gap tails and is diagnostic only.",
+      "primary_result": {
+        "aggregate_delta_elpd_graph_minus_identity": 28.653995192193086,
+        "formula_bootstrap_q05": 18.5912071163828,
+        "formula_bootstrap_q95": 37.782009123959085,
+        "maximum_absolute_formula_contribution_formula": "GaN",
+        "maximum_absolute_formula_contribution_fraction": 0.0478973745404229
+      },
+      "protocol_timing": "post_outcome_retrospective",
+      "protocol_version": "0.2-retrospective",
+      "qualification": "Aggregate delta ELPD is positive, but the affine screen or another declared scientific gate qualifies the common-scale interpretation.",
+      "source_hashes": {
+        "common_evidence": "3277f8df798847d8b35e9897e6d91d431a6d3cf50dec0d5ff42f32f812e66b5d",
+        "common_geometry": "ea5b9252e250a7a02069ab238080b9dc3509d81ce4430cf8bbca1d0e08661f44",
+        "common_predictive_mixture": "2db977651dee30a7b35296157d6054a9a3dfbeeeebc7588c85e35ab02f371f7e",
+        "common_protocol": "252e258a25ebb3b1bc719c871fd7a8e76449e5bd78a543d748a6cc05711011a9",
+        "protocol_lock": "f1f7a5689eb90c5406f93968aa7c0a09f4a6f566f019134c51b15b884f174d38",
+        "study_analysis": "9ef62ccc31fec6db4bfb503b0b1f494ce0a9bdc0b532fcea49711d4a9882616b"
+      },
+      "status": "MIXED",
+      "timing_class": "registered_reanalysis"
+    },
+    {
+      "claim": "Genuine log/direct/reciprocal pushforwards preserve the complete finite tube, and independently based corrected hard limits recover the geometry graph.",
+      "claim_bearing_full_run": true,
+      "claim_id": "JG-GEOM",
+      "data_sha256": "4b7a5f437b1a41030bb65c31d56eaa9524cc91598bd09ff2825c02df60528631",
+      "evidence_artifacts": [
+        {
+          "artifact_type": "table",
+          "path": "tables/geometry_route_contract.csv",
+          "sha256": "341a7263b6f82d20d67549b70ac44d7966f82323138f218bc66f5f40e2394556"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/geometry_hard_limit_audit.csv",
+          "sha256": "1828971c0601324aeed3dda24ddb2cb4f483691348c8ac3d98388015ebb91cee"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/geometry_finite_pushforward_audit.csv",
+          "sha256": "073b23a4d2711b2eba77f50a864a74597730bb89d60366b8ca06bb988320f9d0"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/geometry_global_support.csv",
+          "sha256": "2747c343554dbf02435341c62fb7a4d8561758fc513bdf8b9956d51f701b67ef"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/rejected_reciprocal_diagnostic.csv",
+          "sha256": "e818d33a4004dcac2af1d233a4562f8ae5bca84670152908464e42f0ad0b1e87"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/detcorr_api_audit.csv",
+          "sha256": "a79147f3c22471d6e094e88b08afd20000313cde3056be685f4c08894405e049"
+        },
+        {
+          "artifact_type": "claim_bearing_figure",
+          "path": "figures/posterior_targets.png",
+          "sha256": "7c655c379d00fb6e2a2e3ad2c1fdb13de0b19de0ef53205b1175d4635be5cd24"
+        }
+      ],
+      "evidence_class": "fixture_conditional_inference",
+      "evidence_level": "E1",
+      "gates": {
+        "all_corrected_hard_routes_match_graph": true,
+        "complete_finite_pushforwards_agree_at_25_points": true,
+        "deliberate_double_counting_control_fails": true,
+        "detcorr_api_absolute_error_below_1e_10": true,
+        "global_support_and_tail_gates_pass": true,
+        "rejected_reciprocal_finite_tube_is_identified_as_divergent": true,
+        "rejected_reciprocal_formal_hard_target_is_computed_not_asserted": true,
+        "rejected_reciprocal_inputs_are_finite_positive": true,
+        "residual_metric_transform_is_pointwise_invariant": true
+      },
+      "model_config_sha256": "fd153cf88a307b385e09f4d3118d5f2b9f66a2fc75d8b222fa5a59bcd0f852b4",
+      "plain_language_interpretation": "The independently evaluated coordinate and measure routes satisfy the declared finite-tube and hard-limit identities.",
+      "plain_language_non_claim": "Measure consistency is not a materials mechanism or evidence that the common-scale model is predictively adequate.",
+      "primary_result": {
+        "all_passed": true,
+        "corrected_hard_vs_graph_max_abs_error": 0.0,
+        "direct_vs_log_centered_max_abs_error": 3.4473828236514237e-09,
+        "double_counting_failure_centered_max_abs_error": 4.063981370842839,
+        "global_support_all_edge_masses_below_1e_10": true,
+        "global_support_all_endpoint_log_drops_above_30": true,
+        "n_hermite_nodes": 256,
+        "n_parameter_points": 25,
+        "reciprocal_vs_log_centered_max_abs_error": 3.4473828236514237e-09,
+        "residual_metric_log_j_max_abs_error": 5.995204332975845e-15,
+        "residual_metric_penalty_max_abs_error": 2.2737367544323206e-13,
+        "rho": 25.0
+      },
+      "protocol_timing": "post_outcome_retrospective",
+      "protocol_version": "0.2-retrospective",
+      "qualification": "The geometry audit uses a fixed direct-energy likelihood separate from the robust scientific primary.",
+      "source_hashes": {
+        "common_evidence": "3277f8df798847d8b35e9897e6d91d431a6d3cf50dec0d5ff42f32f812e66b5d",
+        "common_geometry": "ea5b9252e250a7a02069ab238080b9dc3509d81ce4430cf8bbca1d0e08661f44",
+        "common_predictive_mixture": "2db977651dee30a7b35296157d6054a9a3dfbeeeebc7588c85e35ab02f371f7e",
+        "common_protocol": "252e258a25ebb3b1bc719c871fd7a8e76449e5bd78a543d748a6cc05711011a9",
+        "protocol_lock": "f1f7a5689eb90c5406f93968aa7c0a09f4a6f566f019134c51b15b884f174d38",
+        "study_analysis": "9ef62ccc31fec6db4bfb503b0b1f494ce0a9bdc0b532fcea49711d4a9882616b"
+      },
+      "status": "SUPPORTED",
+      "timing_class": "registered_reanalysis"
+    },
+    {
+      "claim": "The graph-versus-identity formula-LOGO ranking is stable across four protocol-locked retrospective nested calculated-gap subsets, with bootstrap intervals supporting the same direction.",
+      "claim_bearing_full_run": true,
+      "claim_id": "JG-THRESHOLD",
+      "data_sha256": "4b7a5f437b1a41030bb65c31d56eaa9524cc91598bd09ff2825c02df60528631",
+      "evidence_artifacts": [
+        {
+          "artifact_type": "table",
+          "path": "tables/opt_gap_domain_sensitivity.csv",
+          "sha256": "ae419e16c7880bb2cbe828ea6e2b1d6f0b27e41bd93c2b3d9ff4201e549c5388"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/opt_gap_threshold_logo_predictions.csv",
+          "sha256": "3a2302bcd6b96a1b643f7c99a2bbdfec28526b233d2147e63684ccaabeefb931"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/opt_gap_threshold_logo_scores.csv",
+          "sha256": "e29bc33f06f2a164fe78741b96397db245b08f3924591b0f3e6e1eff1e572835"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/opt_gap_threshold_formula_contributions.csv",
+          "sha256": "edde2502cfc92c69db7183c789fb4afaf4fb7fba1451148df6cf6dc08068cb6e"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/opt_gap_threshold_formula_bootstrap.csv",
+          "sha256": "d195463574043857704ddc126428c99c40114da6881baa15d52e38aaa5b6ca31"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/opt_gap_threshold_predictive_evidence.csv",
+          "sha256": "f682c0f841a3d004be0c3bd7c7570c22083815dddde90c44fee0419d9e787d57"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/opt_gap_threshold_grid_support_audit.csv",
+          "sha256": "0d83e041b125f76ceb3a51018aaebacd6f7d09a8b6f0f398760450c7e1f0a1b8"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/opt_gap_threshold_logo_role_manifest.csv",
+          "sha256": "b99890a7656e2dfe84a6a54a06f42272a85792d17e46118a21dbb00b7630b06b"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/opt_gap_threshold_role_validation.csv",
+          "sha256": "d4b46a727f5ec2ccdee59b7f4c0959d381208b107a1c154d3343e9f8950f1172"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/opt_gap_threshold_heldout_leakage_audit.csv",
+          "sha256": "31f5a71c9392ef235c11511bcc9a6131851a988b8260bd281451397e4655cdc2"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/physical_density_jacobian_audit.csv",
+          "sha256": "08f92b43df93b8ae3a4f11e08da23aa7219b8f6a35a8b1b526250657aa58df4a"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/predictive_grid_refinement_gates.csv",
+          "sha256": "db4c5bcd19ac888dc6759ae6302cbf2fd6571bb7db06b7ccc39c3539d9fdf5c0"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/predictive_grid_refinement_details.csv",
+          "sha256": "25eb84e18ffbd66103d498c55359f22103bf269a05c530d3131116274df0cc20"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/opt_gap_threshold_grid_refinement_details.csv",
+          "sha256": "ff573713f2fae9bf45f13788638c2b0bbfd7b955d3418bdfb2282f84fdbe5d4c"
+        }
+      ],
+      "evidence_class": "fixture_conditional_inference",
+      "evidence_level": "E1",
+      "gates": {
+        "each_threshold_has_graph_and_identity_scores": true,
+        "each_threshold_reports_locked_bootstrap": true,
+        "each_threshold_reports_rmse_mae_coverage50_90_and_widths": true,
+        "every_threshold_bootstrap_interval_supports_full_fixture_sign": true,
+        "every_threshold_graph_and_identity_support_audit_passes": true,
+        "every_threshold_heldout_outcome_leakage_sentinel_passes": true,
+        "every_threshold_role_manifest_passes": true,
+        "exact_protocol_locked_thresholds_evaluated": true,
+        "physical_density_jacobian_passes": true,
+        "predictive_ranking_consistent_with_full_fixture": true,
+        "primary_and_threshold_grid_refinement_passes": true,
+        "threshold_posterior_scale_range_is_reported": true
+      },
+      "model_config_sha256": "fd153cf88a307b385e09f4d3118d5f2b9f66a2fc75d8b222fa5a59bcd0f852b4",
+      "plain_language_interpretation": "The reported status follows the sign of the complete threshold-specific held-out comparison, not posterior movement alone.",
+      "plain_language_non_claim": "The nested thresholds do not define an optimal materials domain, were not used to select the primary dataset, and are not independent-domain replications.",
+      "primary_result": {
+        "aggregate_delta_elpd_by_threshold": {
+          "0.0": 28.653995192193086,
+          "0.25": 35.96246778780194,
+          "0.5": 39.823013496580195,
+          "1.0": 31.984518738344605
+        },
+        "bootstrap_q05_delta_elpd_by_threshold": {
+          "0.0": 18.5912071163828,
+          "0.25": 26.25441000690087,
+          "0.5": 31.59959643160802,
+          "1.0": 24.25202317034167
+        },
+        "bootstrap_q95_delta_elpd_by_threshold": {
+          "0.0": 37.782009123959085,
+          "0.25": 44.9403482681697,
+          "0.5": 47.259328255207855,
+          "1.0": 39.40234323312707
+        },
+        "posterior_gamma_mean_range": 0.15150324147574112
+      },
+      "protocol_timing": "post_outcome_retrospective",
+      "protocol_version": "0.2-retrospective",
+      "qualification": "All four nested subsets preserve the full-fixture aggregate-score sign, and each 90% bootstrap interval excludes zero in that direction; this is within-fixture subset sensitivity, not independent-domain replication.",
+      "source_hashes": {
+        "common_evidence": "3277f8df798847d8b35e9897e6d91d431a6d3cf50dec0d5ff42f32f812e66b5d",
+        "common_geometry": "ea5b9252e250a7a02069ab238080b9dc3509d81ce4430cf8bbca1d0e08661f44",
+        "common_predictive_mixture": "2db977651dee30a7b35296157d6054a9a3dfbeeeebc7588c85e35ab02f371f7e",
+        "common_protocol": "252e258a25ebb3b1bc719c871fd7a8e76449e5bd78a543d748a6cc05711011a9",
+        "protocol_lock": "f1f7a5689eb90c5406f93968aa7c0a09f4a6f566f019134c51b15b884f174d38",
+        "study_analysis": "9ef62ccc31fec6db4bfb503b0b1f494ce0a9bdc0b532fcea49711d4a9882616b"
+      },
+      "status": "SUPPORTED",
+      "timing_class": "registered_reanalysis"
+    }
+  ],
+  "data": {
+    "bundled_fixture_expected_sha256": "4b7a5f437b1a41030bb65c31d56eaa9524cc91598bd09ff2825c02df60528631",
+    "input_sha256": "4b7a5f437b1a41030bb65c31d56eaa9524cc91598bd09ff2825c02df60528631",
+    "is_bundled_pinned_fixture": true,
+    "manifest": {
+      "dataset_id": "jarvis-docs-positive-band-gaps-54",
+      "dataset_name": "Pinned JARVIS documentation positive-band-gap comparison fixture",
+      "deduplication_rule": "Require unique normalized jvasp_id; distinct structures remain distinct rows.",
+      "dependent_observation_columns": [
+        "bandgap_expt_ev"
+      ],
+      "evidence_timing_class": "registered_reanalysis",
+      "grouping_key": "formula",
+      "grouping_rule": "Leave one complete normalized formula group out; polymorph rows for AlN, CdS, GaN, and TiO2 are held together.",
+      "known_source_dependence": "Experimental source and protocol dependence is unresolved; same-formula structures are not treated as independent groups.",
+      "license_identifier": "CC-BY-4.0",
+      "license_source_url": "https://www.nature.com/articles/sdata201882#rightslink",
+      "license_status": "CC BY 4.0. The exact 54-material comparison is Table 3 of Choudhary et al., Scientific Data 5, 180082 (2018); the article's rights statement permits use, adaptation, distribution, and reproduction with attribution, a licence link, and an indication of changes. The article's third-party-material qualification remains applicable.",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "n_formula_groups": 50,
+      "n_rows": 54,
+      "preparation": "Byte-identical copy of the checksum-pinned 54-row tutorial transcription adapted from Choudhary et al. Table 3: OPT and experimental columns selected and renamed, identifiers and labels normalized, provenance columns added, and all 54 finite positive pairs retained. The source table does not resolve fundamental versus optical measurement type row by row.",
+      "processed_bytes": 11792,
+      "processed_filename": "jarvis_bandgap_benchmark_fixture.csv",
+      "processed_sha256": "4b7a5f437b1a41030bb65c31d56eaa9524cc91598bd09ff2825c02df60528631",
+      "protocol_timing": "post_outcome_retrospective",
+      "protocol_version": "0.2-retrospective",
+      "raw_bytes": "unknown: no immutable upstream raw snapshot was retained",
+      "raw_filename": "unknown: the upstream HTML/source snapshot was not retained; this CSV is the pinned processed transcription",
+      "raw_sha256": "unknown: no immutable upstream raw snapshot was retained",
+      "redistribution_decision": "Bundled as adapted CC BY 4.0 third-party data with source attribution, licence link, and a notice that columns were selected/renamed, identifiers and labels normalized, provenance columns added, and the analysis retained the 54 finite positive OPT/experimental pairs. The repository MIT licence is not applied to the fixture.",
+      "reference_input_columns": [
+        "bandgap_opt_ev"
+      ],
+      "repository_license_applies": false,
+      "retrieval_date": "2026-07-11",
+      "retrieval_method": "manual transcription of the JARVIS-DFT documentation reproduction of Choudhary et al. Table 3, inherited byte-for-byte from the corrected unpublished worked example",
+      "retrieval_timestamp_utc": "unknown: the date 2026-07-11 is recorded but the clock time is not",
+      "rights_basis": "Adapted extraction of a CC BY 4.0 article table, with no contrary third-party credit line attached to the table.",
+      "rights_checked_date": "2026-07-12",
+      "row_count": 54,
+      "row_identity_key": "jvasp_id",
+      "schema_version": "1.0",
+      "scientific_limit": "The positive-domain fixture excludes metallic/zero-gap cases and lacks source-level uncertainty, temperature and protocol metadata.",
+      "selection_rule": "Retain rows only when same-row OPT and tabulated experimental gaps are finite and strictly positive; no epsilon replacement, imputation, clipping, or residual-based filtering.",
+      "sha256": "4b7a5f437b1a41030bb65c31d56eaa9524cc91598bd09ff2825c02df60528631",
+      "source_citation": "K. Choudhary et al., Computational screening of high-performance optoelectronic materials using OptB88vdW and TB-mBJ formalisms, Scientific Data 5, 180082 (2018), https://doi.org/10.1038/sdata.2018.82, Table 3; JARVIS-DFT documentation reproduction. Row-level experimental source citations are not present in this compact fixture.",
+      "source_name": "Table 3 of Choudhary et al., Scientific Data 5, 180082 (2018), as reproduced in the JARVIS-DFT documentation (experimental measurement type unresolved)",
+      "source_row_key": "jvasp_id as transcribed; upstream snapshot needed to revalidate immutability",
+      "source_url": "https://jarvis-materials-design.github.io/dbdocs/jarvisdft/",
+      "source_url_or_accession": "https://jarvis-materials-design.github.io/dbdocs/jarvisdft/",
+      "study_role": "retrospective registered reanalysis fixture",
+      "third_party_notice": "../../../THIRD_PARTY_NOTICES.md",
+      "transform_code_commit": "not recorded; analysis source SHA256 is emitted per claim",
+      "units": {
+        "bandgap_expt_ev": "eV",
+        "bandgap_opt_ev": "eV"
+      },
+      "version": "1.0-pinned-transcription"
+    },
+    "n_formula_groups": 50,
+    "n_rows": 54,
+    "source_url": "https://jarvis-materials-design.github.io/dbdocs/jarvisdft/",
+    "upstream_redistribution_terms": "CC BY 4.0. The exact 54-material comparison is Table 3 of Choudhary et al., Scientific Data 5, 180082 (2018); the article's rights statement permits use, adaptation, distribution, and reproduction with attribution, a licence link, and an indication of changes. The article's third-party-material qualification remains applicable."
+  },
+  "detcorr_api_audit": {
+    "absolute_error": 0.0,
+    "analytic_logabsdet": -38.65046967921073,
+    "api_logabsdet": -38.65046967921073,
+    "detcorr_version": "0.10.0",
+    "method": "diagonal",
+    "structure": "diagonal"
+  },
+  "diagnostics": {
+    "maximum_absolute_omit_group_shift_graph_sd": 0.30846150050762405,
+    "spearman_opt_vs_expt": 0.8808257602767071,
+    "spearman_opt_vs_primary_log_residual": -0.5914462152654003
+  },
+  "direct_model_ladder_negative_q05_counts": {
+    "affine_direct": 7,
+    "identity": 42,
+    "scale_direct": 17
+  },
+  "direct_model_ladder_scores": [
+    {
+      "coverage50": 0.5555555555555556,
+      "coverage90": 0.9074074074074074,
+      "mae_ev": 0.5775291813582675,
+      "mean_log_predictive_density_per_ev": -1.121076055055617,
+      "model": "affine_direct",
+      "n_heldout": 54,
+      "rmse_ev": 0.7286034726384161
+    },
+    {
+      "coverage50": 0.4444444444444444,
+      "coverage90": 0.9074074074074074,
+      "mae_ev": 1.329074074074074,
+      "mean_log_predictive_density_per_ev": -1.9193456117721515,
+      "model": "identity",
+      "n_heldout": 54,
+      "rmse_ev": 1.6178352019722966
+    },
+    {
+      "coverage50": 0.5555555555555556,
+      "coverage90": 0.9259259259259259,
+      "mae_ev": 0.615901256955929,
+      "mean_log_predictive_density_per_ev": -1.2727876378800451,
+      "model": "scale_direct",
+      "n_heldout": 54,
+      "rmse_ev": 0.8353005659860333
+    }
+  ],
+  "geometry_diagnostic": {
+    "computed_gate_statistics": {
+      "all_passed": true,
+      "corrected_hard_vs_graph_max_abs_error": 0.0,
+      "direct_vs_log_centered_max_abs_error": 3.4473828236514237e-09,
+      "double_counting_failure_centered_max_abs_error": 4.063981370842839,
+      "global_support_all_edge_masses_below_1e_10": true,
+      "global_support_all_endpoint_log_drops_above_30": true,
+      "n_hermite_nodes": 256,
+      "n_parameter_points": 25,
+      "reciprocal_vs_log_centered_max_abs_error": 3.4473828236514237e-09,
+      "residual_metric_log_j_max_abs_error": 5.995204332975845e-15,
+      "residual_metric_penalty_max_abs_error": 2.2737367544323206e-13,
+      "rho": 25.0
+    },
+    "graph": {
+      "gamma_mean": 1.7527235465011808,
+      "gamma_q005": 1.6869335183880207,
+      "gamma_q05": 1.7106476445076417,
+      "gamma_q50": 1.752736770573376,
+      "gamma_q95": 1.7944288556499568,
+      "gamma_q995": 1.8187897527389805,
+      "gamma_sd": 0.024986828197155964,
+      "local_window_mass": 0.9999999999999721,
+      "mode_gamma": 1.750672500296105,
+      "mode_mu": 0.5600000000000023
+    },
+    "independent_direct_lebesgue_naive": {
+      "gamma_mean": 1.7717561496544334,
+      "gamma_q005": 1.7069728824095887,
+      "gamma_q05": 1.7299002181821457,
+      "gamma_q50": 1.7717607524802363,
+      "gamma_q95": 1.813106381901464,
+      "gamma_q995": 1.8374901347388233,
+      "gamma_sd": 0.024853676872738713,
+      "local_window_mass": 1.0000000000000546,
+      "mode_gamma": 1.7682670514337482,
+      "mode_mu": 0.5700000000000074
+    },
+    "independent_reciprocal_lebesgue_naive": {
+      "gamma_mean": 1.7332681127195855,
+      "gamma_q005": 1.6672443571681723,
+      "gamma_q05": 1.691311852361934,
+      "gamma_q50": 1.7332660043682406,
+      "gamma_q95": 1.7754425691325473,
+      "gamma_q995": 1.799660661033106,
+      "gamma_sd": 0.025128276063284622,
+      "local_window_mass": 0.9999999999999513,
+      "mode_gamma": 1.7332530178673904,
+      "mode_mu": 0.5499999999999972
+    },
+    "likelihood": "fixed direct-energy Gaussian; sigma=sqrt(0.12^2+(0.15 E_OPT)^2)",
+    "rejected_reciprocal": {
+      "all_reference_inputs_finite_positive": true,
+      "construction": "u=E0/E; c=1/u-gamma*x under Lebesgue du",
+      "finite_penalty_integral": "diverges because as u tends to infinity, E0/u tends to zero, the OPT-conditioned direct likelihood tends to a positive finite value, and c tends to -gamma*x; the integrand therefore tends to a positive constant for every finite gamma and rho",
+      "finite_tube_proper": false,
+      "formal_naive_hard_computed_globally": true,
+      "formal_naive_hard_global_mu_max": 20.0,
+      "formal_naive_hard_global_mu_min": -120.0,
+      "formal_naive_hard_local_window_mass": 0.0,
+      "formal_naive_hard_logdensity_formula": "geometry_graph_logdensity - 2*n*mu + constant independent of mu",
+      "formal_naive_hard_lower_edge_mass_1pct": 0.0,
+      "formal_naive_hard_lower_endpoint_log_drop": 3120.5,
+      "formal_naive_hard_mode_gamma": 4.136282803014549e-27,
+      "formal_naive_hard_mode_mu": -60.75,
+      "formal_naive_hard_n_grid_points": 28001,
+      "formal_naive_hard_remote_minus_local_max_logdensity": 877.8700484396131,
+      "formal_naive_hard_upper_edge_mass_1pct": 0.0,
+      "formal_naive_hard_upper_endpoint_log_drop": 1.885151912247858e+20,
+      "hard_limit_mass_behavior": "remote under the extension geometry likelihood/prior; this formal hard-target location is model-dependent and cannot rescue a route whose finite-rho defining integral is improper",
+      "n_positive_reference_inputs": 54,
+      "status": "rejected_not_an_active_target"
+    },
+    "scientific_role": "separate coordinate/measure audit; not the primary model"
+  },
+  "grid": {
+    "mode": "full",
+    "n_eta": 321,
+    "n_mu": 641
+  },
+  "heldout_outcome_leakage_sentinel": {
+    "all_passed": true,
+    "graph_fit_max_abs_error": 0.0,
+    "identity_fit_max_abs_error": 0.0,
+    "n_heldout_rows_perturbed": 54,
+    "predictive_quantile_max_abs_error": 0.0
+  },
+  "implementation_checks": {
+    "all_claim_gates_are_boolean": true,
+    "all_passed": true,
+    "claim_bearing_full_run_uses_2000_bootstraps_and_permutations": true,
+    "detcorr_api_matches_analytic_result": true,
+    "formula_logo_role_manifest_all_passed": true,
+    "geometry_contract_all_passed": true,
+    "heldout_outcome_leakage_sentinel_all_passed": true,
+    "locked_resampling_seed_used": true,
+    "physical_density_minus_log_y_jacobian_all_passed": true,
+    "positive_gap_delta_elpd_with_better_affine_screen_maps_to_mixed": true,
+    "primary_and_threshold_predictive_grid_refinement_all_passed": true,
+    "primary_full_and_logo_support_all_passed": true,
+    "sole_scientific_posterior_is_graph_primary": true,
+    "threshold_domain_outputs_are_complete": true,
+    "threshold_formula_logo_role_manifests_all_passed": true,
+    "threshold_heldout_outcome_leakage_sentinels_all_passed": true
+  },
+  "limitations": [
+    "The 54-row positive-gap documentation fixture is small and heterogeneous.",
+    "Metallic and zero-gap records are outside this positive-domain calibration.",
+    "The source labels the response as an experimental gap but does not resolve fundamental-versus-optical measurement type row by row.",
+    "Experimental uncertainty, temperature, phase, and measurement-protocol metadata are unavailable in the fixture.",
+    "The primary discrepancy is a model for aggregate calibration error, not a measured experimental error law.",
+    "The direct Gaussian identity/scale/affine ladder is an adequacy screen with unbounded physical-eV support and nonphysical negative-gap tails, not a positive-gap generative model.",
+    "LOGO evaluates interpolation across represented material types, not transport to a new database or functional.",
+    "The pairing permutation is a negative-control diagnostic; heterogeneous formula groups are not asserted exchangeable for formal hypothesis testing."
+  ],
+  "logo_role_manifest_validation": {
+    "all_passed": true,
+    "every_row_is_held_out_exactly_once": true,
+    "heldout_sets_match_formula_groups": true,
+    "n_folds": 50,
+    "n_manifest_rows": 2700,
+    "n_source_rows": 54,
+    "no_training_heldout_overlap_within_fold": true,
+    "protocol_hash": "fd153cf88a307b385e09f4d3118d5f2b9f66a2fc75d8b222fa5a59bcd0f852b4",
+    "single_protocol_hash": true,
+    "training_sets_are_exact_complements": true
+  },
+  "negative_control": {
+    "lower_tail_rank_fraction_with_plus_one": 0.0004997501249375312,
+    "n_formula_groups": 50,
+    "n_permutations": 2000,
+    "observed_logo_log_rmse": 0.7992309391526402,
+    "permutation_median": 1.617063032157013,
+    "permutation_q05": 1.4327917990605,
+    "permutation_q95": 1.7745293929520556,
+    "seed": 20260711
+  },
+  "physical_density_jacobian_audit": {
+    "all_passed": true,
+    "expected_log_density_shift": -1.9810014688665833,
+    "graph_absolute_error": 4.440892098500626e-16,
+    "identity_absolute_error": 0.0,
+    "physical_scale_factor": 7.25
+  },
+  "posterior": {
+    "primary_graph": {
+      "gamma_mean": 1.7278827778506771,
+      "gamma_q05": 1.5811736589507566,
+      "gamma_q50": 1.722994728681574,
+      "gamma_q95": 1.891235526856345,
+      "gamma_sd": 0.09465695555237351,
+      "lower_mu_edge_mass_2pct": 2.60595562824541e-40,
+      "tau_log_ratio_mean": 0.34821323101261187,
+      "upper_mu_edge_mass_2pct": 8.240966389578616e-21
+    }
+  },
+  "predictive_evidence": {
+    "aggregate_delta_elpd": 28.653995192193086,
+    "bootstrap_q05_delta_elpd": 18.5912071163828,
+    "bootstrap_q95_delta_elpd": 37.782009123959085,
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 20260711,
+    "maximum_absolute_formula_contribution_formula": "GaN",
+    "maximum_absolute_formula_contribution_fraction": 0.0478973745404229,
+    "mean_formula_delta_elpd": 0.5730799038438618,
+    "median_formula_delta_elpd": 0.7940777829892762,
+    "n_formula_clusters": 50,
+    "total_absolute_formula_delta_elpd": 45.12367975860933
+  },
+  "predictive_grid_refinement": {
+    "active_grid_mode": "full",
+    "active_grid_shape": [
+      641,
+      321
+    ],
+    "aggregate_delta_elpd_abs_difference": 2.842170943040401e-14,
+    "all_passed": true,
+    "comparison_grid_mode": "standard",
+    "comparison_grid_shape": [
+      321,
+      181
+    ],
+    "gates": {
+      "aggregate_delta_elpd_abs_difference_below_1e_minus_10": true,
+      "all_mixture_cdf_routes_are_exact": true,
+      "mixture_cdf_root_residual_below_1e_10": true,
+      "posterior_gamma_mean_abs_difference_below_1e_minus_10": true,
+      "posterior_log_gamma_quantile_refinement_within_declared_tolerance": true,
+      "posterior_tau_mean_abs_difference_below_1e_minus_10": true,
+      "primary_coverage_decisions_identical": true,
+      "primary_logratio_quantile_abs_difference_below_1e_minus_10": true,
+      "primary_row_log_density_abs_difference_below_1e_minus_10": true,
+      "threshold_coverage_decisions_identical": true,
+      "threshold_delta_elpd_max_abs_difference_below_1e_minus_10": true,
+      "threshold_gamma_mean_max_abs_difference_below_1e_minus_10": true,
+      "threshold_log_gamma_quantile_refinement_within_declared_tolerance": true,
+      "threshold_logratio_quantile_abs_difference_below_1e_minus_10": true,
+      "threshold_row_log_density_abs_difference_below_1e_minus_10": true
+    },
+    "posterior_gamma_mean_abs_difference": 1.3322676295501878e-15,
+    "posterior_gamma_quantile_max_abs_difference": 0.0006862512068126492,
+    "posterior_log_gamma_quantile_max_abs_difference": 0.00037184142373614115,
+    "posterior_log_gamma_quantile_tolerance": 0.001,
+    "posterior_tau_mean_abs_difference": 2.220446049250313e-16,
+    "primary_endpoints": {
+      "all_quantile_routes_exact": true,
+      "coverage_decision_mismatch_count": 0,
+      "max_abs_cdf_root_residual": 1.8773871346411397e-13,
+      "max_abs_log_predictive_density_difference": 1.3322676295501878e-14,
+      "max_abs_logratio_quantile_difference": 5.773159728050814e-15,
+      "n_prediction_rows": 108
+    },
+    "threshold_aggregate_delta_elpd_max_abs_difference": 3.552713678800501e-14,
+    "threshold_endpoints": {
+      "all_quantile_routes_exact": true,
+      "coverage_decision_mismatch_count": 0,
+      "max_abs_cdf_root_residual": 4.808375919651553e-13,
+      "max_abs_log_predictive_density_difference": 1.3322676295501878e-14,
+      "max_abs_logratio_quantile_difference": 5.773159728050814e-15,
+      "n_prediction_rows": 366
+    },
+    "threshold_gamma_mean_max_abs_difference": 1.3322676295501878e-15,
+    "threshold_gamma_quantile_max_abs_difference": 0.0011158458720046394,
+    "threshold_log_gamma_quantile_max_abs_difference": 0.0006657318129735801
+  },
+  "predictive_protocol": "leave one complete formula group out; every prior and discrepancy choice fixed in code before evaluating that group",
+  "predictive_scores": [
+    {
+      "coverage50": 0.5925925925925926,
+      "coverage90": 0.8888888888888888,
+      "mae_point_prediction_ev": 0.7550353691817159,
+      "mean_interval50_width_ev": 1.8101826848282614,
+      "mean_interval90_width_ev": 5.781904110954035,
+      "mean_log_predictive_density_per_ev": -1.7827925294806188,
+      "model": "graph_primary",
+      "n_heldout": 54,
+      "rmse_point_prediction_ev": 1.0126858304945718
+    },
+    {
+      "coverage50": 0.5,
+      "coverage90": 0.8888888888888888,
+      "mae_point_prediction_ev": 1.3290740740740736,
+      "mean_interval50_width_ev": 2.1843686651718164,
+      "mean_interval90_width_ev": 8.84142663946501,
+      "mean_log_predictive_density_per_ev": -2.313422070076787,
+      "model": "identity",
+      "n_heldout": 54,
+      "rmse_point_prediction_ev": 1.6178352019722966
+    }
+  ],
+  "primary_estimand": "common positive scale gamma under a normalized Student-t(4) log-ratio discrepancy, with full-support Gaussian priors and density with respect to dlog(gamma) dlog(tau); local quadrature is verified by a broad-grid audit",
+  "protocol": {
+    "configuration": {
+      "bootstrap_replicates": 2000,
+      "claim_rules": {
+        "affine_rmse_must_not_beat_scale_for_supported_primary": true,
+        "coverage90_maximum_degradation": 0.05,
+        "direct_scale_rmse_must_improve_identity": true,
+        "maximum_formula_influence_graph_sd": 1.0,
+        "pairing_lower_tail_rank_maximum": 0.05,
+        "point_error_requirement": "both_median_rmse_and_mae_improve",
+        "substantial_case_concentration_fraction": 0.5,
+        "threshold_bootstrap90_must_exclude_zero_in_full_fixture_direction": true,
+        "threshold_point_sign_must_match_full_fixture": true
+      },
+      "comparison_model": "identity_with_student_t4_log_ratio_discrepancy",
+      "coverage_levels": [
+        0.5,
+        0.9
+      ],
+      "grid_mode": "full",
+      "grid_refinement": {
+        "coverage_mismatches_allowed": 0,
+        "density_quantile_and_elpd_tolerance": 1e-10,
+        "full_comparison": "standard",
+        "posterior_log_gamma_quantile_tolerance_full": 0.001,
+        "posterior_log_gamma_quantile_tolerance_nonclaim": 0.003,
+        "quick_comparison": "standard",
+        "standard_comparison": "quick"
+      },
+      "grid_shape": [
+        641,
+        321
+      ],
+      "grouping": "leave_one_formula_group_out",
+      "opt_gap_thresholds_ev": [
+        0.0,
+        0.25,
+        0.5,
+        1.0
+      ],
+      "permutation_replicates": 2000,
+      "predictive_quantiles": {
+        "brent_rtol": 1.7763568394002505e-15,
+        "brent_xtol": 1e-12,
+        "component_limit": null,
+        "method": "exact_finite_mixture_cdf_inversion_in_log_ratio",
+        "probabilities": [
+          0.05,
+          0.25,
+          0.5,
+          0.75,
+          0.95
+        ]
+      },
+      "primary_model": "student_t4_log_ratio_common_scale",
+      "priors": {
+        "eta": "Normal(log(0.45),0.75^2) with respect to deta",
+        "mu": "Normal(0,0.75^2) with respect to dmu"
+      },
+      "protocol_version": "0.2-retrospective",
+      "resampling_seed": 20260711,
+      "study": "jarvis_band_gaps"
+    },
+    "evidence_level": "E1",
+    "model_config_sha256": "fd153cf88a307b385e09f4d3118d5f2b9f66a2fc75d8b222fa5a59bcd0f852b4",
+    "protocol_timing": "post_outcome_retrospective",
+    "timing_class": "registered_reanalysis",
+    "version": "0.2-retrospective"
+  },
+  "threshold_heldout_outcome_leakage_sentinels": [
+    {
+      "all_passed": true,
+      "graph_fit_max_abs_error": 0.0,
+      "identity_fit_max_abs_error": 0.0,
+      "minimum_opt_gap_ev": 0.0,
+      "n_formula_groups": 50,
+      "n_heldout_rows_perturbed": 54,
+      "n_rows": 54,
+      "predictive_quantile_max_abs_error": 0.0
+    },
+    {
+      "all_passed": true,
+      "graph_fit_max_abs_error": 0.0,
+      "identity_fit_max_abs_error": 0.0,
+      "minimum_opt_gap_ev": 0.25,
+      "n_formula_groups": 44,
+      "n_heldout_rows_perturbed": 48,
+      "n_rows": 48,
+      "predictive_quantile_max_abs_error": 0.0
+    },
+    {
+      "all_passed": true,
+      "graph_fit_max_abs_error": 0.0,
+      "identity_fit_max_abs_error": 0.0,
+      "minimum_opt_gap_ev": 0.5,
+      "n_formula_groups": 42,
+      "n_heldout_rows_perturbed": 46,
+      "n_rows": 46,
+      "predictive_quantile_max_abs_error": 0.0
+    },
+    {
+      "all_passed": true,
+      "graph_fit_max_abs_error": 0.0,
+      "identity_fit_max_abs_error": 0.0,
+      "minimum_opt_gap_ev": 1.0,
+      "n_formula_groups": 32,
+      "n_heldout_rows_perturbed": 35,
+      "n_rows": 35,
+      "predictive_quantile_max_abs_error": 0.0
+    }
+  ],
+  "threshold_predictive_evidence": [
+    {
+      "aggregate_delta_elpd": 28.653995192193086,
+      "bootstrap_q05_delta_elpd": 18.5912071163828,
+      "bootstrap_q95_delta_elpd": 37.782009123959085,
+      "bootstrap_replicates": 2000,
+      "bootstrap_seed": 20260711,
+      "maximum_absolute_formula_contribution_formula": "GaN",
+      "maximum_absolute_formula_contribution_fraction": 0.0478973745404229,
+      "mean_formula_delta_elpd": 0.5730799038438618,
+      "median_formula_delta_elpd": 0.7940777829892762,
+      "minimum_opt_gap_ev": 0.0,
+      "n_formula_clusters": 50,
+      "n_formula_groups": 50,
+      "n_rows": 54,
+      "total_absolute_formula_delta_elpd": 45.12367975860933
+    },
+    {
+      "aggregate_delta_elpd": 35.96246778780194,
+      "bootstrap_q05_delta_elpd": 26.25441000690087,
+      "bootstrap_q95_delta_elpd": 44.9403482681697,
+      "bootstrap_replicates": 2000,
+      "bootstrap_seed": 20260711,
+      "maximum_absolute_formula_contribution_formula": "GaN",
+      "maximum_absolute_formula_contribution_fraction": 0.05813073425404799,
+      "mean_formula_delta_elpd": 0.817328813359135,
+      "median_formula_delta_elpd": 1.015244496522905,
+      "minimum_opt_gap_ev": 0.25,
+      "n_formula_clusters": 44,
+      "n_formula_groups": 44,
+      "n_rows": 48,
+      "total_absolute_formula_delta_elpd": 45.91199107868866
+    },
+    {
+      "aggregate_delta_elpd": 39.823013496580195,
+      "bootstrap_q05_delta_elpd": 31.59959643160802,
+      "bootstrap_q95_delta_elpd": 47.259328255207855,
+      "bootstrap_replicates": 2000,
+      "bootstrap_seed": 20260711,
+      "maximum_absolute_formula_contribution_formula": "GaN",
+      "maximum_absolute_formula_contribution_fraction": 0.06340770548884846,
+      "mean_formula_delta_elpd": 0.9481669880138142,
+      "median_formula_delta_elpd": 1.1108206566073449,
+      "minimum_opt_gap_ev": 0.5,
+      "n_formula_clusters": 42,
+      "n_formula_groups": 42,
+      "n_rows": 46,
+      "total_absolute_formula_delta_elpd": 44.52393892305306
+    },
+    {
+      "aggregate_delta_elpd": 31.984518738344605,
+      "bootstrap_q05_delta_elpd": 24.25202317034167,
+      "bootstrap_q95_delta_elpd": 39.40234323312707,
+      "bootstrap_replicates": 2000,
+      "bootstrap_seed": 20260711,
+      "maximum_absolute_formula_contribution_formula": "TiO2",
+      "maximum_absolute_formula_contribution_fraction": 0.07757756323629995,
+      "mean_formula_delta_elpd": 0.9995162105732689,
+      "median_formula_delta_elpd": 1.2152918909497505,
+      "minimum_opt_gap_ev": 1.0,
+      "n_formula_clusters": 32,
+      "n_formula_groups": 32,
+      "n_rows": 35,
+      "total_absolute_formula_delta_elpd": 36.06542094341633
+    }
+  ],
+  "threshold_predictive_scores": [
+    {
+      "coverage50": 0.5925925925925926,
+      "coverage90": 0.8888888888888888,
+      "mae_point_prediction_ev": 0.7550353691817159,
+      "mean_interval50_width_ev": 1.8101826848282614,
+      "mean_interval90_width_ev": 5.781904110954035,
+      "mean_log_predictive_density_per_ev": -1.7827925294806188,
+      "minimum_opt_gap_ev": 0.0,
+      "model": "graph_primary",
+      "n_heldout": 54,
+      "rmse_point_prediction_ev": 1.0126858304945718
+    },
+    {
+      "coverage50": 0.5,
+      "coverage90": 0.8888888888888888,
+      "mae_point_prediction_ev": 1.3290740740740736,
+      "mean_interval50_width_ev": 2.1843686651718164,
+      "mean_interval90_width_ev": 8.84142663946501,
+      "mean_log_predictive_density_per_ev": -2.313422070076787,
+      "minimum_opt_gap_ev": 0.0,
+      "model": "identity",
+      "n_heldout": 54,
+      "rmse_point_prediction_ev": 1.6178352019722966
+    },
+    {
+      "coverage50": 0.6041666666666666,
+      "coverage90": 0.9166666666666666,
+      "mae_point_prediction_ev": 0.686298731169019,
+      "mean_interval50_width_ev": 1.296065582377455,
+      "mean_interval90_width_ev": 3.9350022589626548,
+      "mean_log_predictive_density_per_ev": -1.4127152982853506,
+      "minimum_opt_gap_ev": 0.25,
+      "model": "graph_primary",
+      "n_heldout": 48,
+      "rmse_point_prediction_ev": 0.8997913346578021
+    },
+    {
+      "coverage50": 0.3958333333333333,
+      "coverage90": 0.9375,
+      "mae_point_prediction_ev": 1.4104166666666667,
+      "mean_interval50_width_ev": 1.898470332526502,
+      "mean_interval90_width_ev": 6.838487251240042,
+      "mean_log_predictive_density_per_ev": -2.1619333771978906,
+      "minimum_opt_gap_ev": 0.25,
+      "model": "identity",
+      "n_heldout": 48,
+      "rmse_point_prediction_ev": 1.6843693181722352
+    },
+    {
+      "coverage50": 0.4782608695652174,
+      "coverage90": 0.9130434782608695,
+      "mae_point_prediction_ev": 0.5903564604264185,
+      "mean_interval50_width_ev": 1.1518783337039948,
+      "mean_interval90_width_ev": 3.4547678896267606,
+      "mean_log_predictive_density_per_ev": -1.1588132498335275,
+      "minimum_opt_gap_ev": 0.5,
+      "model": "graph_primary",
+      "n_heldout": 46,
+      "rmse_point_prediction_ev": 0.7340825189039948
+    },
+    {
+      "coverage50": 0.3695652173913043,
+      "coverage90": 0.9782608695652174,
+      "mae_point_prediction_ev": 1.3528260869565218,
+      "mean_interval50_width_ev": 1.7888892913578878,
+      "mean_interval90_width_ev": 6.233223447634017,
+      "mean_log_predictive_density_per_ev": -2.0245309345417932,
+      "minimum_opt_gap_ev": 0.5,
+      "model": "identity",
+      "n_heldout": 46,
+      "rmse_point_prediction_ev": 1.6227184652278115
+    },
+    {
+      "coverage50": 0.42857142857142855,
+      "coverage90": 0.8857142857142857,
+      "mae_point_prediction_ev": 0.5985444903454126,
+      "mean_interval50_width_ev": 1.2148812551566375,
+      "mean_interval90_width_ev": 3.6377726925035434,
+      "mean_log_predictive_density_per_ev": -1.246748225606938,
+      "minimum_opt_gap_ev": 1.0,
+      "model": "graph_primary",
+      "n_heldout": 35,
+      "rmse_point_prediction_ev": 0.7009039667189949
+    },
+    {
+      "coverage50": 0.34285714285714286,
+      "coverage90": 1.0,
+      "mae_point_prediction_ev": 1.5257142857142858,
+      "mean_interval50_width_ev": 2.000311495518335,
+      "mean_interval90_width_ev": 6.866057371310628,
+      "mean_log_predictive_density_per_ev": -2.16059161813107,
+      "minimum_opt_gap_ev": 1.0,
+      "model": "identity",
+      "n_heldout": 35,
+      "rmse_point_prediction_ev": 1.772950728507221
+    }
+  ],
+  "threshold_role_manifest_validation": [
+    {
+      "all_passed": true,
+      "every_row_is_held_out_exactly_once": true,
+      "heldout_sets_match_formula_groups": true,
+      "minimum_opt_gap_ev": 0.0,
+      "n_folds": 50,
+      "n_manifest_rows": 2700,
+      "n_source_rows": 54,
+      "no_training_heldout_overlap_within_fold": true,
+      "protocol_hash": "a9f4bbde140092e46ae71c530d3901c0cedf9fbf540e67a0dfe2fb36238b7bac",
+      "single_protocol_hash": true,
+      "training_sets_are_exact_complements": true
+    },
+    {
+      "all_passed": true,
+      "every_row_is_held_out_exactly_once": true,
+      "heldout_sets_match_formula_groups": true,
+      "minimum_opt_gap_ev": 0.25,
+      "n_folds": 44,
+      "n_manifest_rows": 2112,
+      "n_source_rows": 48,
+      "no_training_heldout_overlap_within_fold": true,
+      "protocol_hash": "e35729ac5b36e928cd9d409b4b0434554742a6acd8934ef3934d1e6e3818d1f3",
+      "single_protocol_hash": true,
+      "training_sets_are_exact_complements": true
+    },
+    {
+      "all_passed": true,
+      "every_row_is_held_out_exactly_once": true,
+      "heldout_sets_match_formula_groups": true,
+      "minimum_opt_gap_ev": 0.5,
+      "n_folds": 42,
+      "n_manifest_rows": 1932,
+      "n_source_rows": 46,
+      "no_training_heldout_overlap_within_fold": true,
+      "protocol_hash": "1b56d4ee1a5757f55961fffd75241b4777273448bdc08ceb7636fb6153f206a0",
+      "single_protocol_hash": true,
+      "training_sets_are_exact_complements": true
+    },
+    {
+      "all_passed": true,
+      "every_row_is_held_out_exactly_once": true,
+      "heldout_sets_match_formula_groups": true,
+      "minimum_opt_gap_ev": 1.0,
+      "n_folds": 32,
+      "n_manifest_rows": 1120,
+      "n_source_rows": 35,
+      "no_training_heldout_overlap_within_fold": true,
+      "protocol_hash": "ff1c25db9ae6d0fadb60282528096005ae90cf4d7c2390b441925897064e729f",
+      "single_protocol_hash": true,
+      "training_sets_are_exact_complements": true
+    }
+  ]
+}

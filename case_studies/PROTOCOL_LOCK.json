@@ -1,0 +1,94 @@
+{
+  "active_studies": {
+    "fulton_market": {
+      "claim_ids": [
+        "FU-PRED",
+        "FU-DEP",
+        "FU-GEOM"
+      ],
+      "evidence_ceiling": "E2_conditional_on_the_training_only_plugin_reference_and_dependence_model",
+      "evaluation": "33_one_step_rolling_origins_with_disjoint_reference_calibration_and_test_roles",
+      "registered_protocol": "studies/fulton_market/REGISTERED_PROTOCOL.json",
+      "timing_class": "registered_retrospective_reanalysis"
+    },
+    "jarvis_band_gaps": {
+      "claim_ids": [
+        "JG-PRED",
+        "JG-THRESHOLD",
+        "JG-GEOM"
+      ],
+      "evidence_ceiling": "E1_fixture_conditional",
+      "evaluation": "leave_one_formula_group_out",
+      "fixed_calculated_gap_thresholds_ev": [
+        0.0,
+        0.25,
+        0.5,
+        1.0
+      ],
+      "model": {
+        "discrepancy": "student_t_df_4_on_log_experimental_over_calculated_gap",
+        "eta_prior": "normal_log_0.45_sd_0.75",
+        "identity_comparator": "mu_fixed_to_zero_with_matched_discrepancy_model",
+        "mu_prior": "normal_0_sd_0.75"
+      },
+      "resampling": {
+        "formula_cluster_bootstrap_replicates": 2000,
+        "formula_pairing_permutations": 2000,
+        "seed": 20260711
+      },
+      "timing_class": "registered_retrospective_reanalysis"
+    },
+    "jarvis_bulk_modulus": {
+      "claim_ids": [
+        "JB-PRED",
+        "JB-GEOM"
+      ],
+      "evidence_ceiling": "E1_fixture_conditional",
+      "evaluation": "leave_one_formula_group_out",
+      "model": {
+        "discrepancy": "student_t_df_4_on_log_experimental_over_calculated_modulus",
+        "eta_prior": "normal_log_0.12_sd_0.75",
+        "identity_comparator": "mu_fixed_to_zero_with_matched_discrepancy_model",
+        "mu_prior": "normal_0_sd_0.35"
+      },
+      "resampling": {
+        "formula_cluster_bootstrap_replicates": 2000,
+        "formula_pairing_permutations": 2000,
+        "seed": 20260711
+      },
+      "timing_class": "registered_retrospective_reanalysis"
+    }
+  },
+  "non_claim_demonstrators": [
+    "materials_bandgap_matbench",
+    "materials_screened_lattice_2d3d_jarvis"
+  ],
+  "geometry_contract": {
+    "base_density": "track_q_in_every_state_coordinate",
+    "correction": "J_over_q_for_the_declared_graph_measure",
+    "double_counting": "forbidden",
+    "finite_tube_validation": "independent_state_integration_or_genuine_coordinate_pushforward",
+    "predictive_scores_validate_geometry": false,
+    "residual_metric": "transform_with_the_residual_coordinate"
+  },
+  "computational_hash_scope": {
+    "hash_bound_inputs": [
+      "PROTOCOL_LOCK.json",
+      "STUDY_REGISTRY.json",
+      "study_code",
+      "fixture_manifests",
+      "registered_protocols",
+      "environment_constraints"
+    ],
+    "excluded_documents": [
+      "README.md",
+      "TECHNICAL_DETAILS.md"
+    ]
+  },
+  "protocol_id": "detcorr_scientific_case_studies",
+  "protocol_timing": {
+    "protocol_date": "2026-07-11",
+    "status": "retrospective_post_outcome_specification"
+  },
+  "version": "0.2-retrospective"
+}

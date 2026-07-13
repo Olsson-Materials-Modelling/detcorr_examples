@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "dataset_id": "jarvis_bulk_modulus_36_screened_lattice_v1",
+  "bundled_file": "jarvis_bulk_modulus_paired_fixture.csv",
+  "sha256": "6d9c37c52ef1d7eeb62d0cce3bc00f5b4c979b4b5d2b3bdcfcda8ab6a73cae86",
+  "bytes": 2990,
+  "rows": 36,
+  "row_count": 36,
+  "source_name": "NIST JARVIS-DFT documentation OPT/experimental bulk-modulus comparison table",
+  "source_citation": "NIST JARVIS-DFT documentation, Comparison of bulk modulus K_V (GPa) from vdW-DF-optB88 (OPT) and experiments",
+  "source_url_or_accession": "https://jarvis-materials-design.github.io/dbdocs/jarvisdft/",
+  "source_row_key": "jvasp_id",
+  "retrieval_method": "Byte-identical reuse of the source-checked 36-row worked bulk-modulus transcription",
+  "retrieval_timestamp_utc": "unknown: the verification date 2026-07-11 was retained without a clock time",
+  "selection_rule": "Reuse all 36 rows of the worked bulk-modulus fixture; no additional material selection, imputation, outcome ranking, or residual-based filtering",
+  "deduplication_rule": "jvasp_id must be unique; the two distinct TiO2 structures remain distinct rows",
+  "known_source_dependence": "Experimental source and protocol dependence is unresolved, and repeated formulas are not independent population draws",
+  "license_identifier": "NIST-PUBLIC-INFORMATION",
+  "license_source_url": "https://www.nist.gov/copyrights-disclaimers",
+  "license_status": "NIST public-information permission with attribution and disclaimer; not relicensed as MIT or CC BY",
+  "rights_basis": "Unmarked information on the NIST JARVIS-DFT documentation site may be distributed or copied with appropriate credit under the NIST Copyrights & Disclaimers policy",
+  "redistribution_decision": "Bundled as an attributed transcription under NIST public-information permission with the NIST disclaimer and non-endorsement boundary retained",
+  "rights_checked_date": "2026-07-12",
+  "repository_license_applies": false,
+  "third_party_notice": "../../../THIRD_PARTY_NOTICES.md",
+  "license_file": "../../../case_studies/third_party_licenses/NIST-PUBLIC-INFORMATION-NOTICE.md",
+  "dependent_observation_columns": [
+    "bulk_modulus_expt_gpa"
+  ],
+  "reference_input_columns": [
+    "bulk_modulus_opt_gpa"
+  ],
+  "units": {
+    "bulk_modulus_opt_gpa": "GPa",
+    "bulk_modulus_expt_gpa": "GPa"
+  },
+  "study_role": "external-data-conditioned sparse-determinant and matrix-free stress demonstrator",
+  "fixture_preparation": "The same pinned and source-checked 36-row OPT/experimental fixture used by materials_bulk_modulus_samplers_jarvis",
+  "source_table_reported_mae_gpa": 8.51,
+  "fixture_recomputed_mae_gpa": 8.505555555555555,
+  "fixture_mae_rounds_to_source_value": true,
+  "operator_input": "bulk_modulus_opt_gpa",
+  "dependent_response_input": "bulk_modulus_expt_gpa",
+  "response_proxy": "g_ref * median(B_expt) / B_expt",
+  "normalization": "g_ref is evaluated at s=1 and unit operator coefficient, while OPT coefficients and experimental response ratios are median-normalized; near-unity s is therefore partly a coordinate convention, not a discovered materials scale",
+  "discrepancy_model": "Fixed response-scaled generalized Gaussian loss for a demonstrator target; not a normalized generative likelihood or reported experimental uncertainty",
+  "target_measure": "graph posterior over s with respect to ds",
+  "state_variable": "per-material nondimensional scalar grid field u_j",
+  "residual": "c_j(s,u_j)=(pin I+s k_j L_d)u_j-f",
+  "determinant_route": "separable spectrum and exact sparse LU; centered Gram/SLQ diagnostic over posterior support",
+  "matrix_free_conditioning": "The Gram route squares the operator condition number: kappa(A^T A)=kappa(A)^2",
+  "independent_validation": "exact sparse multivariate-Gaussian integration over every state field at finite penalty",
+  "claim_boundary": "screened-Poisson/lattice surrogate only; no vector elasticity, elastic tensor, physical mesh, or transferable material scale is inferred",
+  "leakage_controls": [
+    "operator coefficients and dependent response proxy use distinct external columns",
+    "a fixed reference Green response sets the response coordinate; it does not supply an independently observed physical truth",
+    "material-specific proxy variation comes only from the experimental column and is not generated from fitted forward outputs",
+    "finite-penalty validation integrates over state fields independently"
+  ]
+}

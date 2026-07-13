@@ -1,0 +1,4 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "../detcorr_demo_common/src"]
+addopts = "-q"

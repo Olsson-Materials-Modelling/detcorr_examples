@@ -1,0 +1,3 @@
+claim_id,status,claim,qualification,protocol_version,evidence_level,model_config_sha256,n_gates_passed,n_gates
+JB-PRED,NOT_SUPPORTED,The robust common scale improves formula-grouped probabilistic prediction over identity on this fixture.,Aggregate formula-LOGO delta ELPD is non-positive. Point-error gains cannot rescue the probabilistic claim.,0.2-retrospective,E1,38cd44f92e4f6eb2e41d40d91449fb0c284d8a1731c79ce03fd7f51ed7ce3ca6,12,16
+JB-GEOM,SUPPORTED,The declared determinant restores the intended graph target for the active bulk-modulus residual route.,"This validates the measure calculation, not the adequacy of the one-scale materials model.",0.2-retrospective,E1,38cd44f92e4f6eb2e41d40d91449fb0c284d8a1731c79ce03fd7f51ed7ce3ca6,6,6

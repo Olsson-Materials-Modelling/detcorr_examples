@@ -1,0 +1,3 @@
+target,z_min,z_max,n_points,mode_log_gamma,mode_gamma,lower_endpoint_log_drop,upper_endpoint_log_drop,lower_edge_mass_1pct,upper_edge_mass_1pct,mass_outside_display_grid,display_gamma_min,display_gamma_max,density_measure_audited
+graph,-120.0,20.0,28001,0.5600000000000023,1.750672500296105,21192.406132116186,1.885151912247858e+20,0.0,0.0,0.0,0.75,2.85,dz after adding +z to the dgamma log density
+naive,-120.0,20.0,28001,0.5700000000000074,1.7682670514337482,27703.001361862163,1.885151912247858e+20,0.0,0.0,0.0,0.75,2.85,dz after adding +z to the dgamma log density

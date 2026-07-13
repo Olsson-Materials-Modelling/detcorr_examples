@@ -1,0 +1,17 @@
+diagnostic,value
+n_initial_reference_train,48
+stationary_marginal_log_residual_sd_plugin,0.401355761251
+derived_log_innovation_sd_plugin,0.308806462312
+reference_r2_log,0.366681092473
+residual_mean,2.5442610981e-16
+residual_skew,-0.169162478946
+residual_excess_kurtosis,-0.172440280665
+durbin_watson,0.684712038667
+ar1_phi_raw,0.638757258953
+ar1_phi_used,0.638757258953
+ljung_box_q_lag_12,49.9649324801
+ljung_box_p_lag_12,1.41706845763e-06
+spearman_squared_residual_vs_fitted,-0.158271819366
+spearman_squared_residual_vs_fitted_p,0.282632324793
+spearman_squared_residual_vs_time,0.353994789405
+spearman_squared_residual_vs_time_p,0.0135715715662

@@ -1,0 +1,23 @@
+# Exact Python-package constraints used to create the committed output artifacts.
+# Python and operating-system details are recorded in TECHNICAL_DETAILS.md.
+contourpy==1.3.3
+cycler==0.12.1
+detcorr==0.10.0
+fonttools==4.61.1
+iniconfig==2.3.0
+kiwisolver==1.4.9
+matplotlib==3.10.8
+numpy==2.3.5
+packaging==26.2
+pandas==2.2.3
+pillow==12.2.0
+pluggy==1.6.0
+Pygments==2.20.0
+pyparsing==3.3.2
+pytest==8.4.2
+python-dateutil==2.9.0.post0
+pytz==2026.2
+ruff==0.14.10
+scipy==1.17.0
+six==1.17.0
+tzdata==2026.2

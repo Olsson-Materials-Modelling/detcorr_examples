@@ -1,0 +1,2 @@
+target,scientific_status,gamma_mean,gamma_sd,gamma_q05,gamma_q50,gamma_q95,tau_log_ratio_mean,lower_mu_edge_mass_2pct,upper_mu_edge_mass_2pct
+graph_primary,sole scientific target,1.0129278736940732,0.015374655623708886,0.9880048082578773,1.0126855538087463,1.0386794682107423,0.07643345835470733,1.8721251916428635e-39,1.503548876840974e-38

@@ -1,0 +1,69 @@
+{
+  "schema_version": 2,
+  "dataset_id": "matbench_expt_gap_first_eligible_100_v1",
+  "bundled_file": "matbench_expt_gap_fixture.csv",
+  "sha256": "106f00fc0032a52791d837a7c92614649447cccc12679797ac1a66d5a4e0904c",
+  "bytes": 1806,
+  "rows": 100,
+  "row_count": 100,
+  "source_name": "Matbench v0.1 expt_gap dataset",
+  "source_citation": "Hacking Materials (2019), expt_gap, Figshare dataset, https://doi.org/10.6084/m9.figshare.9765779.v1",
+  "source_url_or_accession": "https://doi.org/10.6084/m9.figshare.9765779.v1",
+  "source_payload_url": "https://ndownloader.figshare.com/files/17494814",
+  "source_payload_filename": "expt_gap.json.gz",
+  "source_payload_sha256": "1e6816fb8e7132535b76cdac458c4d53944eca97e1ecb68e6a8fd853c9cedc3a",
+  "source_payload_md5_from_figshare": "eb844a19b8607af4580860b4ecbd406d",
+  "source_rows": 4604,
+  "source_row_key": "source_row",
+  "retrieval_method": "Deterministic extraction by build_fixture.py from the checksum-pinned expt_gap.json.gz Figshare payload",
+  "retrieval_timestamp_utc": "unknown: source identity is fixed by DOI and payload hashes",
+  "selection_rule": "In source order, retain the first 100 unique rows with a finite strictly positive gap and an ordinary unparenthesized formula matching (Element amount)*; no outcome ranking or model fit enters selection.",
+  "selection_scope": "source rows 2 through 193 are scanned; 100 rows pass",
+  "deduplication_rule": "Retain the first eligible occurrence of each ordinary formula; duplicate formulas are skipped before the 100-row limit is applied",
+  "known_source_dependence": "Shared literature sources and chemical families may be dependent; this convenience slice is not treated as a population sample",
+  "representativeness": "Alphabetically concentrated convenience fixture for a geometry demonstrator; not a representative Matbench sample or benchmark fold.",
+  "build_script": "build_fixture.py",
+  "license_identifier": "MIT",
+  "license_source_url": "https://api.figshare.com/v2/articles/9765779",
+  "license_status": "The authoritative Figshare dataset record declares the expt_gap dataset under the MIT licence",
+  "rights_basis": "The authoritative Figshare record for dataset 9765779 identifies expt_gap as a public dataset under the MIT licence.",
+  "redistribution_decision": "Bundled under the MIT licence declared by the Figshare dataset record, with Hacking Materials attribution, dataset DOI, source-file identity and transformation rule retained.",
+  "rights_checked_date": "2026-07-12",
+  "repository_license_applies": false,
+  "third_party_notice": "../../../THIRD_PARTY_NOTICES.md",
+  "matbench_paper_doi": "10.1038/s41524-020-00406-3",
+  "original_data_paper_doi": "10.1021/acs.jpclett.8b00124",
+  "dependent_observation_columns": [
+    "band_gap_ev"
+  ],
+  "reference_input_columns": [
+    "formula"
+  ],
+  "units": {
+    "band_gap_ev": "eV"
+  },
+  "study_role": "external-data nonlinear-coordinate measure-correction stress demonstrator",
+  "split": {
+    "algorithm": "SHA256 each unique formula; sort by (hash, formula, source_row); first 70 train, final 30 held out",
+    "formula_hash": "SHA256 UTF-8 formula string",
+    "heldout_targets_used_in_predictor_fit": false,
+    "n_heldout": 30,
+    "n_train": 70,
+    "order_invariant": true
+  },
+  "model": {
+    "constraint": "c_i(alpha,e_i)=e_i^alpha-m_i",
+    "reference_energy": "E0=1 eV",
+    "state": "e_i=E_i/E0, dimensionless",
+    "state_jacobian": "alpha*e_i^(alpha-1)",
+    "target_measure": "graph posterior over alpha with respect to d alpha"
+  },
+  "validation": {
+    "detcorr_routes": [
+      "exact diagonal",
+      "callable residual with central finite differences"
+    ],
+    "finite_penalty_route": "pointwise-corrected direct local trapezoid quadrature over all 30 held-out states",
+    "unit_invariance": "eV/E0=1 eV compared with meV/E0=1000 meV"
+  }
+}

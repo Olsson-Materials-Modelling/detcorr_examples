@@ -1,0 +1,372 @@
+{
+  "claims": [
+    {
+      "claim_bearing_full_run": true,
+      "claim_id": "FU-PRED",
+      "conclusion": "PREDICTIVE_IMPROVEMENT_NOT_ESTABLISHED",
+      "crps_identity_minus_graph": -6.871618869795648e-05,
+      "cumulative_delta_elpd_graph_minus_identity": 0.4083193140830125,
+      "cumulative_delta_elpd_graph_minus_lag4": 3.879166841843934,
+      "cumulative_delta_elpd_graph_minus_persistence_context": -0.74455946430386,
+      "data_sha256": "fa51db236cb3f9e7040cdc50b002542bcbb3d51077132848d1960a996ec9b3c9",
+      "evidence_artifacts": [
+        {
+          "artifact_type": "table",
+          "path": "tables/rolling_predictions.csv",
+          "sha256": "5159c5d8a9caba8e53dd0d79207ec2f58a646f83b170e69d17908d67348f70d6"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/aggregate_predictive_metrics.csv",
+          "sha256": "3444201bdd54141c57689b4ec95d60eb9917831774d15378a944b401a7fa91d3"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/matched_calibration_effects.csv",
+          "sha256": "e6f80589e7ab83dab16350f4f506e89d97a73bb993e99b62ade56bb8ddc6bf12"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/paired_score_uncertainty.csv",
+          "sha256": "b5a5b0c6bb59b5fd23ad54d1f8234554127715c7b2ad287f85bb7eb4c7b61cf7"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/role_manifest.csv",
+          "sha256": "05644cf91254257c8a5e7c781602e27e0e6a810369c14eaaf1752295326dc972"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/pre_score_predictions.csv",
+          "sha256": "59926b0934eb5f9e48859a1582e1bcc9948be7eebcfc9f3285ee8100b114074e"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/phi_clip_sensitivity.csv",
+          "sha256": "2248baad1f4b489a5901a61a0e9cb9a974424e413659dac9448b58836cb885fe"
+        },
+        {
+          "artifact_type": "figure",
+          "path": "figures/rolling_predictions.png",
+          "sha256": "69d02a248950d835b38d0dd8b3b6f3ba2b340b64aefd2c340cb0bf6264d2379c"
+        },
+        {
+          "artifact_type": "figure",
+          "path": "figures/cumulative_log_score_contrasts.png",
+          "sha256": "bc2098095363ebac6eb10ce675ebbb22ed8d1dbc4c2df0f772ac85c83940d30a"
+        }
+      ],
+      "evidence_class": "registered_retrospective_evaluation",
+      "evidence_level": "E2_conditional_registered_fixture",
+      "gate_components": {
+        "contemporaneous_reference_beats_lag4_log_score": true,
+        "cumulative_delta_elpd_positive": true,
+        "graph_crps_no_worse_than_identity": false,
+        "moving_block_90pct_lower_positive": false
+      },
+      "gate_passed": false,
+      "interpretation": "The registered graph calibration did not satisfy every predictive-improvement gate on the current short retrospective series.",
+      "matched_assumption_family": "ar1_plugin",
+      "model_config_sha256": "2a9b9e5a2e499505334e66d5d3824a6898cbab2cd39290e94edb811d86741b15",
+      "moving_block_90pct_mean_delta_elpd": [
+        -0.0417219391082214,
+        0.06335702153229449
+      ],
+      "non_claim": "Failure to establish improvement does not establish that scale one is true, nor does any result identify market structure.",
+      "phi_clip_sensitivity": {
+        "absolute_limits": [
+          0.5,
+          0.75,
+          0.9,
+          0.99
+        ],
+        "all_gate_decisions_match_primary": true,
+        "cumulative_delta_elpd_range": [
+          0.4083193140830125,
+          1.2023517187271766
+        ],
+        "moving_block_lower_endpoint_range": [
+          -0.0417219391082214,
+          -0.022373141832096433
+        ],
+        "outcomes_known_when_added": true,
+        "primary_absolute_limit": 0.9,
+        "primary_n_origins_clipped": 0,
+        "role": "post-outcome one-at-a-time robustness sensitivity; alternatives do not select or replace the primary analysis",
+        "table": "tables/phi_clip_sensitivity.csv",
+        "timing": "post_outcome_nonselecting"
+      },
+      "protocol_timing": "post_outcome_nonselecting",
+      "protocol_version": "2",
+      "source_hashes": {
+        "REGISTERED_PROTOCOL.json": "cca5dfd6369b20c16504486b476e5725f405c5f3f0d3b6fa949fb64b907c3170",
+        "common/evidence.py": "3277f8df798847d8b35e9897e6d91d431a6d3cf50dec0d5ff42f32f812e66b5d",
+        "fulton_analysis.py": "83e6d789831a683fb59dc2989a23869712e5acc378df1ead07e18e2b27468c5e",
+        "run_analysis.py": "19a031c531c898732329c87ae4044996c3199f75a5d80fdf4cfc70f99c475c1a"
+      },
+      "status": "NOT_SUPPORTED",
+      "timing_class": "registered_reanalysis"
+    },
+    {
+      "ar1_iid_direction_reversal": false,
+      "ar1_iid_interval_gate_change": true,
+      "claim_bearing_full_run": true,
+      "claim_id": "FU-DEP",
+      "conclusion": "DEPENDENCE_SENSITIVE",
+      "data_sha256": "fa51db236cb3f9e7040cdc50b002542bcbb3d51077132848d1960a996ec9b3c9",
+      "evidence_artifacts": [
+        {
+          "artifact_type": "table",
+          "path": "tables/matched_calibration_effects.csv",
+          "sha256": "e6f80589e7ab83dab16350f4f506e89d97a73bb993e99b62ade56bb8ddc6bf12"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/paired_score_uncertainty.csv",
+          "sha256": "b5a5b0c6bb59b5fd23ad54d1f8234554127715c7b2ad287f85bb7eb4c7b61cf7"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/initial_reference_residual_diagnostics.csv",
+          "sha256": "06628cababcdd718c742a65f123edfd522032ca08ab0f71a1cfc193da9489396"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/initial_reference_residual_acf.csv",
+          "sha256": "f046f513df3dfddfc1c6ba1b4d3b17895e0872917d01e46b50ac0dd09faee4ce"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/phi_clip_sensitivity.csv",
+          "sha256": "2248baad1f4b489a5901a61a0e9cb9a974424e413659dac9448b58836cb885fe"
+        },
+        {
+          "artifact_type": "figure",
+          "path": "figures/initial_reference_residual_acf.png",
+          "sha256": "9aa6703207c73de66547d2c8f4ff6e0a591aaa491892484797932e035252c0af"
+        }
+      ],
+      "evidence_class": "registered_retrospective_evaluation",
+      "evidence_level": "E2_matched_plugin_sensitivity",
+      "interpretation": "The matched AR(1) and iid comparisons retain the same point direction, but their registered interval-gate decisions differ.",
+      "matched_mean_delta_elpd": {
+        "ar1_beta_uncertainty": 0.006131536031292886,
+        "ar1_plugin": 0.012373312547970075,
+        "iid": 0.18727120350629406
+      },
+      "model_config_sha256": "2a9b9e5a2e499505334e66d5d3824a6898cbab2cd39290e94edb811d86741b15",
+      "non_claim": "This comparison does not establish that stationary AR(1) errors are true or that phi has a posterior distribution.",
+      "phi_clip_sensitivity": {
+        "absolute_limits": [
+          0.5,
+          0.75,
+          0.9,
+          0.99
+        ],
+        "all_dependence_categories_match_primary": true,
+        "dependence_sensitive_by_limit": {
+          "0.5": true,
+          "0.75": true,
+          "0.9": true,
+          "0.99": true
+        },
+        "outcomes_known_when_added": true,
+        "primary_absolute_limit": 0.9,
+        "primary_n_origins_clipped": 0,
+        "role": "post-outcome one-at-a-time robustness sensitivity; alternatives do not select or replace the primary analysis",
+        "table": "tables/phi_clip_sensitivity.csv",
+        "timing": "post_outcome_nonselecting"
+      },
+      "phi_is_plugin_not_posterior": true,
+      "protocol_timing": "post_outcome_nonselecting",
+      "protocol_version": "2",
+      "source_hashes": {
+        "REGISTERED_PROTOCOL.json": "cca5dfd6369b20c16504486b476e5725f405c5f3f0d3b6fa949fb64b907c3170",
+        "common/evidence.py": "3277f8df798847d8b35e9897e6d91d431a6d3cf50dec0d5ff42f32f812e66b5d",
+        "fulton_analysis.py": "83e6d789831a683fb59dc2989a23869712e5acc378df1ead07e18e2b27468c5e",
+        "run_analysis.py": "19a031c531c898732329c87ae4044996c3199f75a5d80fdf4cfc70f99c475c1a"
+      },
+      "status": "SUPPORTED",
+      "timing_class": "registered_reanalysis"
+    },
+    {
+      "claim_bearing_full_run": true,
+      "claim_id": "FU-GEOM",
+      "conclusion": "QUANTIFIED",
+      "crps_naive_minus_graph": 0.020937588340236304,
+      "cumulative_delta_elpd_graph_minus_naive": 3.4159404042769674,
+      "data_sha256": "fa51db236cb3f9e7040cdc50b002542bcbb3d51077132848d1960a996ec9b3c9",
+      "evidence_artifacts": [
+        {
+          "artifact_type": "table",
+          "path": "tables/primary_model_geometry_audit.csv",
+          "sha256": "e9ebd01ae0945b13f816e36129a1f4f39212c8db5df87eb35b37d062559d74aa"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/residual_pushforward_audit.csv",
+          "sha256": "961ae30b5d26a9b61a96adfd20573bc6d34df12d4c224208aec15682cb0e7ef7"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/rolling_predictions.csv",
+          "sha256": "5159c5d8a9caba8e53dd0d79207ec2f58a646f83b170e69d17908d67348f70d6"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/matched_calibration_effects.csv",
+          "sha256": "e6f80589e7ab83dab16350f4f506e89d97a73bb993e99b62ade56bb8ddc6bf12"
+        },
+        {
+          "artifact_type": "table",
+          "path": "tables/phi_clip_sensitivity.csv",
+          "sha256": "2248baad1f4b489a5901a61a0e9cb9a974424e413659dac9448b58836cb885fe"
+        },
+        {
+          "artifact_type": "figure",
+          "path": "figures/rolling_eta_volume_effect.png",
+          "sha256": "65fbf6af281d38d6ecbc9e3db11e9b4978caed6f2c5d834fbcf2b1474926d67c"
+        }
+      ],
+      "evidence_class": "registered_retrospective_evaluation",
+      "evidence_level": "E2_analytic_and_callable_geometry_audit",
+      "geometry_gate_evidence": {
+        "all_geometry_checks_passed": true,
+        "detcorr_callable": {
+          "absolute_error": 3.973243956068018e-11,
+          "available": true,
+          "detcorr_version": "0.10.0",
+          "expected_state_logdet": -1.6500563346474888,
+          "lambda": 0.79,
+          "n_state": 7,
+          "observed_state_logdet": -1.6500563346077564,
+          "route": "detcorr callable residual with scipy central finite differences",
+          "target_measure": "graph",
+          "version_is_at_least_0_10": true
+        },
+        "parameter_density_pushforward": {
+          "lambda_mean_direct": 0.7553910213334231,
+          "lambda_mean_via_eta": 0.7553910204285847,
+          "lambda_to_eta_to_lambda_total_variation": 5.066552188988133e-17
+        },
+        "primary_model_finite_tube": {
+          "central_graph_probability": 0.99,
+          "claim_bearing_model": "rolling primary AR(1) log-price graph model",
+          "determinant_log_variation_central_region": 14.868064781265895,
+          "direct_normal_factor_J": "J_u=lambda^n",
+          "direct_state_base_density_q": "q_u(u)=1 relative to du",
+          "direct_state_coordinate": "u=native_price/state_scale in (0,infinity)",
+          "eta_points": 25,
+          "exact_gaussian_verification_used_as_claim_evidence": false,
+          "finite_vs_graph_error_fraction_of_determinant_variation": 8.532823932587954e-06,
+          "log_state_coordinate": "v=log(u)",
+          "log_state_normal_factor_J": "J_v=prod(lambda*exp(v))",
+          "max_abs_centered_finite_vs_graph_log_error": 0.00012686657899685372,
+          "max_abs_log_J_over_q_coordinate_error": 0.0,
+          "max_invalid_positive_state_fraction": 0.0,
+          "max_qmc_replicate_centered_log_sd": 1.1873529220797916e-07,
+          "n_state": 16,
+          "origin_test_t": 65,
+          "passed": true,
+          "pushed_log_state_base_density_q": "q_v(v)=exp(sum(v)) relative to dv",
+          "qmc_error_fraction_of_determinant_variation": 7.985927822805048e-09,
+          "registered_max_error_fraction": 0.01,
+          "required_multiplier": "J/q=lambda^n in both coordinates on the graph",
+          "rho": 1000000.0,
+          "rho_unit": "inverse squared dimensionless residual",
+          "sobol_power": 14,
+          "sobol_samples_per_scramble": 16384,
+          "sobol_scrambles": 4,
+          "sobol_seed_sequence": [
+            20260711,
+            20260712,
+            20260713,
+            20260714
+          ],
+          "state_scale_native": 0.8436752099766366,
+          "state_scale_source": "geometric mean price of reference-training rows 1-48",
+          "support_certificate": {
+            "direct_to_log_pushforward": "du=exp(sum(v))dv is included as q_v, so no state Jacobian is double counted",
+            "finite_tube_integrable_for_every_lambda_positive": true,
+            "global_eta_target_normalizable": true,
+            "lambda_to_zero_and_infinity": "the proper normal prior on eta=log(lambda) dominates polynomial tube-volume factors; the corrected hard limit is the proper conjugate eta posterior",
+            "positive_boundary_respected": true,
+            "state_domain": "u in (0, infinity)^n",
+            "u_to_infinity": "for every lambda>0, exp[-rho*||a-lambda*u||^2/2] is Gaussian-coercive",
+            "u_to_zero": "the Gaussian log-price likelihood decays faster than every power of u, so it is integrable at the positive boundary"
+          }
+        },
+        "residual_metric_pushforward": {
+          "max_abs_correction_error": 0.0,
+          "max_abs_penalty_error": 3.469446951953614e-18
+        }
+      },
+      "interpretation": "The omitted J/q factor changes the declared rolling target and its predictive distribution by the reported amounts.",
+      "max_abs_eta_shift_in_graph_sd": 3.135194235180826,
+      "mean_eta_shift_in_graph_sd": -2.7442552228264208,
+      "model_config_sha256": "2a9b9e5a2e499505334e66d5d3824a6898cbab2cd39290e94edb811d86741b15",
+      "model_sensitivity_envelope_in_graph_sd": 0.49270896550118176,
+      "moving_block_90pct_mean_delta_elpd_graph_minus_naive": [
+        -0.02904550789703498,
+        0.23297886806764703
+      ],
+      "non_claim": "The determinant is a measure correction, not an economic mechanism or causal price effect.",
+      "normal_factor_J": "J(lambda)=lambda^n",
+      "phi_clip_sensitivity": {
+        "absolute_limits": [
+          0.5,
+          0.75,
+          0.9,
+          0.99
+        ],
+        "all_geometry_consequences_finite": true,
+        "graph_minus_naive_delta_elpd_range": [
+          2.4746381332506244,
+          3.4159404042769674
+        ],
+        "mean_eta_volume_shift_graph_sd_range": [
+          -2.7442552228264208,
+          -2.404121104512221
+        ],
+        "outcomes_known_when_added": true,
+        "primary_absolute_limit": 0.9,
+        "primary_n_origins_clipped": 0,
+        "role": "post-outcome one-at-a-time robustness sensitivity; alternatives do not select or replace the primary analysis",
+        "table": "tables/phi_clip_sensitivity.csv",
+        "timing": "post_outcome_nonselecting"
+      },
+      "primary_model_coordinate_audit": {
+        "finite_vs_graph_error_fraction_of_determinant_variation": 8.532823932587954e-06,
+        "max_abs_log_J_over_q_coordinate_error": 0.0,
+        "origin_test_t": 65,
+        "passed": true,
+        "qmc_error_fraction_of_determinant_variation": 7.985927822805048e-09,
+        "support_certificate": {
+          "direct_to_log_pushforward": "du=exp(sum(v))dv is included as q_v, so no state Jacobian is double counted",
+          "finite_tube_integrable_for_every_lambda_positive": true,
+          "global_eta_target_normalizable": true,
+          "lambda_to_zero_and_infinity": "the proper normal prior on eta=log(lambda) dominates polynomial tube-volume factors; the corrected hard limit is the proper conjugate eta posterior",
+          "positive_boundary_respected": true,
+          "state_domain": "u in (0, infinity)^n",
+          "u_to_infinity": "for every lambda>0, exp[-rho*||a-lambda*u||^2/2] is Gaussian-coercive",
+          "u_to_zero": "the Gaussian log-price likelihood decays faster than every power of u, so it is integrable at the positive boundary"
+        }
+      },
+      "protocol_timing": "post_outcome_nonselecting",
+      "protocol_version": "2",
+      "required_graph_multiplier": "J/q=lambda^n",
+      "source_hashes": {
+        "REGISTERED_PROTOCOL.json": "cca5dfd6369b20c16504486b476e5725f405c5f3f0d3b6fa949fb64b907c3170",
+        "common/evidence.py": "3277f8df798847d8b35e9897e6d91d431a6d3cf50dec0d5ff42f32f812e66b5d",
+        "fulton_analysis.py": "83e6d789831a683fb59dc2989a23869712e5acc378df1ead07e18e2b27468c5e",
+        "run_analysis.py": "19a031c531c898732329c87ae4044996c3199f75a5d80fdf4cfc70f99c475c1a"
+      },
+      "state_base_density_q": "q(u)=1 in the declared direct-price coordinate",
+      "state_base_measure": "product Lebesgue du over direct positive price states",
+      "status": "SUPPORTED",
+      "timing_class": "registered_reanalysis"
+    }
+  ],
+  "configuration_sha256": "2a9b9e5a2e499505334e66d5d3824a6898cbab2cd39290e94edb811d86741b15",
+  "protocol_sha256": "cca5dfd6369b20c16504486b476e5725f405c5f3f0d3b6fa949fb64b907c3170"
+}

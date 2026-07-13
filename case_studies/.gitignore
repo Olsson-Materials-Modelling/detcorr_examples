@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+build/
+dist/
+
+# Ad-hoc study outputs stay local. The top-level reference_results/ directory
+# is intentionally not ignored: it contains the verified locked full run used
+# by the README figures and release archive.
+outputs/
+outputs-quick/
+outputs-full/
+studies/*/outputs/
+!studies/*/outputs/reference_summary.json

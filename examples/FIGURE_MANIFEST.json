@@ -1,0 +1,371 @@
+{
+  "schema_version": 2,
+  "example_count": 10,
+  "tier_counts": {
+    "illustrative": 5,
+    "open_data": 5
+  },
+  "figure_count": 30,
+  "figures": [
+    {
+      "example": "calorimetry_constant_determinant_control",
+      "tier": "illustrative",
+      "data_basis": "transparent synthetic verification problem",
+      "path": "examples/calorimetry_constant_determinant_control/outputs/calorimetry_constant_determinant_posteriors.png",
+      "bytes": 80343,
+      "size": [
+        1116,
+        756
+      ],
+      "sha256": "1edd25733d790d14054afa3536bce9f982ec362229d5acc5b06da4f3cdf6c359"
+    },
+    {
+      "example": "calorimetry_constant_determinant_control",
+      "tier": "illustrative",
+      "data_basis": "transparent synthetic verification problem",
+      "path": "examples/calorimetry_constant_determinant_control/outputs/finite_penalty_convergence.png",
+      "bytes": 57110,
+      "size": [
+        1044,
+        720
+      ],
+      "sha256": "982e508a589d5dc7f4987b4419347db9a1043bcda9ee2c5acffe6db7d143cae6"
+    },
+    {
+      "example": "kinetics_decay_time_stepping",
+      "tier": "illustrative",
+      "data_basis": "transparent synthetic verification problem",
+      "path": "examples/kinetics_decay_time_stepping/outputs/eta_posterior_comparison.png",
+      "bytes": 78134,
+      "size": [
+        1296,
+        774
+      ],
+      "sha256": "4d8c990ba98d468674d30af62a917011f1bc86ed0c2b4069f74c4cca2dcb1d9d"
+    },
+    {
+      "example": "kinetics_decay_time_stepping",
+      "tier": "illustrative",
+      "data_basis": "transparent synthetic verification problem",
+      "path": "examples/kinetics_decay_time_stepping/outputs/synthetic_decay_trajectory.png",
+      "bytes": 89827,
+      "size": [
+        1296,
+        774
+      ],
+      "sha256": "4fb291f026e6e0f0c819ccf030c13cf810e6a358b0acf8cd8922276955d819c5"
+    },
+    {
+      "example": "adsorption_langmuir_equilibrium",
+      "tier": "illustrative",
+      "data_basis": "transparent synthetic verification problem",
+      "path": "examples/adsorption_langmuir_equilibrium/outputs/posterior_eta_targets.png",
+      "bytes": 84116,
+      "size": [
+        1260,
+        792
+      ],
+      "sha256": "2846dfbb8070b4c4b17afc9ba1c0d5a9ec91dea974046a25f28ee79546eab84a"
+    },
+    {
+      "example": "adsorption_langmuir_equilibrium",
+      "tier": "illustrative",
+      "data_basis": "transparent synthetic verification problem",
+      "path": "examples/adsorption_langmuir_equilibrium/outputs/synthetic_langmuir_isotherm.png",
+      "bytes": 75519,
+      "size": [
+        1260,
+        792
+      ],
+      "sha256": "e6b9ddb5ec5fcf0a8eaba2fa2560d12adc51b7580f247071e398312af1e28ebb"
+    },
+    {
+      "example": "sensor_weighted_constraint",
+      "tier": "illustrative",
+      "data_basis": "transparent synthetic verification problem",
+      "path": "examples/sensor_weighted_constraint/outputs/algorithmic_metric_correction.png",
+      "bytes": 78146,
+      "size": [
+        1512,
+        648
+      ],
+      "sha256": "55982faf04d8c9d3587f3cbe362b7e8d466e48148b8761db7b190d894cb93c32"
+    },
+    {
+      "example": "sensor_weighted_constraint",
+      "tier": "illustrative",
+      "data_basis": "transparent synthetic verification problem",
+      "path": "examples/sensor_weighted_constraint/outputs/sensor_gain_posteriors.png",
+      "bytes": 86275,
+      "size": [
+        1116,
+        756
+      ],
+      "sha256": "7a7257d24137d28989d5517f62e9d6df28b21c9a9949c380ba10a0a6496fc154"
+    },
+    {
+      "example": "elliptic_pde_1d",
+      "tier": "illustrative",
+      "data_basis": "transparent synthetic verification problem",
+      "path": "examples/elliptic_pde_1d/outputs/elliptic_posterior_routes.png",
+      "bytes": 84846,
+      "size": [
+        1296,
+        774
+      ],
+      "sha256": "15038f47b77bef50027190d5ee51f8ee69d997abd1a1e814d44b9d6d74a8ecdf"
+    },
+    {
+      "example": "elliptic_pde_1d",
+      "tier": "illustrative",
+      "data_basis": "transparent synthetic verification problem",
+      "path": "examples/elliptic_pde_1d/outputs/elliptic_state_profiles.png",
+      "bytes": 113454,
+      "size": [
+        1296,
+        774
+      ],
+      "sha256": "f7e8435678a73fa3e0252dbd8213867814277f220ceb9e64916b15cef3053271"
+    },
+    {
+      "example": "materials_bulk_modulus_samplers_jarvis",
+      "tier": "open_data",
+      "data_basis": "publicly accessible paired JARVIS OPT/experimental fixture",
+      "path": "examples/materials_bulk_modulus_samplers_jarvis/outputs/alternating_augmented_lagrangian_gamma_trace.png",
+      "bytes": 56227,
+      "size": [
+        1260,
+        756
+      ],
+      "sha256": "fa870c53e611f3937829c394b78fe9f71feb4cd4c17d9325c537364a93d875c1"
+    },
+    {
+      "example": "materials_bulk_modulus_samplers_jarvis",
+      "tier": "open_data",
+      "data_basis": "publicly accessible paired JARVIS OPT/experimental fixture",
+      "path": "examples/materials_bulk_modulus_samplers_jarvis/outputs/bulk_modulus_fixture_opt_vs_expt.png",
+      "bytes": 65074,
+      "size": [
+        1278,
+        756
+      ],
+      "sha256": "b25422203c1ddcf966a79e098ce566576b701b60af1af96d053f376824ec9415"
+    },
+    {
+      "example": "materials_bulk_modulus_samplers_jarvis",
+      "tier": "open_data",
+      "data_basis": "publicly accessible paired JARVIS OPT/experimental fixture",
+      "path": "examples/materials_bulk_modulus_samplers_jarvis/outputs/hard_limit_residual_scaling_graph_recovery.png",
+      "bytes": 71928,
+      "size": [
+        1260,
+        756
+      ],
+      "sha256": "5391cc42cc40337fd354574980c448b026cbac9420ba33444fcb8de8c526ede5"
+    },
+    {
+      "example": "materials_bulk_modulus_samplers_jarvis",
+      "tier": "open_data",
+      "data_basis": "publicly accessible paired JARVIS OPT/experimental fixture",
+      "path": "examples/materials_bulk_modulus_samplers_jarvis/outputs/mcmc_smc_gamma_check.png",
+      "bytes": 51153,
+      "size": [
+        1296,
+        774
+      ],
+      "sha256": "a66702d94e930270a9a9009d19f78565e9ccd1b1d9e0dadee9d0786d952ef778"
+    },
+    {
+      "example": "materials_bulk_modulus_samplers_jarvis",
+      "tier": "open_data",
+      "data_basis": "publicly accessible paired JARVIS OPT/experimental fixture",
+      "path": "examples/materials_bulk_modulus_samplers_jarvis/outputs/posterior_gamma_bulk_modulus.png",
+      "bytes": 93372,
+      "size": [
+        1296,
+        774
+      ],
+      "sha256": "0bc931924eb595772b25788dbfcc3cfe2379f71ec1e9885b22d7732c84e712db"
+    },
+    {
+      "example": "econometrics_fulton_market",
+      "tier": "open_data",
+      "data_basis": "publicly accessible Wooldridge/Graddy Fulton fish-price fixture",
+      "path": "examples/econometrics_fulton_market/outputs/finite_penalty_convergence.png",
+      "bytes": 75136,
+      "size": [
+        1170,
+        756
+      ],
+      "sha256": "bd110fdbccbeb0e39428cacc07fab77867147e7d333889b89757b9852c752ba7"
+    },
+    {
+      "example": "econometrics_fulton_market",
+      "tier": "open_data",
+      "data_basis": "publicly accessible Wooldridge/Graddy Fulton fish-price fixture",
+      "path": "examples/econometrics_fulton_market/outputs/heldout_price_reference.png",
+      "bytes": 182826,
+      "size": [
+        1655,
+        720
+      ],
+      "sha256": "1d8397f449cc5587a720b41c14067a07a89da88d7a88b7c745c5cb8d372799e8"
+    },
+    {
+      "example": "econometrics_fulton_market",
+      "tier": "open_data",
+      "data_basis": "publicly accessible Wooldridge/Graddy Fulton fish-price fixture",
+      "path": "examples/econometrics_fulton_market/outputs/heldout_scale_posteriors.png",
+      "bytes": 79262,
+      "size": [
+        1170,
+        774
+      ],
+      "sha256": "33be982cc1613a8764bd79099a01cef6dbadeac3a8d6fa6b94eca7fe6bd835de"
+    },
+    {
+      "example": "materials_bandgap_matbench",
+      "tier": "open_data",
+      "data_basis": "publicly accessible Matbench/Matminer experimental-gap fixture",
+      "path": "examples/materials_bandgap_matbench/outputs/finite_state_quadrature_validation.png",
+      "bytes": 65382,
+      "size": [
+        1170,
+        756
+      ],
+      "sha256": "682f7cb99b6a0934d95adece66afef35b7987c5ae8c9980c3a977598d07f3cda"
+    },
+    {
+      "example": "materials_bandgap_matbench",
+      "tier": "open_data",
+      "data_basis": "publicly accessible Matbench/Matminer experimental-gap fixture",
+      "path": "examples/materials_bandgap_matbench/outputs/formula_hash_predictor.png",
+      "bytes": 103229,
+      "size": [
+        1620,
+        720
+      ],
+      "sha256": "8523c2f9485bf28e38ed84b4473c22b90656aed1aa5d932198270a00dfaa7d7d"
+    },
+    {
+      "example": "materials_bandgap_matbench",
+      "tier": "open_data",
+      "data_basis": "publicly accessible Matbench/Matminer experimental-gap fixture",
+      "path": "examples/materials_bandgap_matbench/outputs/heldout_alpha_posteriors.png",
+      "bytes": 76707,
+      "size": [
+        1170,
+        774
+      ],
+      "sha256": "c47fcda45d38282a18023368d5734fef340b2f7043ee8e293fe2ee32f239d302"
+    },
+    {
+      "example": "materials_bandgap_samplers_jarvis",
+      "tier": "open_data",
+      "data_basis": "publicly accessible paired JARVIS OPT/experimental gap fixture",
+      "path": "examples/materials_bandgap_samplers_jarvis/outputs/alternating_augmented_lagrangian_gamma_trace.png",
+      "bytes": 52743,
+      "size": [
+        1260,
+        756
+      ],
+      "sha256": "c39ee01c15e37ca0fb0b8d68cb89aca4a227847115a489a800af05b3e9f6b2c4"
+    },
+    {
+      "example": "materials_bandgap_samplers_jarvis",
+      "tier": "open_data",
+      "data_basis": "publicly accessible paired JARVIS OPT/experimental gap fixture",
+      "path": "examples/materials_bandgap_samplers_jarvis/outputs/bandgap_fixture_opt_vs_expt.png",
+      "bytes": 75754,
+      "size": [
+        1080,
+        936
+      ],
+      "sha256": "9b40bc97d7364f34099af78db15fca50f36778cd9d79d65c7f9d5ab59e98f5dc"
+    },
+    {
+      "example": "materials_bandgap_samplers_jarvis",
+      "tier": "open_data",
+      "data_basis": "publicly accessible paired JARVIS OPT/experimental gap fixture",
+      "path": "examples/materials_bandgap_samplers_jarvis/outputs/domain_threshold_sensitivity.png",
+      "bytes": 74618,
+      "size": [
+        1260,
+        756
+      ],
+      "sha256": "feb5b5a2e89b0f0a8a38c00401ba8ad64c40e707708d1d9172b0d4a395bf408f"
+    },
+    {
+      "example": "materials_bandgap_samplers_jarvis",
+      "tier": "open_data",
+      "data_basis": "publicly accessible paired JARVIS OPT/experimental gap fixture",
+      "path": "examples/materials_bandgap_samplers_jarvis/outputs/mcmc_smc_gamma_check.png",
+      "bytes": 48356,
+      "size": [
+        1296,
+        774
+      ],
+      "sha256": "8404936d8f7e26ee13f2298cc5d535a64a6e2269e62b344c023e87fd12fe4c66"
+    },
+    {
+      "example": "materials_bandgap_samplers_jarvis",
+      "tier": "open_data",
+      "data_basis": "publicly accessible paired JARVIS OPT/experimental gap fixture",
+      "path": "examples/materials_bandgap_samplers_jarvis/outputs/posterior_gamma_log_energy_residual.png",
+      "bytes": 93283,
+      "size": [
+        1314,
+        792
+      ],
+      "sha256": "bd6cff464351cdbea00421cade9c4853850925e7758a236bff8aa4a9e1ae9ae7"
+    },
+    {
+      "example": "materials_screened_lattice_2d3d_jarvis",
+      "tier": "open_data",
+      "data_basis": "publicly accessible paired JARVIS fixture in a spatial surrogate",
+      "path": "examples/materials_screened_lattice_2d3d_jarvis/outputs/exact_vs_matrix_free_audit.png",
+      "bytes": 55510,
+      "size": [
+        1350,
+        810
+      ],
+      "sha256": "e22de2a6b11cafb9241150a54d7574b81f97fc9b37103cabdea950da13a3d37e"
+    },
+    {
+      "example": "materials_screened_lattice_2d3d_jarvis",
+      "tier": "open_data",
+      "data_basis": "publicly accessible paired JARVIS fixture in a spatial surrogate",
+      "path": "examples/materials_screened_lattice_2d3d_jarvis/outputs/paired_bulk_modulus_inputs.png",
+      "bytes": 73038,
+      "size": [
+        1296,
+        792
+      ],
+      "sha256": "44889fcd08b5472969b3beff9811e35822e7517c6da971534c60c5253a1cb5f0"
+    },
+    {
+      "example": "materials_screened_lattice_2d3d_jarvis",
+      "tier": "open_data",
+      "data_basis": "publicly accessible paired JARVIS fixture in a spatial surrogate",
+      "path": "examples/materials_screened_lattice_2d3d_jarvis/outputs/posterior_spatial_lattice_scale.png",
+      "bytes": 62067,
+      "size": [
+        1296,
+        792
+      ],
+      "sha256": "2e72e65994083f2248e3eee16f39574214ea34d5124af15ed8ee8f28d322aa24"
+    },
+    {
+      "example": "materials_screened_lattice_2d3d_jarvis",
+      "tier": "open_data",
+      "data_basis": "publicly accessible paired JARVIS fixture in a spatial surrogate",
+      "path": "examples/materials_screened_lattice_2d3d_jarvis/outputs/residual_scaling_invariance.png",
+      "bytes": 59745,
+      "size": [
+        1260,
+        774
+      ],
+      "sha256": "ce53ef0c9802b93b7a1a6ff63e9996d7f72324392ab6425045ff3662d8226381"
+    }
+  ]
+}

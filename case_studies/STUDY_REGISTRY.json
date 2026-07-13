@@ -1,0 +1,30 @@
+{
+  "non_claim_demonstrators": [
+    {
+      "reason": "nonphysical held-out coordinate demonstrator; no scientific claim ID",
+      "slug": "materials_bandgap_matbench"
+    },
+    {
+      "reason": "data-conditioned determinant/SLQ demonstrator; no scientific claim ID",
+      "slug": "materials_screened_lattice_2d3d_jarvis"
+    }
+  ],
+  "registered_reanalyses": [
+    {
+      "entrypoint": "studies/jarvis_bulk_modulus/run_analysis.py",
+      "role": "paired-material empirical calibration",
+      "slug": "jarvis_bulk_modulus"
+    },
+    {
+      "entrypoint": "studies/jarvis_band_gaps/run_analysis.py",
+      "role": "positive-gap calibration and domain-adequacy study",
+      "slug": "jarvis_band_gaps"
+    },
+    {
+      "entrypoint": "studies/fulton_market/run_analysis.py",
+      "role": "rolling temporal calibration reanalysis with untouched next-outcome scoring",
+      "slug": "fulton_market"
+    }
+  ],
+  "version": 1
+}

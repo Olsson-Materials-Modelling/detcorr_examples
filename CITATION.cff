@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: >-
+  If you use these examples or case studies, please cite this repository release
+  and retain the source-specific citations for any bundled third-party data.
+title: detcorr examples and scientific case studies
+type: software
+authors:
+  - name: Measure-Corrected Inference Project
+date-released: 2026-07-12
+license: MIT
+abstract: >-
+  Runnable tutorials and independently verifiable scientific case studies for
+  determinant correction in constrained probabilistic inference.
+keywords:
+  - constrained inference
+  - determinant correction
+  - target measure
+  - reproducible research
+

@@ -1,0 +1,457 @@
+{
+  "anti_circular_finite_penalty_validation": {
+    "finite_corrected_vs_graph_centered_max_abs_diff": 6.388263750523038e-05,
+    "finite_corrected_vs_graph_role": "independent corrected finite-tube integration: the state-dependent 1/e correction is included inside each state integral",
+    "finite_vs_hard_tube_centered_max_abs_diff": 6.275551595535944e-05,
+    "integral_route": "global_gauss_hermite_in_log_energy_residual_over_positive_energy_states",
+    "load_bearing_metric": "finite_vs_hard_tube_centered_max_abs_diff",
+    "load_bearing_metrics": [
+      "finite_vs_hard_tube_centered_max_abs_diff",
+      "finite_corrected_vs_graph_centered_max_abs_diff"
+    ],
+    "n_materials": 54,
+    "n_points": 9,
+    "n_quadrature_nodes_per_state": 128,
+    "rho": 3000000000.0,
+    "rho_units": "dimensionless"
+  },
+  "classification": "external_data_simplified_calibration_demonstrator",
+  "configuration": {
+    "alternating_augmented_lagrangian": {
+      "n_iterations": 120,
+      "rho": 25.0,
+      "rho_units": "dimensionless"
+    },
+    "energy_reference_ev": 1.0,
+    "finite_penalty_validation": {
+      "n_nodes_per_state": 128,
+      "n_points": 9,
+      "rho": 3000000000.0,
+      "rho_units": "dimensionless"
+    },
+    "fixed_likelihood_sigma": "sqrt((0.15 E_OPT)^2 + (0.12 eV)^2); fixed before observing E_expt",
+    "gamma_grid": {
+      "maximum": 2.85,
+      "minimum": 0.75,
+      "n_points": 1600
+    },
+    "mcmc": {
+      "burn": 1800,
+      "n_steps": 10000,
+      "proposal_sd_log_gamma": 0.026
+    },
+    "seed": 202612,
+    "smc": {
+      "move_steps": 2,
+      "n_particles": 3000,
+      "n_temper_steps": 22,
+      "proposal_sd_log_gamma": 0.026
+    }
+  },
+  "correction_driver": "log-energy residual derivative |D_e c_i|=1/(gamma E_i^OPT/E0) repeated across 54 external table rows",
+  "correction_log_range_on_grid": 72.09005760354636,
+  "dataset": {
+    "active_filter": "finite positive OPT and experimental gaps only",
+    "fixture_path": "data/jarvis_bandgap_benchmark_fixture.csv",
+    "fixture_preparation": "pinned transcription of the public comparison table",
+    "fixture_sha256": "4b7a5f437b1a41030bb65c31d56eaa9524cc91598bd09ff2825c02df60528631",
+    "licence_status": "CC BY 4.0 applies to the source Scientific Data Table 3; attribution, change, third-party-material, and non-endorsement notices are retained in case_studies/THIRD_PARTY_NOTICES.md",
+    "n_materials": 54,
+    "observation_status": "external_repository_tabulated_gap_values; experimental measurement type unresolved",
+    "source_nist": "https://www.nist.gov/programs-projects/jarvis-dft",
+    "source_record": "https://jarvis-materials-design.github.io/dbdocs/jarvisdft/",
+    "source_verification_date": "2026-07-11"
+  },
+  "demo": "materials_bandgap_samplers_jarvis",
+  "detcorr_api_audit": {
+    "analytic_state_logdet": -38.63013928243784,
+    "constant_energy_coordinate_logdet": 0.0,
+    "detcorr_available": true,
+    "detcorr_state_logdet": -38.63013928243784,
+    "gamma": 1.752063789868668,
+    "reason": null,
+    "state_abs_error": 0.0,
+    "state_logdet_result": {
+      "api_version": "0.10",
+      "backend": "dense",
+      "error_estimate": null,
+      "estimated": false,
+      "exact": true,
+      "logabsdet": -38.63013928243784,
+      "metadata": {
+        "determinant_config": {
+          "method": "auto",
+          "singular_policy": "return",
+          "slq": {
+            "adjoint_check": true,
+            "adjoint_check_atol": 1e-07,
+            "adjoint_check_n_probe": 3,
+            "adjoint_check_rtol": 1e-05,
+            "checkpoint_degrees": null,
+            "confidence_level": 0.95,
+            "convergence_atol": 0.0,
+            "convergence_check": true,
+            "convergence_rtol": 0.05,
+            "eigenvalue_floor": 1e-14,
+            "exact_check_max_dimension": 0,
+            "jitter": 0.0,
+            "lanczos_breakdown_tol": 1e-14,
+            "lanczos_degree": 40,
+            "max_stored_probe_diagnostics": 8,
+            "max_stored_quadrature_nodes": 16,
+            "n_probe": 16,
+            "orthogonality_check": false,
+            "probe_distribution": "rademacher",
+            "reorthogonalize": false,
+            "seed": null,
+            "store_probe_diagnostics": true,
+            "store_probe_estimates": true,
+            "store_quadrature_nodes": false,
+            "warn_condition_number": 1000000000000.0,
+            "warn_relative_standard_error": 0.1
+          },
+          "sparse_lu": {
+            "diag_pivot_thresh": null,
+            "permc_spec": "COLAMD"
+          },
+          "structure": "diagonal"
+        },
+        "diagonal_pivot_ratio": 0.0010548523206751056,
+        "input_jacobian_type": "ndarray",
+        "max_abs_diagonal": 57.07554746479627,
+        "min_abs_diagonal": 0.060206273697042484,
+        "near_singular": false,
+        "near_singular_pivot_ratio_threshold": 1e-12
+      },
+      "method": "diagonal",
+      "rank_deficient": false,
+      "shape": [
+        54,
+        54
+      ],
+      "sign": 1.0,
+      "singular": false,
+      "value": -38.63013928243784,
+      "warnings": []
+    },
+    "target_measure": "graph"
+  },
+  "global_log_gamma_support_audit": [
+    {
+      "density_measure_audited": "dz after adding +z to the dgamma log density",
+      "display_gamma_max": 2.85,
+      "display_gamma_min": 0.75,
+      "lower_edge_mass_1pct": 0.0,
+      "lower_endpoint_log_drop": 21192.406132116186,
+      "mass_outside_display_grid": 0.0,
+      "mode_gamma": 1.750672500296105,
+      "mode_log_gamma": 0.5600000000000023,
+      "n_points": 28001,
+      "target": "graph",
+      "upper_edge_mass_1pct": 0.0,
+      "upper_endpoint_log_drop": 1.885151912247858e+20,
+      "z_max": 20.0,
+      "z_min": -120.0
+    },
+    {
+      "density_measure_audited": "dz after adding +z to the dgamma log density",
+      "display_gamma_max": 2.85,
+      "display_gamma_min": 0.75,
+      "lower_edge_mass_1pct": 0.0,
+      "lower_endpoint_log_drop": 27703.001361862163,
+      "mass_outside_display_grid": 0.0,
+      "mode_gamma": 1.7682670514337482,
+      "mode_log_gamma": 0.5700000000000074,
+      "n_points": 28001,
+      "target": "naive",
+      "upper_edge_mass_1pct": 0.0,
+      "upper_endpoint_log_drop": 1.885151912247858e+20,
+      "z_max": 20.0,
+      "z_min": -120.0
+    }
+  ],
+  "independent_validation": {
+    "finite_corrected_vs_graph_centered_max_abs_diff": 6.388263750523038e-05,
+    "finite_corrected_vs_graph_role": "independent corrected finite-tube integration: the state-dependent 1/e correction is included inside each state integral",
+    "finite_vs_hard_tube_centered_max_abs_diff": 6.275551595535944e-05,
+    "integral_route": "global_gauss_hermite_in_log_energy_residual_over_positive_energy_states",
+    "load_bearing_metric": "finite_vs_hard_tube_centered_max_abs_diff",
+    "load_bearing_metrics": [
+      "finite_vs_hard_tube_centered_max_abs_diff",
+      "finite_corrected_vs_graph_centered_max_abs_diff"
+    ],
+    "n_materials": 54,
+    "n_points": 9,
+    "n_quadrature_nodes_per_state": 128,
+    "rho": 3000000000.0,
+    "rho_units": "dimensionless",
+    "route": "global Gauss-Hermite integration in each log-energy residual over every positive energy state; no graph-minus-logdet construction"
+  },
+  "interpretation_boundary": "gamma is a fixture-level conditional scale under a deliberately simple fixed likelihood; it is not a transferable material correction and does not support inference beyond this fixture and model",
+  "model": {
+    "constraint": "c_i(gamma,e_i)=log(e_i/(gamma E_i^OPT/E0))=0",
+    "corrected_tube_validation": [
+      "deterministic_hard_limit",
+      "global_finite_penalty_positive_energy_state_quadrature"
+    ],
+    "correction_measure_contract": "graph multiplier is J/q; here J=product_i(1/e_i) and q=1",
+    "dependent_observation": "bandgap_expt_ev from JARVIS-DB documentation comparison table",
+    "energy_reference_ev": 1.0,
+    "full_space_base_measure": "d gamma times the product of de_i over all positive dimensionless energy state coordinates e_i=E_i/E0",
+    "likelihood": "Gaussian in energy against external tabulated experimental gaps; measurement type unresolved",
+    "no_fit_to_answer": true,
+    "optimizer": "fixed_iteration_alternating_augmented_lagrangian_map",
+    "parameter_units": {
+      "gamma": "dimensionless"
+    },
+    "prior": {
+      "density_measure": "d gamma",
+      "distribution": "lognormal",
+      "log_location": 0.0,
+      "log_parameter_distribution": "log(gamma) ~ Normal(0, 0.62^2)",
+      "log_scale": 0.62,
+      "support": "gamma > 0"
+    },
+    "reference_input": "bandgap_opt_ev from JARVIS-DB documentation comparison table",
+    "residual_units": {
+      "c_i": "dimensionless"
+    },
+    "samplers": [
+      "random_walk_metropolis",
+      "smc_tempering"
+    ],
+    "sampling_targets": [
+      "reduced_graph",
+      "naive_hard_limit_tube"
+    ],
+    "state_base_density": "q(e)=1 with respect to product_i de_i",
+    "state_jacobian": "D_e c_i=1/e_i=1/(gamma E_i^OPT/E0); constant-det energy residual c'=E_i/E0-gamma E_i^OPT/E0 has D c'=1",
+    "state_units": {
+      "e_i=E_i/E0": "dimensionless"
+    },
+    "target_measure": "graph"
+  },
+  "optimizer_summary": {
+    "abs_mode_error": 0.0004950694830530011,
+    "all_gamma_subproblems_succeeded": true,
+    "coordinate": "constant-determinant energy state v=E/E0",
+    "feasibility_rms_dimensionless": 2.1601789277067853e-10,
+    "final_gamma_step_abs": 1.7412915553904895e-10,
+    "gamma_augmented_lagrangian": 1.752558859351721,
+    "grid_graph_mode": 1.752063789868668,
+    "method": "fixed-iteration alternating augmented-Lagrangian heuristic",
+    "n_iter": 120,
+    "observation_rms_ev": 1.0333052190505223,
+    "rho": 25.0,
+    "rho_units": "dimensionless",
+    "target": "constrained graph MAP; optimization only, not posterior sampling"
+  },
+  "outcome": {
+    "corrected_density_l1_role": "algebraic hard-limit round-trip consistency; not independent validation",
+    "corrected_density_l1_vs_graph": 4.048023068346289e-15,
+    "corrected_mean_shift_in_graph_sd": -8.886793443338092e-15,
+    "correction_log_range_on_grid": 72.09005760354636,
+    "graph_mean": 1.7525589645508293,
+    "graph_sd": 0.024985908172703745,
+    "naive_density_l1_vs_graph": 0.5949647535218308,
+    "naive_mean_shift_in_graph_sd": 0.7617492707850221,
+    "naive_minus_corrected_mean_in_graph_sd": 0.761749270785031
+  },
+  "provenance": {
+    "detcorr_version": "0.10.0",
+    "example_root": ".",
+    "platform": "Linux-6.12.47-x86_64-with-glibc2.39",
+    "python_version": "3.12.13"
+  },
+  "rejected_reciprocal_construction": {
+    "construction": "u=E0/E; c=1/u-gamma*E_OPT/E0 under Lebesgue du",
+    "divergence_reason": "as u tends to infinity the integrand tends to a strictly positive gamma-dependent constant, hence its du integral is infinite",
+    "finite_penalty_state_integral": "diverges for every finite positive gamma and rho",
+    "hard_limit_naive_global_support": "broad-grid audit places essentially all normalized hard-limit mass in the display range; this does not make the finite tube integrable",
+    "local_display_gamma_bounds": [
+      0.75,
+      2.85
+    ],
+    "local_display_mass_fraction": 1.0,
+    "log_mass_outside_minus_inside_display": -156.95541761278673,
+    "lower_edge_mass_1pct": 0.0,
+    "lower_endpoint_log_drop": 8172.998933038018,
+    "mass_outside_display_grid": 0.0,
+    "status": "rejected_not_an_active_target",
+    "upper_edge_mass_1pct": 0.0,
+    "upper_endpoint_log_drop": 1.885151912247858e+20,
+    "verified_global_mode_gamma": 1.7160068621848692,
+    "verified_global_mode_log_gamma": 0.5400000000000063,
+    "verified_log_gamma_grid": {
+      "density_measure": "dz after adding +z to the dgamma log density",
+      "maximum": 20.0,
+      "minimum": -120.0,
+      "n_points": 28001
+    }
+  },
+  "tables": {
+    "domain_threshold_sensitivity": [
+      {
+        "graph_mean": 1.7525589645508293,
+        "graph_mode": 1.752063789868668,
+        "graph_q05": 1.7114474719974575,
+        "graph_q95": 1.7936789348820847,
+        "graph_sd": 0.024985908172703745,
+        "minimum_opt_gap_ev": 0.0,
+        "n_materials": 54
+      },
+      {
+        "graph_mean": 1.7398931346972457,
+        "graph_mode": 1.7402439024390244,
+        "graph_q05": 1.6987361235241787,
+        "graph_q95": 1.7810399783663675,
+        "graph_sd": 0.02500770811994538,
+        "minimum_opt_gap_ev": 0.2,
+        "n_materials": 49
+      },
+      {
+        "graph_mean": 1.666515636144008,
+        "graph_mode": 1.6666979362101313,
+        "graph_q05": 1.6250670341206894,
+        "graph_q95": 1.707966163693471,
+        "graph_sd": 0.025186047286344368,
+        "minimum_opt_gap_ev": 0.5,
+        "n_materials": 46
+      },
+      {
+        "graph_mean": 1.6101365436063364,
+        "graph_mode": 1.6102251407129455,
+        "graph_q05": 1.564904750381472,
+        "graph_q95": 1.6553677108511966,
+        "graph_sd": 0.027485985225595436,
+        "minimum_opt_gap_ev": 1.0,
+        "n_materials": 35
+      }
+    ],
+    "main": [
+      {
+        "centered_logdensity_max_abs_diff_vs_graph": 0.0,
+        "density_l1_vs_graph": 0.0,
+        "log_normalizer": -623.233946690235,
+        "mean": 1.7525589645508293,
+        "mode": 1.752063789868668,
+        "q05": 1.7114474719974575,
+        "q50": 1.7525589646311197,
+        "q95": 1.7936789348820847,
+        "sd": 0.024985908172703745,
+        "target": "graph_reduced"
+      },
+      {
+        "centered_logdensity_max_abs_diff_vs_graph": 46.126311846550266,
+        "density_l1_vs_graph": 0.5949647535218308,
+        "log_normalizer": -584.3007370476422,
+        "mean": 1.7715919618812879,
+        "mode": 1.7717636022514072,
+        "q05": 1.7306942171552824,
+        "q50": 1.7715906429602202,
+        "q95": 1.8124831205539875,
+        "sd": 0.024852788177630075,
+        "target": "naive_log_energy_residual_tube"
+      },
+      {
+        "centered_logdensity_max_abs_diff_vs_graph": 2.2737367544323206e-13,
+        "density_l1_vs_graph": 4.048023068346289e-15,
+        "log_normalizer": -623.233946690235,
+        "mean": 1.752558964550829,
+        "mode": 1.752063789868668,
+        "q05": 1.7114474719974575,
+        "q50": 1.7525589646311195,
+        "q95": 1.7936789348820845,
+        "sd": 0.02498590817270372,
+        "target": "detcorr_log_energy_residual_tube"
+      },
+      {
+        "centered_logdensity_max_abs_diff_vs_graph": 0.0,
+        "density_l1_vs_graph": 0.0,
+        "log_normalizer": -623.233946690235,
+        "mean": 1.7525589645508293,
+        "mode": 1.752063789868668,
+        "q05": 1.7114474719974575,
+        "q50": 1.7525589646311197,
+        "q95": 1.7936789348820847,
+        "sd": 0.024985908172703745,
+        "target": "constant_det_energy_coordinate_tube"
+      }
+    ],
+    "sampler_summaries": [
+      {
+        "accept_rate": 0.5213,
+        "final_unique_fraction": null,
+        "final_unique_particles": null,
+        "final_weight_ess": null,
+        "grid_reference_mean": 1.7525589645508293,
+        "grid_reference_target": "graph_reduced",
+        "mcmc_autocorr_ess": 1389.7850076991222,
+        "mean": 1.7515509777491118,
+        "mean_abs_error_vs_grid": 0.001007986801717431,
+        "n_resamples": null,
+        "n_samples": 8200,
+        "name": "mcmc_graph",
+        "q05": 1.7106245486724039,
+        "q50": 1.7515028102881554,
+        "q95": 1.792463610346939,
+        "sd": 0.025233723970090275
+      },
+      {
+        "accept_rate": 0.5271,
+        "final_unique_fraction": null,
+        "final_unique_particles": null,
+        "final_weight_ess": null,
+        "grid_reference_mean": 1.7715919618812879,
+        "grid_reference_target": "naive_log_energy_residual_tube",
+        "mcmc_autocorr_ess": 1865.3557469444443,
+        "mean": 1.7703923021401171,
+        "mean_abs_error_vs_grid": 0.0011996597411707555,
+        "n_resamples": null,
+        "n_samples": 8200,
+        "name": "mcmc_naive",
+        "q05": 1.7304092503363488,
+        "q50": 1.7695930429787947,
+        "q95": 1.8107023231288477,
+        "sd": 0.02479682283515463
+      },
+      {
+        "accept_rate": null,
+        "final_unique_fraction": 0.505,
+        "final_unique_particles": 1515,
+        "final_weight_ess": 1705.8152614195615,
+        "grid_reference_mean": 1.7525589645508293,
+        "grid_reference_target": "graph_reduced",
+        "mcmc_autocorr_ess": null,
+        "mean": 1.7526008280471348,
+        "mean_abs_error_vs_grid": 4.186349630552755e-05,
+        "n_resamples": 1,
+        "n_samples": 3000,
+        "name": "smc_graph",
+        "q05": 1.711956098862122,
+        "q50": 1.7535576533975499,
+        "q95": 1.7938754008020161,
+        "sd": 0.024844495732296298
+      },
+      {
+        "accept_rate": null,
+        "final_unique_fraction": 0.509,
+        "final_unique_particles": 1527,
+        "final_weight_ess": 1754.6863955705398,
+        "grid_reference_mean": 1.7715919618812879,
+        "grid_reference_target": "naive_log_energy_residual_tube",
+        "mcmc_autocorr_ess": null,
+        "mean": 1.7714070558838897,
+        "mean_abs_error_vs_grid": 0.00018490599739817704,
+        "n_resamples": 1,
+        "n_samples": 3000,
+        "name": "smc_naive",
+        "q05": 1.7327061253955636,
+        "q50": 1.770650500950652,
+        "q95": 1.8138500950794194,
+        "sd": 0.024996650197900514
+      }
+    ]
+  },
+  "target_measure": "graph posterior over gamma with respect to d gamma"
+}

@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "detcorr-scientific-case-studies"
+version = "0.1.0"
+description = "Protocolized retrospective scientific extensions to detcorr worked examples"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = [
+  "detcorr>=0.10.0,<0.11",
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "pandas>=2.0",
+  "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=7",
+  "ruff>=0.4",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["common*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "studies"]
+addopts = "-q --strict-markers --strict-config"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "C4", "SIM"]
+ignore = ["B008"]

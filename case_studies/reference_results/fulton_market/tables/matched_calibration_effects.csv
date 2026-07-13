@@ -1,0 +1,4 @@
+assumption_family,graph_model,matched_identity_model,n_origins,cumulative_delta_elpd_graph_minus_identity,mean_delta_elpd_graph_minus_identity,moving_block_90pct_mean_delta_elpd_lower,moving_block_90pct_mean_delta_elpd_upper,graph_mean_crps,identity_mean_crps,crps_identity_minus_graph,bootstrap_seed,bootstrap_replicates,block_length,interval_level
+ar1_plugin,ar1_graph,ar1_identity_reference_baseline,33,0.408319314083,0.012373312548,-0.0417219391082,0.0633570215323,0.107296001262,0.107227285073,-6.8716188698e-05,20260711,5000,4,0.9
+iid,iid_graph_sensitivity,iid_identity_reference_baseline,33,6.17994971571,0.187271203506,0.0505247503593,0.305576540029,0.133015605996,0.161158669329,0.0281430633333,20260711,5000,4,0.9
+ar1_beta_uncertainty,ar1_beta_uncertainty_sensitivity,ar1_beta_uncertainty_identity_baseline,33,0.202340689033,0.00613153603129,-0.0218159969043,0.0347784428395,0.10710753405,0.10713072105,2.31870001533e-05,20260711,5000,4,0.9

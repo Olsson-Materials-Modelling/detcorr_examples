@@ -1,0 +1,412 @@
+{
+  "checks": {
+    "all_passed": true,
+    "convergence_improves_with_rho": true,
+    "detcorr_api_correction_is_zero": true,
+    "dimensional_equation_is_consistent": true,
+    "finite_naive_equals_finite_corrected": true,
+    "finite_tube_is_close_to_graph": true,
+    "naive_corrected_density_l1_is_zero": true,
+    "state_jacobian_is_one": true,
+    "state_logdet_is_exactly_zero": true,
+    "synthetic_data_declared": true
+  },
+  "classification": "transparent_synthetic_constant_determinant_control",
+  "correction": {
+    "correction_max_on_grid": 0.0,
+    "correction_min_on_grid": 0.0,
+    "correction_peak_to_peak": 0.0,
+    "state_logdet": 0.0
+  },
+  "correction_driver": "constant solved-state derivative D_deltaT c=1; no parameter-dependent determinant correction",
+  "correction_log_range_on_grid": 0.0,
+  "demo": "calorimetry_constant_determinant_control",
+  "detcorr_api_audit": {
+    "correction_abs_error": 1.774491664703136e-11,
+    "detcorr_available": true,
+    "diagnostics": {
+      "addend": -79.99999999998239,
+      "api_version": "0.10",
+      "base_logdensity": -0.045826446280991764,
+      "calibration": null,
+      "correction": 1.774491664703136e-11,
+      "diagnostic_taxonomy": {
+        "calibration": null,
+        "feasibility": {
+          "diagnostic_type": "feasibility",
+          "metadata": {
+            "diagnostic_scope": "finite_penalty_target",
+            "rho": 100000.0,
+            "state_jacobian_graph_correction_included": true,
+            "target_measure": "graph",
+            "weighted": false
+          },
+          "projection_error_distribution": {
+            "count": 1,
+            "l2_norm": 0.040000000000000036,
+            "linf_norm": 0.040000000000000036,
+            "max": -0.040000000000000036,
+            "mean": -0.040000000000000036,
+            "median": -0.040000000000000036,
+            "min": -0.040000000000000036,
+            "q05": -0.040000000000000036,
+            "q25": -0.040000000000000036,
+            "q75": -0.040000000000000036,
+            "q95": -0.040000000000000036,
+            "std": 0.0
+          },
+          "projection_error_linf_norm": 0.040000000000000036,
+          "projection_error_norm": 0.040000000000000036,
+          "projection_errors": [
+            -0.040000000000000036
+          ],
+          "residual_component_distribution": {
+            "count": 1,
+            "l2_norm": 0.040000000000000036,
+            "linf_norm": 0.040000000000000036,
+            "max": 0.040000000000000036,
+            "mean": 0.040000000000000036,
+            "median": 0.040000000000000036,
+            "min": 0.040000000000000036,
+            "q05": 0.040000000000000036,
+            "q25": 0.040000000000000036,
+            "q75": 0.040000000000000036,
+            "q95": 0.040000000000000036,
+            "std": 0.0
+          },
+          "residual_linf_norm": 0.040000000000000036,
+          "residual_norm": 0.040000000000000036,
+          "residual_size": 1,
+          "tag": "feasibility",
+          "taxonomy": "feasibility"
+        }
+      },
+      "diagnostics": {
+        "finite_penalty_terms": {
+          "addend": -79.99999999998239,
+          "correction": 1.774491664703136e-11,
+          "multiplier_term": 0.0,
+          "penalty": -80.00000000000014,
+          "residual_norm_squared": 0.001600000000000003,
+          "rho": 100000.0,
+          "state_correction": 1.774491664703136e-11,
+          "state_jacobian_graph_correction_included": true,
+          "target_measure": "graph",
+          "unweighted_residual_norm_squared": 0.001600000000000003,
+          "weight_correction": 0.0,
+          "weighted": false
+        },
+        "logdet": {
+          "backend": "dense",
+          "estimated": false,
+          "estimator_report": {
+            "adjoint_check_max_relative_error": null,
+            "adjoint_check_passed": null,
+            "backend": "dense",
+            "clipped_ritz_count": null,
+            "confidence_interval": null,
+            "convergence_ok": null,
+            "error_estimate": null,
+            "estimated": false,
+            "exact_reference_absolute_error": null,
+            "gram_condition_estimate": null,
+            "jacobian_condition_estimate": null,
+            "lanczos_degree": null,
+            "last_checkpoint_delta_scaled": null,
+            "metadata": {
+              "condition_number": 1.0,
+              "determinant_config": {
+                "method": "auto",
+                "singular_policy": "raise",
+                "slq": {
+                  "adjoint_check": true,
+                  "adjoint_check_atol": 1e-07,
+                  "adjoint_check_n_probe": 3,
+                  "adjoint_check_rtol": 1e-05,
+                  "checkpoint_degrees": null,
+                  "confidence_level": 0.95,
+                  "convergence_atol": 0.0,
+                  "convergence_check": true,
+                  "convergence_rtol": 0.05,
+                  "eigenvalue_floor": 1e-14,
+                  "exact_check_max_dimension": 0,
+                  "jitter": 0.0,
+                  "lanczos_breakdown_tol": 1e-14,
+                  "lanczos_degree": 40,
+                  "max_stored_probe_diagnostics": 8,
+                  "max_stored_quadrature_nodes": 16,
+                  "n_probe": 16,
+                  "orthogonality_check": false,
+                  "probe_distribution": "rademacher",
+                  "reorthogonalize": false,
+                  "seed": null,
+                  "store_probe_diagnostics": true,
+                  "store_probe_estimates": true,
+                  "store_quadrature_nodes": false,
+                  "warn_condition_number": 1000000000000.0,
+                  "warn_relative_standard_error": 0.1
+                },
+                "sparse_lu": {
+                  "diag_pivot_thresh": null,
+                  "permc_spec": "COLAMD"
+                },
+                "structure": "general"
+              },
+              "jacobian_config": {
+                "backend": "scipy",
+                "finite_difference_eps": null,
+                "finite_difference_scheme": "central",
+                "matrix_free": false,
+                "mode": "auto"
+              },
+              "jacobian_dense_shape": [
+                1,
+                1
+              ],
+              "near_singular": false,
+              "near_singular_condition_threshold": 1000000000000.0
+            },
+            "method": "dense_slogdet",
+            "n_probe": null,
+            "negative_ritz_count": null,
+            "probe_distribution": null,
+            "relative_standard_error": null,
+            "ritz_floor_fraction": null,
+            "scaled_standard_error": null,
+            "shape": [
+              1,
+              1
+            ],
+            "value": 1.774491664703136e-11,
+            "warnings": []
+          },
+          "method": "dense_slogdet",
+          "rank_deficient": false,
+          "shape": [
+            1,
+            1
+          ],
+          "value": 1.774491664703136e-11,
+          "warnings": []
+        },
+        "state_jacobian_graph_correction_included": true,
+        "target_measure": "graph",
+        "weight": null
+      },
+      "feasibility": {
+        "diagnostic_type": "feasibility",
+        "metadata": {
+          "diagnostic_scope": "finite_penalty_target",
+          "rho": 100000.0,
+          "state_jacobian_graph_correction_included": true,
+          "target_measure": "graph",
+          "weighted": false
+        },
+        "projection_error_distribution": {
+          "count": 1,
+          "l2_norm": 0.040000000000000036,
+          "linf_norm": 0.040000000000000036,
+          "max": -0.040000000000000036,
+          "mean": -0.040000000000000036,
+          "median": -0.040000000000000036,
+          "min": -0.040000000000000036,
+          "q05": -0.040000000000000036,
+          "q25": -0.040000000000000036,
+          "q75": -0.040000000000000036,
+          "q95": -0.040000000000000036,
+          "std": 0.0
+        },
+        "projection_error_linf_norm": 0.040000000000000036,
+        "projection_error_norm": 0.040000000000000036,
+        "projection_errors": [
+          -0.040000000000000036
+        ],
+        "residual_component_distribution": {
+          "count": 1,
+          "l2_norm": 0.040000000000000036,
+          "linf_norm": 0.040000000000000036,
+          "max": 0.040000000000000036,
+          "mean": 0.040000000000000036,
+          "median": 0.040000000000000036,
+          "min": 0.040000000000000036,
+          "q05": 0.040000000000000036,
+          "q25": 0.040000000000000036,
+          "q75": 0.040000000000000036,
+          "q95": 0.040000000000000036,
+          "std": 0.0
+        },
+        "residual_linf_norm": 0.040000000000000036,
+        "residual_norm": 0.040000000000000036,
+        "residual_size": 1,
+        "tag": "feasibility",
+        "taxonomy": "feasibility"
+      },
+      "logdensity": -80.04582644626339,
+      "logdet": {
+        "api_version": "0.10",
+        "backend": "dense",
+        "error_estimate": null,
+        "estimated": false,
+        "exact": true,
+        "logabsdet": 1.774491664703136e-11,
+        "metadata": {
+          "condition_number": 1.0,
+          "determinant_config": {
+            "method": "auto",
+            "singular_policy": "raise",
+            "slq": {
+              "adjoint_check": true,
+              "adjoint_check_atol": 1e-07,
+              "adjoint_check_n_probe": 3,
+              "adjoint_check_rtol": 1e-05,
+              "checkpoint_degrees": null,
+              "confidence_level": 0.95,
+              "convergence_atol": 0.0,
+              "convergence_check": true,
+              "convergence_rtol": 0.05,
+              "eigenvalue_floor": 1e-14,
+              "exact_check_max_dimension": 0,
+              "jitter": 0.0,
+              "lanczos_breakdown_tol": 1e-14,
+              "lanczos_degree": 40,
+              "max_stored_probe_diagnostics": 8,
+              "max_stored_quadrature_nodes": 16,
+              "n_probe": 16,
+              "orthogonality_check": false,
+              "probe_distribution": "rademacher",
+              "reorthogonalize": false,
+              "seed": null,
+              "store_probe_diagnostics": true,
+              "store_probe_estimates": true,
+              "store_quadrature_nodes": false,
+              "warn_condition_number": 1000000000000.0,
+              "warn_relative_standard_error": 0.1
+            },
+            "sparse_lu": {
+              "diag_pivot_thresh": null,
+              "permc_spec": "COLAMD"
+            },
+            "structure": "general"
+          },
+          "jacobian_config": {
+            "backend": "scipy",
+            "finite_difference_eps": null,
+            "finite_difference_scheme": "central",
+            "matrix_free": false,
+            "mode": "auto"
+          },
+          "jacobian_dense_shape": [
+            1,
+            1
+          ],
+          "near_singular": false,
+          "near_singular_condition_threshold": 1000000000000.0
+        },
+        "method": "dense_slogdet",
+        "rank_deficient": false,
+        "shape": [
+          1,
+          1
+        ],
+        "sign": 1.0,
+        "singular": false,
+        "value": 1.774491664703136e-11,
+        "warnings": []
+      },
+      "metadata": {
+        "case": "synthetic_calorimetry_constant_determinant_control",
+        "residual_shape": [
+          1
+        ],
+        "residual_unit": "K",
+        "rho_unit": "K^-2",
+        "theta_type": "ndarray",
+        "u_type": "ndarray"
+      },
+      "multiplier_term": 0.0,
+      "penalty": -80.00000000000014,
+      "residual_norm_squared": 0.001600000000000003,
+      "rho": 100000.0,
+      "state_correction": 1.774491664703136e-11,
+      "state_jacobian_graph_correction_included": true,
+      "target_measure": "graph",
+      "unweighted_residual_norm_squared": 0.001600000000000003,
+      "weight_correction": 0.0,
+      "weight_logdet": null,
+      "weighted": false
+    },
+    "expected_total_correction": 0.0,
+    "primary_state_correction": 1.774491664703136e-11,
+    "secondary_weight_correction": 0.0,
+    "state_jacobian_route": "callable residual with central finite differences",
+    "target_measure": "graph",
+    "total_correction": 1.774491664703136e-11
+  },
+  "example": "calorimetry_constant_determinant_control",
+  "independent_validation": {
+    "finite_tube_convergence_table": "tables/rho_convergence.csv",
+    "route": "exact scalar Gaussian integration over temperature rise"
+  },
+  "interpretation_boundary": "Confirms that a constant state derivative introduces no relative correction; it is not experimental calorimetry.",
+  "limitations": [
+    "The heat capacity, observation and fixed noise offset are synthetic.",
+    "Heat input is treated as exact and heat loss is omitted.",
+    "The heat capacity is constant over the small temperature rise.",
+    "Agreement is a constant-determinant control, not material characterization."
+  ],
+  "model": {
+    "constraint": "c(C,delta_T)=delta_T-Q/C",
+    "heat_capacity_unit": "J/K",
+    "heat_input_J": 420.0,
+    "penalty_rho": 100000.0,
+    "penalty_rho_unit": "K^-2",
+    "state_jacobian": 1.0,
+    "state_logdet": 0.0,
+    "state_temperature_rise_unit": "K"
+  },
+  "outcome": {
+    "corrected_density_l1_vs_graph": 0.0007531042765471519,
+    "corrected_mean_shift_in_graph_sd": 0.00012798079349295925,
+    "correction_log_range_on_grid": 0.0,
+    "naive_density_l1_vs_graph": 0.0007531042765471519,
+    "naive_mean_shift_in_graph_sd": 0.00012798079349295925,
+    "naive_minus_corrected_mean_in_graph_sd": 0.0
+  },
+  "outcomes": {
+    "corrected_density_l1_vs_graph": 0.0007531042765471519,
+    "correction_log_range_on_grid": 0.0,
+    "naive_corrected_density_l1": 0.0,
+    "naive_corrected_mean_difference": 0.0,
+    "naive_density_l1_vs_graph": 0.0007531042765471519,
+    "naive_mean_shift_in_graph_sd": 0.00012798079349295925
+  },
+  "outputs": {
+    "convergence_figure": "finite_penalty_convergence.png",
+    "convergence_table": "tables/rho_convergence.csv",
+    "posterior_figure": "calorimetry_constant_determinant_posteriors.png",
+    "posterior_table": "tables/posterior_summaries.csv"
+  },
+  "posterior": {
+    "finite_corrected_mean_C_J_per_K": 104.5459506950971,
+    "finite_minus_graph_mean_C_J_per_K": 0.0002656802781615397,
+    "finite_naive_mean_C_J_per_K": 104.5459506950971,
+    "graph_mean_C_J_per_K": 104.54568501481894,
+    "graph_sd_C_J_per_K": 2.075938669470399
+  },
+  "provenance": {
+    "detcorr_version": "0.10.0",
+    "example_root": ".",
+    "platform": "Linux-6.12.47-x86_64-with-glibc2.39",
+    "python_version": "3.12.13"
+  },
+  "status": "synthetic_worked_control_not_experimental_calorimetry",
+  "synthetic_data": {
+    "fixed_noise_offset_sd": 0.3,
+    "noise_free_temperature_rise_K": 4.0,
+    "observation_sd_K": 0.08,
+    "observed_temperature_rise_K": 4.024,
+    "random_sampling_used": false,
+    "true_heat_capacity_J_per_K": 105.0
+  },
+  "target_measure": "graph posterior over C with respect to dC"
+}

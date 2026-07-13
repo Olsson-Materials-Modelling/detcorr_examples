@@ -1,0 +1,14 @@
+name: detcorr-scientific-case-studies
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy>=1.24
+  - scipy>=1.10
+  - pandas>=2.0
+  - matplotlib>=3.7
+  - pytest>=7
+  - pip
+  - pip:
+      - "detcorr @ git+https://github.com/Olsson-Materials-Modelling/detcorr.git@a414f063515359f70952e2717a506b75e69e4b0b"
+      - -e .

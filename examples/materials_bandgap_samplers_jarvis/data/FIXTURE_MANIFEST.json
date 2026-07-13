@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "dataset_id": "jarvis_positive_bandgap_54_v1",
+  "bundled_file": "jarvis_bandgap_benchmark_fixture.csv",
+  "sha256": "4b7a5f437b1a41030bb65c31d56eaa9524cc91598bd09ff2825c02df60528631",
+  "bytes": 11792,
+  "rows": 54,
+  "row_count": 54,
+  "source_name": "JARVIS-DB documentation band-gap comparison table",
+  "source_citation": "K. Choudhary et al., Computational screening of high-performance optoelectronic materials using OptB88vdW and TB-mBJ formalisms, Scientific Data 5, 180082 (2018), Table 3, DOI 10.1038/sdata.2018.82",
+  "source_url_or_accession": "https://jarvis-materials-design.github.io/dbdocs/jarvisdft/",
+  "source_row_key": "jvasp_id",
+  "retrieval_method": "Pinned transcription of documentation lines 441-499, reduced to identifiers, OPT gap, experimental gap, and source fields used by the demonstrator",
+  "retrieval_timestamp_utc": "unknown: the verification date 2026-07-11 was retained without a clock time",
+  "selection_rule": "Retain every row in the cited table for which both OPT and experimental gaps are finite and strictly positive; no residual-based filtering, imputation, or model fit enters selection",
+  "deduplication_rule": "jvasp_id must be unique; repeated chemical formulas are retained as distinct structures",
+  "known_source_dependence": "Repeated formulas and unresolved shared experimental sources may be correlated; the worked demonstrator does not treat this table as independent population evidence",
+  "license_identifier": "CC-BY-4.0",
+  "license_source_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Adapted from Table 3 of the cited Scientific Data article under CC BY 4.0",
+  "rights_basis": "CC BY 4.0 covers the cited table; attribution, licence link, transformation notice, third-party-material qualification, and non-endorsement boundary are retained",
+  "redistribution_decision": "Bundled as an attributed CC BY 4.0 adaptation with the source DOI, transformation description, qualification, and licence notice retained",
+  "rights_checked_date": "2026-07-12",
+  "repository_license_applies": false,
+  "third_party_notice": "../../../THIRD_PARTY_NOTICES.md",
+  "license_file": "../../../case_studies/third_party_licenses/CC-BY-4.0-NOTICE.md",
+  "dependent_observation_columns": [
+    "bandgap_expt_ev"
+  ],
+  "reference_input_columns": [
+    "bandgap_opt_ev"
+  ],
+  "units": {
+    "bandgap_opt_ev": "eV",
+    "bandgap_expt_ev": "eV"
+  },
+  "study_role": "external-data positive-gap measure-correction demonstrator",
+  "active_filter": "finite positive bandgap_opt_ev and bandgap_expt_ev only",
+  "measurement_type_status": "The source labels the dependent column experimental but does not resolve fundamental versus optical measurement type row by row",
+  "constraint": "e_i=E_i/E0; c_i(gamma,e_i)=log(e_i/(gamma E_i^OPT/E0))=0 with E0=1 eV",
+  "likelihood": "Fixed outcome-independent Gaussian likelihood in energy: sigma=sqrt((0.15 E_OPT)^2+(0.12 eV)^2)",
+  "state_variable": "positive dimensionless energy e_i=E_i/E0",
+  "state_base_measure": "product_i de_i; q(e)=1",
+  "correction_measure_contract": "graph multiplier is J/q; here J=1/e and q=1",
+  "determinant_route": "exact diagonal log-energy-residual state Jacobian 1/e, checked with detcorr",
+  "anti_circular_validation": [
+    "Global Gauss-Hermite quadrature is performed over every positive dimensionless energy state",
+    "The corrected finite tube includes the state-dependent 1/e multiplier inside a separate integral",
+    "MCMC and SMC sample graph and naive targets only; no duplicate corrected branch is claimed as independent validation"
+  ],
+  "rejected_construction": "u=E0/E with c=1/u-gamma*x under Lebesgue du has a divergent finite-rho state integral; a formal hard-limit calculation does not repair it",
+  "target_measure": "graph posterior over gamma with respect to d gamma"
+}

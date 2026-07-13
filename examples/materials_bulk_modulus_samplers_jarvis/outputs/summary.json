@@ -1,0 +1,397 @@
+{
+  "anti_circular_finite_penalty_validation": {
+    "finite_corrected_vs_graph_centered_max_abs_diff": 6.797424248361494e-06,
+    "finite_corrected_vs_graph_role": "derived from the independently integrated finite tube by re-adding the same analytic determinant; a consistency view, not a separate check",
+    "finite_vs_hard_tube_centered_max_abs_diff": 6.797424248361494e-06,
+    "integral_route": "exact_scalar_gaussian_product",
+    "load_bearing_metric": "finite_vs_hard_tube_centered_max_abs_diff",
+    "n_materials": 36,
+    "n_points": 9,
+    "rho": 1000000.0,
+    "rho_units": "GPa^-2"
+  },
+  "classification": "external_data_simplified_calibration_demonstrator",
+  "configuration": {
+    "alternating_augmented_lagrangian": {
+      "n_iterations": 80,
+      "rho": 0.1,
+      "rho_units": "GPa^-2"
+    },
+    "finite_penalty_validation": {
+      "n_points": 9,
+      "rho": 1000000.0,
+      "rho_units": "GPa^-2"
+    },
+    "gamma_grid": {
+      "maximum": 1.34,
+      "minimum": 0.72,
+      "n_points": 1400
+    },
+    "mcmc": {
+      "burn": 1500,
+      "n_steps": 9000,
+      "proposal_sd_log_gamma": 0.035
+    },
+    "seed": 202611,
+    "smc": {
+      "move_steps": 2,
+      "n_particles": 2500,
+      "n_temper_steps": 18,
+      "proposal_sd_log_gamma": 0.035
+    }
+  },
+  "correction_driver": "repeated diagonal state-coordinate derivative D_B c=1/gamma across 36 tabulated material rows",
+  "correction_log_range_on_grid": 22.362252513654823,
+  "dataset": {
+    "fixture_mae_rounds_to_source_value": true,
+    "fixture_path": "data/jarvis_bulk_modulus_benchmark_fixture.csv",
+    "fixture_preparation": "pinned transcription of the public comparison table",
+    "fixture_recomputed_mae_gpa": 8.505555555555555,
+    "fixture_sha256": "6d9c37c52ef1d7eeb62d0cce3bc00f5b4c979b4b5d2b3bdcfcda8ab6a73cae86",
+    "n_materials": 36,
+    "observation_status": "external_repository_values_only",
+    "redistribution_note": "retain the NIST attribution, disclaimer, transformation notice, and non-endorsement statement in case_studies/THIRD_PARTY_NOTICES.md",
+    "source_nist": "https://www.nist.gov/programs-projects/jarvis-dft",
+    "source_record": "https://jarvis-materials-design.github.io/dbdocs/jarvisdft/",
+    "source_table_reported_mae_gpa": 8.51,
+    "source_verification_date": "2026-07-11",
+    "upstream_license_status": "NIST public-information permission with attribution and disclaimer; the table is not relicensed as MIT or CC BY"
+  },
+  "demo": "materials_bulk_modulus_samplers_jarvis",
+  "detcorr_api_audit": {
+    "analytic_state_logdet": -1.2109678338510674,
+    "detcorr_available": true,
+    "detcorr_state_logdet": -1.2109678338510674,
+    "gamma": 1.0342101501072194,
+    "reason": null,
+    "solved_residual_constant_logdet": 0.0,
+    "state_abs_error": 0.0,
+    "state_logdet_result": {
+      "api_version": "0.10",
+      "backend": "dense",
+      "error_estimate": null,
+      "estimated": false,
+      "exact": true,
+      "logabsdet": -1.2109678338510674,
+      "metadata": {
+        "determinant_config": {
+          "method": "auto",
+          "singular_policy": "return",
+          "slq": {
+            "adjoint_check": true,
+            "adjoint_check_atol": 1e-07,
+            "adjoint_check_n_probe": 3,
+            "adjoint_check_rtol": 1e-05,
+            "checkpoint_degrees": null,
+            "confidence_level": 0.95,
+            "convergence_atol": 0.0,
+            "convergence_check": true,
+            "convergence_rtol": 0.05,
+            "eigenvalue_floor": 1e-14,
+            "exact_check_max_dimension": 0,
+            "jitter": 0.0,
+            "lanczos_breakdown_tol": 1e-14,
+            "lanczos_degree": 40,
+            "max_stored_probe_diagnostics": 8,
+            "max_stored_quadrature_nodes": 16,
+            "n_probe": 16,
+            "orthogonality_check": false,
+            "probe_distribution": "rademacher",
+            "reorthogonalize": false,
+            "seed": null,
+            "store_probe_diagnostics": true,
+            "store_probe_estimates": true,
+            "store_quadrature_nodes": false,
+            "warn_condition_number": 1000000000000.0,
+            "warn_relative_standard_error": 0.1
+          },
+          "sparse_lu": {
+            "diag_pivot_thresh": null,
+            "permc_spec": "COLAMD"
+          },
+          "structure": "diagonal"
+        },
+        "diagonal_pivot_ratio": 1.0,
+        "input_jacobian_type": "ndarray",
+        "max_abs_diagonal": 0.9669214713241088,
+        "min_abs_diagonal": 0.9669214713241088,
+        "near_singular": false,
+        "near_singular_pivot_ratio_threshold": 1e-12
+      },
+      "method": "diagonal",
+      "rank_deficient": false,
+      "shape": [
+        36,
+        36
+      ],
+      "sign": 1.0,
+      "singular": false,
+      "value": -1.2109678338510674,
+      "warnings": []
+    },
+    "target_measure": "graph"
+  },
+  "independent_validation": {
+    "finite_corrected_vs_graph_centered_max_abs_diff": 6.797424248361494e-06,
+    "finite_corrected_vs_graph_role": "derived from the independently integrated finite tube by re-adding the same analytic determinant; a consistency view, not a separate check",
+    "finite_vs_hard_tube_centered_max_abs_diff": 6.797424248361494e-06,
+    "integral_route": "exact_scalar_gaussian_product",
+    "load_bearing_metric": "finite_vs_hard_tube_centered_max_abs_diff",
+    "n_materials": 36,
+    "n_points": 9,
+    "rho": 1000000.0,
+    "rho_units": "GPa^-2",
+    "route": "cancellation-resistant exact Gaussian state integration, also checked against direct scalar quadrature"
+  },
+  "interpretation_boundary": "gamma is a fixture-level conditional scale under a one-parameter model and fixed demonstrator likelihood; it does not define a universal DFT bulk-modulus correction or inference beyond this fixture and model",
+  "limitations": [
+    "The fixed uncertainty model is an ad hoc demonstrator discrepancy, not a sourced experimental error model.",
+    "One common scale does not represent material-specific functional errors, phase, temperature, or measurement-protocol differences.",
+    "The experimental comparison values are not corrected for zero-point energy in the cited table.",
+    "The fixture is distributed under NIST's public-information policy, not the repository MIT licence; retain the notice and disclaimer.",
+    "Materials inference beyond this fixture requires sourced uncertainties, phase and temperature metadata, and external validation."
+  ],
+  "model": {
+    "constraint": "c_i(gamma,B_i)=B_i/gamma-B_i^OPT=0",
+    "corrected_tube_validation": [
+      "deterministic_hard_limit",
+      "exact_finite_penalty_gaussian_integration"
+    ],
+    "dependent_observation": "bulk_modulus_expt_gpa from JARVIS-DB documentation table",
+    "full_space_base_measure": "d gamma times the product of dB_i in numerical GPa coordinates",
+    "no_fit_to_answer": true,
+    "optimizer": "fixed_iteration_alternating_augmented_lagrangian_map",
+    "parameter_units": {
+      "gamma": "dimensionless"
+    },
+    "prior": {
+      "density_measure": "d gamma",
+      "distribution": "lognormal",
+      "log_location": 0.0,
+      "log_parameter_distribution": "log(gamma) ~ Normal(0, 0.24^2)",
+      "log_scale": 0.24,
+      "support": "gamma > 0"
+    },
+    "reference_input": "bulk_modulus_opt_gpa from JARVIS-DB documentation table",
+    "residual_units": {
+      "c_i": "GPa"
+    },
+    "samplers": [
+      "random_walk_metropolis",
+      "smc_tempering"
+    ],
+    "sampling_targets": [
+      "reduced_graph",
+      "naive_hard_limit_tube"
+    ],
+    "state_jacobian": "D_B c_i=1/gamma; solved-state residual c'=B_i-gamma B_i^OPT has D_B c'=1",
+    "state_units": {
+      "B_i": "GPa"
+    },
+    "target_measure": "graph"
+  },
+  "optimizer_summary": {
+    "abs_mode_error": 7.728753163349644e-05,
+    "all_gamma_subproblems_succeeded": true,
+    "feasibility_rms_gpa": 0.00013280860182412972,
+    "final_gamma_step_abs": 8.024704518216907e-06,
+    "gamma_augmented_lagrangian": 1.034132862575586,
+    "grid_graph_mode": 1.0342101501072194,
+    "method": "fixed-iteration alternating augmented-Lagrangian heuristic",
+    "n_iter": 80,
+    "observation_rms_gpa": 10.987697595283691,
+    "rho": 0.1,
+    "rho_units": "GPa^-2",
+    "target": "constrained graph MAP; optimization only, not posterior sampling"
+  },
+  "outcome": {
+    "corrected_density_l1_role": "algebraic hard-limit round-trip consistency; not independent validation",
+    "corrected_density_l1_vs_graph": 2.405156513377633e-19,
+    "corrected_mean_shift_in_graph_sd": 0.0,
+    "correction_log_range_on_grid": 22.362252513654823,
+    "graph_mean": 1.0342388306184547,
+    "graph_sd": 0.011545755934779588,
+    "naive_density_l1_vs_graph": 0.3174862016048157,
+    "naive_mean_shift_in_graph_sd": 0.400154266919951,
+    "naive_minus_corrected_mean_in_graph_sd": 0.400154266919951
+  },
+  "provenance": {
+    "detcorr_version": "0.10.0",
+    "example_root": ".",
+    "platform": "Linux-6.12.47-x86_64-with-glibc2.39",
+    "python_version": "3.12.13"
+  },
+  "tables": {
+    "hard_limit_residual_scaling": [
+      {
+        "corrected_abs_diff": 0.0,
+        "corrected_centered_logdensity_max_abs_diff_vs_graph": 5.684341886080802e-14,
+        "corrected_density_l1_vs_graph": 2.405156513377633e-19,
+        "corrected_mean": 1.0342388306184547,
+        "graph_mean": 1.0342388306184547,
+        "naive_density_l1_vs_graph": 0.3174862016048157,
+        "naive_mean": 1.038858914120573,
+        "naive_shift_pct": 0.4467134055830876,
+        "scale_power_s": 0
+      },
+      {
+        "corrected_abs_diff": 0.0,
+        "corrected_centered_logdensity_max_abs_diff_vs_graph": 0.0,
+        "corrected_density_l1_vs_graph": 0.0,
+        "corrected_mean": 1.0342388306184547,
+        "graph_mean": 1.0342388306184547,
+        "naive_density_l1_vs_graph": 0.0,
+        "naive_mean": 1.0342388306184547,
+        "naive_shift_pct": 0.0,
+        "scale_power_s": 1
+      },
+      {
+        "corrected_abs_diff": 0.0,
+        "corrected_centered_logdensity_max_abs_diff_vs_graph": 5.684341886080802e-14,
+        "corrected_density_l1_vs_graph": 1.383733760120881e-15,
+        "corrected_mean": 1.0342388306184547,
+        "graph_mean": 1.0342388306184547,
+        "naive_density_l1_vs_graph": 0.3196219484899801,
+        "naive_mean": 1.0295772088889517,
+        "naive_shift_pct": -0.45072971459749384,
+        "scale_power_s": 2
+      },
+      {
+        "corrected_abs_diff": 0.0,
+        "corrected_centered_logdensity_max_abs_diff_vs_graph": 5.684341886080802e-14,
+        "corrected_density_l1_vs_graph": 1.5028316087008965e-15,
+        "corrected_mean": 1.0342388306184547,
+        "graph_mean": 1.0342388306184547,
+        "naive_density_l1_vs_graph": 0.6285848142744119,
+        "naive_mean": 1.0248729081175085,
+        "naive_shift_pct": -0.9055860429592946,
+        "scale_power_s": 3
+      }
+    ],
+    "main": [
+      {
+        "centered_logdensity_max_abs_diff_vs_graph": 0.0,
+        "density_l1_vs_graph": 0.0,
+        "log_normalizer": -34.819653670182966,
+        "mean": 1.0342388306184547,
+        "mode": 1.0342101501072194,
+        "q05": 1.0152433675383739,
+        "q50": 1.034238705325852,
+        "q95": 1.0532334444539935,
+        "sd": 0.011545755934779588,
+        "target": "graph_reduced"
+      },
+      {
+        "centered_logdensity_max_abs_diff_vs_graph": 13.118323873646489,
+        "density_l1_vs_graph": 0.3174862016048157,
+        "log_normalizer": -33.529508671250845,
+        "mean": 1.038858914120573,
+        "mode": 1.0386418870621874,
+        "q05": 1.0199050787271975,
+        "q50": 1.0388585985289163,
+        "q95": 1.0578137084962767,
+        "sd": 0.011520316919806272,
+        "target": "naive_bulk_modulus_tube"
+      },
+      {
+        "centered_logdensity_max_abs_diff_vs_graph": 5.684341886080802e-14,
+        "density_l1_vs_graph": 2.405156513377633e-19,
+        "log_normalizer": -34.819653670182966,
+        "mean": 1.0342388306184547,
+        "mode": 1.0342101501072194,
+        "q05": 1.0152433675383739,
+        "q50": 1.034238705325852,
+        "q95": 1.0532334444539935,
+        "sd": 0.011545755934779588,
+        "target": "detcorr_bulk_modulus_tube"
+      },
+      {
+        "centered_logdensity_max_abs_diff_vs_graph": 0.0,
+        "density_l1_vs_graph": 0.0,
+        "log_normalizer": -34.819653670182966,
+        "mean": 1.0342388306184547,
+        "mode": 1.0342101501072194,
+        "q05": 1.0152433675383739,
+        "q50": 1.034238705325852,
+        "q95": 1.0532334444539935,
+        "sd": 0.011545755934779588,
+        "target": "constant_det_solved_bulk_tube"
+      }
+    ],
+    "sampler_summaries": [
+      {
+        "accept_rate": 0.3596666666666667,
+        "final_unique_fraction": null,
+        "final_unique_particles": null,
+        "final_weight_ess": null,
+        "grid_reference_mean": 1.0342388306184547,
+        "grid_reference_target": "graph_reduced",
+        "mcmc_autocorr_ess": 1704.2798740141109,
+        "mean": 1.0344331090379386,
+        "mean_abs_error_vs_grid": 0.00019427841948393976,
+        "n_resamples": null,
+        "n_samples": 7500,
+        "name": "mcmc_graph",
+        "q05": 1.0160356340930903,
+        "q50": 1.0342818291728653,
+        "q95": 1.0528885600802922,
+        "sd": 0.011123485027465496
+      },
+      {
+        "accept_rate": 0.35988888888888887,
+        "final_unique_fraction": null,
+        "final_unique_particles": null,
+        "final_weight_ess": null,
+        "grid_reference_mean": 1.038858914120573,
+        "grid_reference_target": "naive_bulk_modulus_tube",
+        "mcmc_autocorr_ess": 1334.720856006556,
+        "mean": 1.0383239614737156,
+        "mean_abs_error_vs_grid": 0.0005349526468574339,
+        "n_resamples": null,
+        "n_samples": 7500,
+        "name": "mcmc_naive",
+        "q05": 1.0191095984388976,
+        "q50": 1.0381252603573499,
+        "q95": 1.057827683834569,
+        "sd": 0.011822891438187067
+      },
+      {
+        "accept_rate": null,
+        "final_unique_fraction": 0.532,
+        "final_unique_particles": 1330,
+        "final_weight_ess": 1556.1808378064493,
+        "grid_reference_mean": 1.0342388306184547,
+        "grid_reference_target": "graph_reduced",
+        "mcmc_autocorr_ess": null,
+        "mean": 1.0349660988134322,
+        "mean_abs_error_vs_grid": 0.0007272681949774817,
+        "n_resamples": 1,
+        "n_samples": 2500,
+        "name": "smc_graph",
+        "q05": 1.0156195826919647,
+        "q50": 1.03516003043235,
+        "q95": 1.0532557128643327,
+        "sd": 0.011403881361079313
+      },
+      {
+        "accept_rate": null,
+        "final_unique_fraction": 0.5244,
+        "final_unique_particles": 1311,
+        "final_weight_ess": 1541.4388009684042,
+        "grid_reference_mean": 1.038858914120573,
+        "grid_reference_target": "naive_bulk_modulus_tube",
+        "mcmc_autocorr_ess": null,
+        "mean": 1.0388917132360076,
+        "mean_abs_error_vs_grid": 3.2799115434523074e-05,
+        "n_resamples": 1,
+        "n_samples": 2500,
+        "name": "smc_naive",
+        "q05": 1.020385457583202,
+        "q50": 1.0389992060332047,
+        "q95": 1.0578994508149555,
+        "sd": 0.011571794127106188
+      }
+    ]
+  },
+  "target_measure": "graph posterior over gamma with respect to d gamma"
+}

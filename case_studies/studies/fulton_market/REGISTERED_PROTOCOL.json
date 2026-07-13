@@ -1,0 +1,117 @@
+{
+  "analysis_class": "registered_retrospective_reanalysis",
+  "baselines": [
+    "ar1_identity_reference_baseline",
+    "iid_identity_reference_baseline",
+    "ar1_beta_uncertainty_identity_baseline",
+    "last_price_persistence_baseline"
+  ],
+  "calibration_window": 16,
+  "claim_boundary": "conditional one-step price calibration; no causal, structural, elasticity, supply, demand, or market-power claim",
+  "dependence": {
+    "innovation_sd": "derived as stationary_marginal_residual_sd * sqrt(1-phi_used^2)",
+    "phi_bound": 0.9,
+    "phi_bound_sensitivity": {
+      "absolute_limits": [
+        0.5,
+        0.75,
+        0.9,
+        0.99
+      ],
+      "primary_absolute_limit": 0.9,
+      "selection_role": "robustness disclosure only; never selects the primary model",
+      "timing": "post_outcome_nonselecting"
+    },
+    "phi_inference": "training-only plug-in estimate; no phi posterior",
+    "primary": "stationary_ar1_training_only_plugin",
+    "residual_sd": "training-only plug-in stationary marginal residual SD",
+    "sensitivity": "iid"
+  },
+  "first_test_position_zero_based": 64,
+  "first_test_t_registered_fixture": 65,
+  "forecast_horizon": 1,
+  "geometry_audit": {
+    "central_graph_probability": 0.99,
+    "direct_state_base_density": "q_u=1 relative to du",
+    "eta_points": 25,
+    "full_sobol_power": 14,
+    "full_sobol_scrambles": 4,
+    "log_state_base_density": "q_v=exp(sum(v)) relative to dv",
+    "max_error_fraction_of_determinant_variation": 0.01,
+    "primary_origin_t": 65,
+    "quick_sobol_power": 11,
+    "quick_sobol_scrambles": 2,
+    "rho": 1000000.0,
+    "seed": 20260711,
+    "state_scale": "geometric mean price of reference-training rows"
+  },
+  "matched_identity_models": {
+    "ar1_beta_uncertainty": "ar1_beta_uncertainty_identity_baseline",
+    "ar1_plugin": "ar1_identity_reference_baseline",
+    "iid": "iid_identity_reference_baseline"
+  },
+  "negative_control": {
+    "lag_observations": 4,
+    "name": "causal_lagged_reference",
+    "rule": "replace each contemporaneous reference design row by its row four observations earlier without reordering responses"
+  },
+  "observation_coordinate": "log_native_average_price",
+  "parameter": "eta=log(lambda), where lambda is a dimensionless multiplicative reference-to-state scale",
+  "primary_model": "ar1_graph",
+  "registered_claim_ids": [
+    "FU-PRED",
+    "FU-DEP",
+    "FU-GEOM"
+  ],
+  "prior": "eta ~ Normal(0, 0.5^2), equivalently a lognormal density for lambda with respect to d lambda",
+  "prior_parameters": {
+    "eta_mean": 0.0,
+    "eta_sd": 0.5,
+    "family": "normal_on_eta",
+    "lambda_density_measure": "d_lambda"
+  },
+  "reference_fit": {
+    "columns": [
+      "const",
+      "wave2",
+      "speed2",
+      "mon",
+      "tues",
+      "wed",
+      "thurs",
+      "t"
+    ],
+    "response": "log(avgprc)",
+    "rule": "for test position j, fit only rows strictly before j-16"
+  },
+  "score_uncertainty": {
+    "block_length": 4,
+    "full_replicates": 5000,
+    "interval_quantiles": [
+      0.05,
+      0.95
+    ],
+    "method": "circular moving-block bootstrap of paired origin-level score contrasts",
+    "quick_replicates": 500,
+    "seed": 20260711
+  },
+  "scores": [
+    "native-price log predictive density",
+    "native-price CRPS",
+    "predictive-mean RMSE",
+    "predictive-median MAE",
+    "90-percent interval coverage and width"
+  ],
+  "test_information": {
+    "contemporaneous_covariates_used": true,
+    "price_outcome_used_before_scoring": false,
+    "scope": "conditional one-step prediction, not an unconditional forecast when contemporaneous weather is unavailable"
+  },
+  "sensitivities": [
+    "iid log-price errors",
+    "Gaussian OLS coefficient covariance propagated analytically",
+    "state-volume determinant omission counterfactual",
+    "one-at-a-time symmetric AR(1) coefficient clipping bounds"
+  ],
+  "version": 2
+}

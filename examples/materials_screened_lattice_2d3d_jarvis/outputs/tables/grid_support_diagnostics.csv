@@ -1,0 +1,4 @@
+target,mode,mode_index,mode_is_interior,left_two_percent_grid_mass,right_two_percent_grid_mass,maximum_edge_mass
+graph_reduced,0.9849610678531703,287,True,0.0,2.1855586092629368e-82,2.1855586092629368e-82
+naive_screened_lattice_tube,0.24084538375973305,61,True,0.0,0.0,0.0
+detcorr_screened_lattice_tube,0.9849610678531703,287,True,0.0,2.1855586092636373e-82,2.1855586092636373e-82

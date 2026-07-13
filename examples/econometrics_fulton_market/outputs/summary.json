@@ -1,0 +1,568 @@
+{
+  "checks": {
+    "all_passed": true,
+    "chronological_split_is_disjoint": true,
+    "data_checksum_matches": true,
+    "detcorr_callable_logdet_matches": true,
+    "fixture_manifest_matches": true,
+    "grid_tails_are_negligible": true,
+    "heldout_reference_is_positive": true,
+    "independent_finite_corrected_matches_graph": true,
+    "naive_tube_changes_posterior": true,
+    "nondimensional_scale_uses_training_only": true,
+    "predeclared_train_size_used": true
+  },
+  "classification": "external_open_data_heldout_calibration_demonstrator",
+  "correction_driver": "repeated diagonal state derivative D_u c=-lambda I across 33 held-out nondimensional price states",
+  "correction_log_range_on_grid": 68.62157087543457,
+  "data": {
+    "bundled_path": "data/fish.csv",
+    "citation": "K. Graddy (1995), Testing for Imperfect Competition at the Fulton Fish Market, RAND Journal of Economics 26, 75-92.",
+    "dataset": "Wooldridge/Graddy Fulton fish-market fish data",
+    "license_boundary": "The CSV is conveyed separately under GPL-3 to the extent the official wooldridge package licence applies; the Rdatasets underlying-rights caveat is retained. See case_studies/THIRD_PARTY_NOTICES.md.",
+    "manifest": "data/FIXTURE_MANIFEST.json",
+    "n_complete_rows": 97,
+    "sha256": "fa51db236cb3f9e7040cdc50b002542bcbb3d51077132848d1960a996ec9b3c9",
+    "source_url": "https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/csv/wooldridge/fish.csv",
+    "upstream_package": "CRAN wooldridge",
+    "upstream_package_software_license": "GPL-3"
+  },
+  "demo": "econometrics_fulton_market",
+  "detcorr_callable_api_audit": {
+    "detcorr_available": true,
+    "detcorr_state_logdet": -9.257151906625968,
+    "diagnostics": {
+      "addend": -9.373486487106128,
+      "api_version": "0.10",
+      "base_logdensity": -6.231691394668691,
+      "calibration": null,
+      "correction": -9.257151906625968,
+      "diagnostic_taxonomy": {
+        "calibration": null,
+        "feasibility": {
+          "diagnostic_type": "feasibility",
+          "metadata": {
+            "diagnostic_scope": "finite_penalty_target",
+            "rho": 50000000.0,
+            "state_jacobian_graph_correction_included": true,
+            "target_measure": "graph",
+            "weighted": false
+          },
+          "projection_error_distribution": {
+            "count": 33,
+            "l2_norm": 9.030516515899408e-05,
+            "linf_norm": 1.999567528376822e-05,
+            "max": -3.973386615951924e-06,
+            "mean": -1.5053540032414972e-05,
+            "median": -1.6268310095823857e-05,
+            "min": -1.999567528376822e-05,
+            "q05": -1.993323120212942e-05,
+            "q25": -1.897969238706665e-05,
+            "q75": -1.2103728114776224e-05,
+            "q95": -6.287149185180143e-06,
+            "std": 4.529109975598032e-06
+          },
+          "projection_error_linf_norm": 1.999567528376822e-05,
+          "projection_error_norm": 9.030516515899408e-05,
+          "projection_errors": [
+            -3.973386615951924e-06,
+            -5.430938739170443e-06,
+            -6.857956149186606e-06,
+            -8.246415634904913e-06,
+            -9.588510772040593e-06,
+            -1.0876695813566428e-05,
+            -1.2103728114776224e-05,
+            -1.3262708853267746e-05,
+            -1.4347121818025776e-05,
+            -1.5350870044672504e-05,
+            -1.6268310095823857e-05,
+            -1.7094283789487186e-05,
+            -1.7824147201195295e-05,
+            -1.845379677345438e-05,
+            -1.897969238706665e-05,
+            -1.939887726587486e-05,
+            -1.970899459979858e-05,
+            -1.9908300796345202e-05,
+            -1.999567528376822e-05,
+            -1.9970626810805747e-05,
+            -1.9833296209026408e-05,
+            -1.9584455601240336e-05,
+            -1.9225504059527943e-05,
+            -1.8758459740308986e-05,
+            -1.8185948536530994e-05,
+            -1.7511189314478592e-05,
+            -1.673797581591696e-05,
+            -1.5870655328598104e-05,
+            -1.491410424347972e-05,
+            -1.3873700639099873e-05,
+            -1.275529404265452e-05,
+            -1.1565172543193114e-05,
+            -1.0310027436455371e-05
+          ],
+          "residual_component_distribution": {
+            "count": 33,
+            "l2_norm": 6.821571094114926e-05,
+            "linf_norm": 1.5104553574896151e-05,
+            "max": -3.0014605740813494e-06,
+            "mean": -1.1371308979771822e-05,
+            "median": -1.2288935378634847e-05,
+            "min": -1.5104553574896151e-05,
+            "q05": -1.5057383876193597e-05,
+            "q25": -1.4337089216831522e-05,
+            "q75": -9.143047542625737e-06,
+            "q95": -4.749256044278562e-06,
+            "std": 3.4212490101987453e-06
+          },
+          "residual_linf_norm": 1.5104553574896151e-05,
+          "residual_norm": 6.821571094114926e-05,
+          "residual_size": 33,
+          "tag": "feasibility",
+          "taxonomy": "feasibility"
+        }
+      },
+      "diagnostics": {
+        "finite_penalty_terms": {
+          "addend": -9.373486487106128,
+          "correction": -9.257151906625968,
+          "multiplier_term": 0.0,
+          "penalty": -0.11633458048016077,
+          "residual_norm_squared": 4.653383219206431e-09,
+          "rho": 50000000.0,
+          "state_correction": -9.257151906625968,
+          "state_jacobian_graph_correction_included": true,
+          "target_measure": "graph",
+          "unweighted_residual_norm_squared": 4.653383219206431e-09,
+          "weight_correction": 0.0,
+          "weighted": false
+        },
+        "logdet": {
+          "backend": "dense",
+          "estimated": false,
+          "estimator_report": {
+            "adjoint_check_max_relative_error": null,
+            "adjoint_check_passed": null,
+            "backend": "dense",
+            "clipped_ritz_count": null,
+            "confidence_interval": null,
+            "convergence_ok": null,
+            "error_estimate": null,
+            "estimated": false,
+            "exact_reference_absolute_error": null,
+            "gram_condition_estimate": null,
+            "jacobian_condition_estimate": null,
+            "lanczos_degree": null,
+            "last_checkpoint_delta_scaled": null,
+            "metadata": {
+              "condition_number": 1.0000000000359186,
+              "determinant_config": {
+                "method": "auto",
+                "singular_policy": "raise",
+                "slq": {
+                  "adjoint_check": true,
+                  "adjoint_check_atol": 1e-07,
+                  "adjoint_check_n_probe": 3,
+                  "adjoint_check_rtol": 1e-05,
+                  "checkpoint_degrees": null,
+                  "confidence_level": 0.95,
+                  "convergence_atol": 0.0,
+                  "convergence_check": true,
+                  "convergence_rtol": 0.05,
+                  "eigenvalue_floor": 1e-14,
+                  "exact_check_max_dimension": 0,
+                  "jitter": 0.0,
+                  "lanczos_breakdown_tol": 1e-14,
+                  "lanczos_degree": 40,
+                  "max_stored_probe_diagnostics": 8,
+                  "max_stored_quadrature_nodes": 16,
+                  "n_probe": 16,
+                  "orthogonality_check": false,
+                  "probe_distribution": "rademacher",
+                  "reorthogonalize": false,
+                  "seed": null,
+                  "store_probe_diagnostics": true,
+                  "store_probe_estimates": true,
+                  "store_quadrature_nodes": false,
+                  "warn_condition_number": 1000000000000.0,
+                  "warn_relative_standard_error": 0.1
+                },
+                "sparse_lu": {
+                  "diag_pivot_thresh": null,
+                  "permc_spec": "COLAMD"
+                },
+                "structure": "general"
+              },
+              "jacobian_config": {
+                "backend": "scipy",
+                "finite_difference_eps": null,
+                "finite_difference_scheme": "central",
+                "matrix_free": false,
+                "mode": "auto"
+              },
+              "jacobian_dense_shape": [
+                33,
+                33
+              ],
+              "near_singular": false,
+              "near_singular_condition_threshold": 1000000000000.0
+            },
+            "method": "dense_slogdet",
+            "n_probe": null,
+            "negative_ritz_count": null,
+            "probe_distribution": null,
+            "relative_standard_error": null,
+            "ritz_floor_fraction": null,
+            "scaled_standard_error": null,
+            "shape": [
+              33,
+              33
+            ],
+            "value": -9.257151906625968,
+            "warnings": []
+          },
+          "method": "dense_slogdet",
+          "rank_deficient": false,
+          "shape": [
+            33,
+            33
+          ],
+          "value": -9.257151906625968,
+          "warnings": []
+        },
+        "state_jacobian_graph_correction_included": true,
+        "target_measure": "graph",
+        "weight": null
+      },
+      "feasibility": {
+        "diagnostic_type": "feasibility",
+        "metadata": {
+          "diagnostic_scope": "finite_penalty_target",
+          "rho": 50000000.0,
+          "state_jacobian_graph_correction_included": true,
+          "target_measure": "graph",
+          "weighted": false
+        },
+        "projection_error_distribution": {
+          "count": 33,
+          "l2_norm": 9.030516515899408e-05,
+          "linf_norm": 1.999567528376822e-05,
+          "max": -3.973386615951924e-06,
+          "mean": -1.5053540032414972e-05,
+          "median": -1.6268310095823857e-05,
+          "min": -1.999567528376822e-05,
+          "q05": -1.993323120212942e-05,
+          "q25": -1.897969238706665e-05,
+          "q75": -1.2103728114776224e-05,
+          "q95": -6.287149185180143e-06,
+          "std": 4.529109975598032e-06
+        },
+        "projection_error_linf_norm": 1.999567528376822e-05,
+        "projection_error_norm": 9.030516515899408e-05,
+        "projection_errors": [
+          -3.973386615951924e-06,
+          -5.430938739170443e-06,
+          -6.857956149186606e-06,
+          -8.246415634904913e-06,
+          -9.588510772040593e-06,
+          -1.0876695813566428e-05,
+          -1.2103728114776224e-05,
+          -1.3262708853267746e-05,
+          -1.4347121818025776e-05,
+          -1.5350870044672504e-05,
+          -1.6268310095823857e-05,
+          -1.7094283789487186e-05,
+          -1.7824147201195295e-05,
+          -1.845379677345438e-05,
+          -1.897969238706665e-05,
+          -1.939887726587486e-05,
+          -1.970899459979858e-05,
+          -1.9908300796345202e-05,
+          -1.999567528376822e-05,
+          -1.9970626810805747e-05,
+          -1.9833296209026408e-05,
+          -1.9584455601240336e-05,
+          -1.9225504059527943e-05,
+          -1.8758459740308986e-05,
+          -1.8185948536530994e-05,
+          -1.7511189314478592e-05,
+          -1.673797581591696e-05,
+          -1.5870655328598104e-05,
+          -1.491410424347972e-05,
+          -1.3873700639099873e-05,
+          -1.275529404265452e-05,
+          -1.1565172543193114e-05,
+          -1.0310027436455371e-05
+        ],
+        "residual_component_distribution": {
+          "count": 33,
+          "l2_norm": 6.821571094114926e-05,
+          "linf_norm": 1.5104553574896151e-05,
+          "max": -3.0014605740813494e-06,
+          "mean": -1.1371308979771822e-05,
+          "median": -1.2288935378634847e-05,
+          "min": -1.5104553574896151e-05,
+          "q05": -1.5057383876193597e-05,
+          "q25": -1.4337089216831522e-05,
+          "q75": -9.143047542625737e-06,
+          "q95": -4.749256044278562e-06,
+          "std": 3.4212490101987453e-06
+        },
+        "residual_linf_norm": 1.5104553574896151e-05,
+        "residual_norm": 6.821571094114926e-05,
+        "residual_size": 33,
+        "tag": "feasibility",
+        "taxonomy": "feasibility"
+      },
+      "logdensity": -15.605177881774818,
+      "logdet": {
+        "api_version": "0.10",
+        "backend": "dense",
+        "error_estimate": null,
+        "estimated": false,
+        "exact": true,
+        "logabsdet": -9.257151906625968,
+        "metadata": {
+          "condition_number": 1.0000000000359186,
+          "determinant_config": {
+            "method": "auto",
+            "singular_policy": "raise",
+            "slq": {
+              "adjoint_check": true,
+              "adjoint_check_atol": 1e-07,
+              "adjoint_check_n_probe": 3,
+              "adjoint_check_rtol": 1e-05,
+              "checkpoint_degrees": null,
+              "confidence_level": 0.95,
+              "convergence_atol": 0.0,
+              "convergence_check": true,
+              "convergence_rtol": 0.05,
+              "eigenvalue_floor": 1e-14,
+              "exact_check_max_dimension": 0,
+              "jitter": 0.0,
+              "lanczos_breakdown_tol": 1e-14,
+              "lanczos_degree": 40,
+              "max_stored_probe_diagnostics": 8,
+              "max_stored_quadrature_nodes": 16,
+              "n_probe": 16,
+              "orthogonality_check": false,
+              "probe_distribution": "rademacher",
+              "reorthogonalize": false,
+              "seed": null,
+              "store_probe_diagnostics": true,
+              "store_probe_estimates": true,
+              "store_quadrature_nodes": false,
+              "warn_condition_number": 1000000000000.0,
+              "warn_relative_standard_error": 0.1
+            },
+            "sparse_lu": {
+              "diag_pivot_thresh": null,
+              "permc_spec": "COLAMD"
+            },
+            "structure": "general"
+          },
+          "jacobian_config": {
+            "backend": "scipy",
+            "finite_difference_eps": null,
+            "finite_difference_scheme": "central",
+            "matrix_free": false,
+            "mode": "auto"
+          },
+          "jacobian_dense_shape": [
+            33,
+            33
+          ],
+          "near_singular": false,
+          "near_singular_condition_threshold": 1000000000000.0
+        },
+        "method": "dense_slogdet",
+        "rank_deficient": false,
+        "shape": [
+          33,
+          33
+        ],
+        "sign": -1.0,
+        "singular": false,
+        "value": -9.257151906625968,
+        "warnings": []
+      },
+      "metadata": {
+        "residual_shape": [
+          33
+        ],
+        "residual_unit": "dimensionless",
+        "state_coordinate": "heldout_price_divided_by_training_mean_price",
+        "state_jacobian": "-lambda*I",
+        "theta_type": "float",
+        "u_type": "ndarray"
+      },
+      "multiplier_term": 0.0,
+      "penalty": -0.11633458048016077,
+      "residual_norm_squared": 4.653383219206431e-09,
+      "rho": 50000000.0,
+      "state_correction": -9.257151906625968,
+      "state_jacobian_graph_correction_included": true,
+      "target_measure": "graph",
+      "unweighted_residual_norm_squared": 4.653383219206431e-09,
+      "weight_correction": 0.0,
+      "weight_logdet": null,
+      "weighted": false
+    },
+    "expected_state_logdet": -9.25715190677723,
+    "lambda_scale": 0.7553910213334231,
+    "route": "callable residual with scipy central finite differences",
+    "state_dimension": 33,
+    "state_logdet_abs_error": 1.5126211394544953e-10,
+    "target_measure": "graph"
+  },
+  "example": "econometrics_fulton_market",
+  "grid_tail_checks": {
+    "maximum_two_percent_grid_tail_mass": 2.3411186598378295e-18,
+    "minimum_endpoint_log_drop": 39.702486173510806,
+    "passed": true,
+    "targets": {
+      "finite_corrected": {
+        "left_endpoint_log_drop": 375.8965515436987,
+        "left_two_percent_grid_mass": 9.891984684031585e-112,
+        "right_endpoint_log_drop": 39.702486173510806,
+        "right_two_percent_grid_mass": 2.3411186598378295e-18
+      },
+      "finite_naive": {
+        "left_endpoint_log_drop": 342.34093533324113,
+        "left_two_percent_grid_mass": 7.0339342211476086e-99,
+        "right_endpoint_log_drop": 74.76844083848783,
+        "right_two_percent_grid_mass": 2.7380847438975765e-33
+      },
+      "graph_reduced": {
+        "left_endpoint_log_drop": 375.89746169383875,
+        "left_two_percent_grid_mass": 9.887405559818415e-112,
+        "right_endpoint_log_drop": 39.70248931855502,
+        "right_two_percent_grid_mass": 2.3411116677566783e-18
+      }
+    }
+  },
+  "independent_validation": {
+    "finite_corrected_vs_graph_centered_max_abs_diff": 0.0009102759489678647,
+    "finite_vs_hard_tube_centered_max_abs_diff": 0.0009102759490247081,
+    "integral_route": "exact_product_of_scalar_gaussian_state_integrals",
+    "n_points": 13,
+    "rho": 50000000.0,
+    "rho_unit": "dimensionless",
+    "route": "stable exact Gaussian integration over all 33 held-out latent price states, evaluated independently of the reduced graph target"
+  },
+  "interpretation_boundary": "The defensible result is conditional and numerical: for this predeclared held-out price-scale model, omitting the state-volume determinant changes the lambda posterior, while exact state integration verifies the corrected graph target. It is not a structural or causal estimate of the fish market.",
+  "limitations": [
+    "The iid Gaussian likelihood ignores serial correlation, heteroskedasticity, and time-series model discrepancy.",
+    "Reduced-form coefficients and sigma are plug-in training estimates; their uncertainty is not propagated.",
+    "The chronological split is a transparent demonstration choice, not an optimized forecasting design.",
+    "Lambda is a conditional dimensionless scale parameter, not a supply, demand, market-power, or causal elasticity.",
+    "The model does not support publication-grade claims about the Fulton market."
+  ],
+  "model": {
+    "constraint": "c_t(lambda,u_t)=a_t-lambda*u_t",
+    "full_space_base_measure": "d lambda times the product of du_t over all held-out dimensionless price-state coordinates",
+    "observation_likelihood": "iid Gaussian held-out price errors with plug-in training SD",
+    "parameter": "lambda, dimensionless reference-to-state scale",
+    "penalty_rho": 50000000.0,
+    "penalty_rho_unit": "dimensionless",
+    "prior": {
+      "density_measure": "d lambda",
+      "distribution": "lognormal",
+      "log_location": 0.0,
+      "log_parameter_distribution": "log(lambda) ~ Normal(0, 0.5^2)",
+      "log_scale": 0.5,
+      "support": "lambda > 0"
+    },
+    "reference_fit": {
+      "coefficients": [
+        0.6594715240295796,
+        0.096597156580154,
+        -0.010065980895438531,
+        -0.06034350522596924,
+        -0.019615171309425413,
+        0.02534141920665966,
+        0.10676400963392782,
+        -0.00542904146396617
+      ],
+      "columns": [
+        "const",
+        "wave2",
+        "speed2",
+        "mon",
+        "tues",
+        "wed",
+        "thurs",
+        "t"
+      ],
+      "n_parameters": 8,
+      "n_train": 64,
+      "residual_sd_native_price": 0.32054317121385606,
+      "training_price_scale": 0.8921539816074073,
+      "training_r2": 0.3135517169986797
+    },
+    "sigma_nondimensional": 0.3592913082518878,
+    "state_and_residual_unit": "dimensionless",
+    "state_coordinate": "native price divided by mean training price",
+    "state_jacobian": "D_u c=-lambda*I",
+    "state_logdet": "n_heldout*log(lambda)",
+    "state_solution": "u_t(lambda)=a_t/lambda",
+    "training_price_scale_native": 0.8921539816074073
+  },
+  "outcome": {
+    "corrected_density_l1_vs_graph": 2.4633863620179644e-07,
+    "corrected_mean": 0.7553910367012473,
+    "corrected_mean_shift_in_graph_sd": 2.75742838891488e-07,
+    "correction_log_range_on_grid": 68.62157087543457,
+    "graph_mean": 0.7553910213334231,
+    "graph_sd": 0.05573245092119383,
+    "naive_density_l1_vs_graph": 1.4382389255006647,
+    "naive_mean": 0.6545753116504414,
+    "naive_mean_shift_in_graph_sd": -1.8089229527252622,
+    "naive_minus_corrected_mean_in_graph_sd": -1.808923228468101
+  },
+  "outputs": {
+    "convergence_figure": "finite_penalty_convergence.png",
+    "convergence_table": "tables/finite_penalty_convergence.csv",
+    "heldout_predictions": "tables/heldout_predictions.csv",
+    "posterior_figure": "heldout_scale_posteriors.png",
+    "posterior_table": "tables/posterior_summaries.csv",
+    "reference_figure": "heldout_price_reference.png",
+    "sensitivity_table": "tables/prior_and_split_sensitivity.csv",
+    "validation_table": "tables/finite_penalty_validation.csv"
+  },
+  "provenance": {
+    "detcorr_version": "0.10.0",
+    "example_root": ".",
+    "platform": "Linux-6.12.47-x86_64-with-glibc2.39",
+    "python_version": "3.12.13"
+  },
+  "sensitivity": {
+    "chronological_train_sizes": [
+      60,
+      64,
+      70
+    ],
+    "prior_log_sd_values": [
+      0.35,
+      0.5,
+      0.75
+    ],
+    "scope": "declared demonstrator sensitivity, not a model-selection analysis",
+    "table": "tables/prior_and_split_sensitivity.csv"
+  },
+  "split": {
+    "heldout_prices_used_in_likelihood": true,
+    "heldout_prices_used_in_reference_fit": false,
+    "heldout_t_range": [
+      65,
+      97
+    ],
+    "n_heldout": 33,
+    "n_train": 64,
+    "rule": "first 64 chronological rows train; final 33 rows held out",
+    "training_t_range": [
+      1,
+      64
+    ]
+  },
+  "status": "worked_real_data_demonstrator_not_structural_economics",
+  "target_measure": "graph posterior over lambda with respect to d lambda"
+}

@@ -1,0 +1,17 @@
+comparator,contrast,positive_favors_primary,mean_contrast,moving_block_bootstrap_ci05,moving_block_bootstrap_ci95,n_origins,block_length,bootstrap_replicates,bootstrap_seed,interval_level
+ar1_identity_reference_baseline,log_score_primary_minus_comparator,True,0.012373312548,-0.0417219391082,0.0633570215323,33,4,5000,20260711,0.9
+ar1_identity_reference_baseline,crps_comparator_minus_primary,True,-6.8716188698e-05,-0.00848717813797,0.00794031191634,33,4,5000,20260711,0.9
+iid_graph_sensitivity,log_score_primary_minus_comparator,True,0.246084302716,0.170460866927,0.322234866579,33,4,5000,20260711,0.9
+iid_graph_sensitivity,crps_comparator_minus_primary,True,0.025719604734,0.00769246270044,0.0440003491702,33,4,5000,20260711,0.9
+iid_identity_reference_baseline,log_score_primary_minus_comparator,True,0.433355506222,0.287725312709,0.567489153706,33,4,5000,20260711,0.9
+iid_identity_reference_baseline,crps_comparator_minus_primary,True,0.0538626680673,0.0252727579598,0.0828728857875,33,4,5000,20260711,0.9
+ar1_beta_uncertainty_sensitivity,log_score_primary_minus_comparator,True,0.0184563457302,-0.0352191730356,0.0767112243327,33,4,5000,20260711,0.9
+ar1_beta_uncertainty_sensitivity,crps_comparator_minus_primary,True,-0.000188467211568,-0.0100706923039,0.010221985654,33,4,5000,20260711,0.9
+ar1_beta_uncertainty_identity_baseline,log_score_primary_minus_comparator,True,0.0245878817615,-0.0411414153058,0.0924743922117,33,4,5000,20260711,0.9
+ar1_beta_uncertainty_identity_baseline,crps_comparator_minus_primary,True,-0.000165280211415,-0.0121790285028,0.0120737403341,33,4,5000,20260711,0.9
+ar1_naive_volume_omission_counterfactual,log_score_primary_minus_comparator,True,0.103513345584,-0.029045507897,0.232978868068,33,4,5000,20260711,0.9
+ar1_naive_volume_omission_counterfactual,crps_comparator_minus_primary,True,0.0209375883402,-0.000183011025874,0.0398270657075,33,4,5000,20260711,0.9
+ar1_lag4_reference_placebo,log_score_primary_minus_comparator,True,0.117550510359,-0.0136513216935,0.277565958333,33,4,5000,20260711,0.9
+ar1_lag4_reference_placebo,crps_comparator_minus_primary,True,0.0112881355075,-0.00431081060373,0.027746157129,33,4,5000,20260711,0.9
+last_price_persistence_baseline,log_score_primary_minus_comparator,True,-0.0225624080092,-0.127191954983,0.0907841238776,33,4,5000,20260711,0.9
+last_price_persistence_baseline,crps_comparator_minus_primary,True,-0.005503364239,-0.0222284060092,0.0100070184109,33,4,5000,20260711,0.9

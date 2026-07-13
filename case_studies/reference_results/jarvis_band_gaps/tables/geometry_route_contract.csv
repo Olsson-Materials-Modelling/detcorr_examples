@@ -1,0 +1,7 @@
+route,coordinate,base_relationship,q_formula,J_formula,J_over_q_formula,finite_comparison,tail_result
+log_genuine,w=log(Y/X0),reference,1,1,1,genuine_pushforward_complete_tube,Gaussian log residual is coercive at w boundaries
+direct_genuine,s=Y/X0,pushforward_of_dw,1/s,1/s,1,genuine_pushforward_complete_tube,log residual is coercive at s=0 and infinity
+reciprocal_genuine,v=X0/Y,pushforward_of_dw,1/v,1/v,1,genuine_pushforward_complete_tube,log residual is coercive at v=0 and infinity
+direct_independent_lebesgue,s=Y/X0,independent_q_equals_1,1,1/s,1/s,corrected_hard_limit_only,log residual and direct likelihood give a proper finite tube
+reciprocal_independent_lebesgue,v=X0/Y,independent_q_equals_1,1,1/v,1/v,corrected_hard_limit_only,log residual is coercive at both reciprocal boundaries
+log_residual_rescaled_metric,w=log(Y/X0),residual_transform_r=gamma*c,1,|gamma|*sqrt(gamma^-2)=1,1,pointwise_identical_metric_transformation,r^T R_r r equals c^2 pointwise

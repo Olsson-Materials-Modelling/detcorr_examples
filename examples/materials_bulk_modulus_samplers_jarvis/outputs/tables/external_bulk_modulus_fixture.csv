@@ -1,0 +1,37 @@
+material,formula,jvasp_id,bulk_modulus_opt_gpa,bulk_modulus_expt_gpa,source_note,sigma_gpa,expt_over_opt_ratio,observation_origin
+Copper,Cu,JVASP-14648,141.4,142.0,JARVIS-DB docs bulk modulus comparison table,8.335570106477421,1.0042432814710043,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Vanadium,V,JVASP-1041,183.4,161.9,JARVIS-DB docs bulk modulus comparison table,10.523667088995166,0.8827699018538713,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Diamond,C,JVASP-91,437.4,443.0,JARVIS-DB docs bulk modulus comparison table,24.24333411476235,1.0128029263831733,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Iron,Fe,JVASP-882,193.0,168.3,JARVIS-DB docs bulk modulus comparison table,11.030785330156688,0.8720207253886011,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Silicon,Si,JVASP-1002,87.3,99.2,JARVIS-DB docs bulk modulus comparison table,5.6616607325059665,1.13631156930126,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Nickel,Ni,JVASP-14630,200.4,186.0,JARVIS-DB docs bulk modulus comparison table,11.422980521737749,0.9281437125748503,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Germanium,Ge,JVASP-890,58.1,75.8,JARVIS-DB docs bulk modulus comparison table,4.38306060304897,1.3046471600688467,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Niobium,Nb,JVASP-934,176.0,170.2,JARVIS-DB docs bulk modulus comparison table,10.134219259518712,0.9670454545454544,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Silver,Ag,JVASP-813,100.3,109.0,JARVIS-DB docs bulk modulus comparison table,6.279472290726347,1.086739780658026,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Molybdenum,Mo,JVASP-925,262.0,272.5,JARVIS-DB docs bulk modulus comparison table,14.718970752060077,1.0400763358778626,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Palladium,Pd,JVASP-14644,176.0,195.0,JARVIS-DB docs bulk modulus comparison table,10.134219259518712,1.1079545454545454,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Tantalum,Ta,JVASP-14750,199.0,200.0,JARVIS-DB docs bulk modulus comparison table,11.348701467568878,1.0050251256281406,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Rhodium,Rh,JVASP-14817,260.8,269.0,JARVIS-DB docs bulk modulus comparison table,14.65436235392042,1.031441717791411,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Tungsten,W,JVASP-14830,305.2,323.2,JARVIS-DB docs bulk modulus comparison table,17.05197337553633,1.0589777195281782,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Lithium,Li,JVASP-913,13.9,13.3,JARVIS-DB docs bulk modulus comparison table,3.0958779449455043,0.9568345323741008,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Iridium,Ir,JVASP-901,348.0,355.0,JARVIS-DB docs bulk modulus comparison table,19.373683181057753,1.0201149425287357,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Sodium,Na,JVASP-25140,7.7,7.5,JARVIS-DB docs bulk modulus comparison table,3.0297445849444142,0.974025974025974,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Platinum,Pt,JVASP-972,251.6,278.3,JARVIS-DB docs bulk modulus comparison table,14.159457757979293,1.106120826709062,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Potassium,K,JVASP-14800,3.9,3.7,JARVIS-DB docs bulk modulus comparison table,3.0076585993094365,0.9487179487179488,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Gold,Au,JVASP-825,148.0,173.2,JARVIS-DB docs bulk modulus comparison table,8.675229103602971,1.17027027027027,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Rubidium,Rb,JVASP-978,3.1,2.9,JARVIS-DB docs bulk modulus comparison table,3.004841135567736,0.9354838709677419,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Lead,Pb,JVASP-961,42.6,46.8,JARVIS-DB docs bulk modulus comparison table,3.8065271573968835,1.0985915492957745,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Calcium,Ca,JVASP-846,17.7,18.4,JARVIS-DB docs bulk modulus comparison table,3.153997820227528,1.03954802259887,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Lithium chloride,LiCl,JVASP-23864,35.5,35.4,JARVIS-DB docs bulk modulus comparison table,3.5794212171802298,0.9971830985915493,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Strontium,Sr,JVASP-21208,12.5,12.4,JARVIS-DB docs bulk modulus comparison table,3.0777680630612827,0.992,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Sodium chloride,NaCl,JVASP-23862,27.7,26.6,JARVIS-DB docs bulk modulus comparison table,3.36467713904321,0.96028880866426,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Barium,Ba,JVASP-831,9.9,9.3,JARVIS-DB docs bulk modulus comparison table,3.0490129960365864,0.9393939393939394,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Sodium fluoride,NaF,JVASP-20326,53.7,51.4,JARVIS-DB docs bulk modulus comparison table,4.209888626792876,0.9571694599627559,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Aluminum,Al,JVASP-816,70.0,79.4,JARVIS-DB docs bulk modulus comparison table,4.88082984747471,1.1342857142857143,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Magnesium oxide,MgO,JVASP-116,160.7,165.0,JARVIS-DB docs bulk modulus comparison table,9.333760348862617,1.0267579340385813,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Lithium fluoride,LiF,JVASP-1130,73.9,69.8,JARVIS-DB docs bulk modulus comparison table,5.051748236996773,0.9445196211096075,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Silicon carbide,SiC,JVASP-182,213.3,225.0,JARVIS-DB docs bulk modulus comparison table,12.10900872284763,1.0548523206751055,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Titanium dioxide anatase,TiO2,JVASP-314,196.0,191.9,JARVIS-DB docs bulk modulus comparison table,11.189655937516577,0.9790816326530613,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Gallium arsenide,GaAs,JVASP-1174,62.0,75.6,JARVIS-DB docs bulk modulus comparison table,4.541816817089831,1.2193548387096773,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Titanium dioxide rutile,TiO2,JVASP-10036,226.3,243.5,JARVIS-DB docs bulk modulus comparison table,12.802943499445743,1.0760053026955367,external JARVIS-DB documentation OPT and experimental bulk-modulus table
+Black phosphorus,P,JVASP-7818,41.0,36.0,JARVIS-DB docs bulk modulus comparison table,3.7530021316274254,0.8780487804878049,external JARVIS-DB documentation OPT and experimental bulk-modulus table
